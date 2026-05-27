@@ -1,0 +1,20 @@
+{
+  "name": "zoositioweb-content-factory",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Local campaign factory for zoositioweb.com.mx short-form content, render briefs, blog backlog, and learning reports.",
+  "scripts": {
+    "ui": "node tools/serve-ui.mjs",
+    "start": "node tools/serve-ui.mjs",
+    "test": "node --test tools/tests/campaign-zoosite-*.spec.mjs",
+    "test:campaign-zoosite": "node --test tools/tests/campaign-zoosite-*.spec.mjs",
+    "campaign:zoosite:extract-claims": "node tools/campaigns/zoositioweb/extract-approved-claims.mjs",
+    "campaign:zoosite:validate": "node tools/campaigns/zoositioweb/validate-pilot.mjs",
+    "campaign:zoosite:render-briefs": "node tools/campaigns/zoositioweb/build-render-briefs.mjs",
+    "campaign:zoosite:report": "node tools/campaigns/zoositioweb/build-learning-report.mjs"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

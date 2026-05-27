@@ -1,0 +1,12 @@
+node_modules/
+devonly/
+logs/
+.env
+.env.*
+*.log
+*.mp4
+*.mov
+*.webm
+*.mp3
+*.wav
+*.aac

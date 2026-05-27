@@ -1,0 +1,40 @@
+{
+  "pilotId": "pilot-2026-05-sector-shortform",
+  "product": "zoositioweb.com.mx",
+  "defaultCta": "Revisa zoositioweb.com.mx y pide tu sitio por WhatsApp.",
+  "sectors": [
+    {
+      "id": "servicios-locales",
+      "label": "Servicios locales",
+      "audience": "duenos de servicios locales",
+      "sourceDraftPaths": [
+        "default/i18n/es.json",
+        "sector-servicios-locales/i18n/es.json",
+        "planes/i18n/es.json",
+        "servicios/i18n/es.json"
+      ]
+    },
+    {
+      "id": "consultorios",
+      "label": "Consultorios",
+      "audience": "duenos y administradores de consultorios",
+      "sourceDraftPaths": [
+        "default/i18n/es.json",
+        "sector-consultorios/i18n/es.json",
+        "planes/i18n/es.json",
+        "servicios/i18n/es.json"
+      ]
+    },
+    {
+      "id": "despachos",
+      "label": "Despachos",
+      "audience": "socios y administradores de despachos profesionales",
+      "sourceDraftPaths": [
+        "default/i18n/es.json",
+        "sector-despachos/i18n/es.json",
+        "planes/i18n/es.json",
+        "servicios/i18n/es.json"
+      ]
+    }
+  ]
+}

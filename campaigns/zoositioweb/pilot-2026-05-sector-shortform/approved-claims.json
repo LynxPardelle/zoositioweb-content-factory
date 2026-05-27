@@ -1,0 +1,3296 @@
+{
+  "generatedAt": "2026-05-27T20:40:27.562Z",
+  "draftRepo": "draft-zoositioweb-com-mx",
+  "sourceFiles": [
+    "default/i18n/es.json",
+    "sector-servicios-locales/i18n/es.json",
+    "sector-consultorios/i18n/es.json",
+    "sector-despachos/i18n/es.json",
+    "planes/i18n/es.json",
+    "servicios/i18n/es.json"
+  ],
+  "claims": [
+    {
+      "id": "claim-default-i18n-es-json-001",
+      "sourceDraftPath": "default/i18n/es.json",
+      "jsonPath": "$.dictionary.hero.eyebrow",
+      "text": "Sitios web completos para negocios"
+    },
+    {
+      "id": "claim-default-i18n-es-json-002",
+      "sourceDraftPath": "default/i18n/es.json",
+      "jsonPath": "$.dictionary.hero.title",
+      "text": "Consigue más clientes con un sitio profesional."
+    },
+    {
+      "id": "claim-default-i18n-es-json-003",
+      "sourceDraftPath": "default/i18n/es.json",
+      "jsonPath": "$.dictionary.hero.lead",
+      "text": "Desde $3,000 MXN sin IVA, creamos sitios completos para PyMEs, profesionales y equipos que quieren explicar su oferta, recibir contactos por WhatsApp y recopilar datos propios desde el primer día."
+    },
+    {
+      "id": "claim-default-i18n-es-json-004",
+      "sourceDraftPath": "default/i18n/es.json",
+      "jsonPath": "$.dictionary.hero.primaryLabel",
+      "text": "Quiero mi sitio web"
+    },
+    {
+      "id": "claim-default-i18n-es-json-005",
+      "sourceDraftPath": "default/i18n/es.json",
+      "jsonPath": "$.dictionary.hero.secondaryLabel",
+      "text": "Ver planes"
+    },
+    {
+      "id": "claim-default-i18n-es-json-006",
+      "sourceDraftPath": "default/i18n/es.json",
+      "jsonPath": "$.dictionary.hero.panel.kicker",
+      "text": "Base comercial"
+    },
+    {
+      "id": "claim-default-i18n-es-json-007",
+      "sourceDraftPath": "default/i18n/es.json",
+      "jsonPath": "$.dictionary.hero.panel.title",
+      "text": "Lo importante queda claro desde el primer vistazo."
+    },
+    {
+      "id": "claim-default-i18n-es-json-008",
+      "sourceDraftPath": "default/i18n/es.json",
+      "jsonPath": "$.dictionary.hero.panel.lead",
+      "text": "Tu sitio debe explicar tu oferta, mostrar el valor de tu trabajo, facilitar el primer contacto y generar datos útiles para mejorar."
+    },
+    {
+      "id": "claim-default-i18n-es-json-009",
+      "sourceDraftPath": "default/i18n/es.json",
+      "jsonPath": "$.dictionary.hero.panel.items[0].title",
+      "text": "Primera ronda en 5 días"
+    },
+    {
+      "id": "claim-default-i18n-es-json-010",
+      "sourceDraftPath": "default/i18n/es.json",
+      "jsonPath": "$.dictionary.hero.panel.items[0].content",
+      "text": "Con alcance base y materiales listos, podemos preparar una primera ronda de pruebas en 5 días."
+    },
+    {
+      "id": "claim-default-i18n-es-json-011",
+      "sourceDraftPath": "default/i18n/es.json",
+      "jsonPath": "$.dictionary.hero.panel.items[1].title",
+      "text": "100% facturable"
+    },
+    {
+      "id": "claim-default-i18n-es-json-012",
+      "sourceDraftPath": "default/i18n/es.json",
+      "jsonPath": "$.dictionary.hero.panel.items[1].content",
+      "text": "Los precios publicados son sin IVA y el servicio puede facturarse de forma completa."
+    },
+    {
+      "id": "claim-default-i18n-es-json-013",
+      "sourceDraftPath": "default/i18n/es.json",
+      "jsonPath": "$.dictionary.hero.panel.items[2].title",
+      "text": "Soporte humano"
+    },
+    {
+      "id": "claim-default-i18n-es-json-014",
+      "sourceDraftPath": "default/i18n/es.json",
+      "jsonPath": "$.dictionary.hero.panel.items[2].content",
+      "text": "Desarrolladores te acompañan en estructura, publicación, datos, tecnología e IA cuando aporta valor."
+    },
+    {
+      "id": "claim-default-i18n-es-json-015",
+      "sourceDraftPath": "default/i18n/es.json",
+      "jsonPath": "$.dictionary.stats[0].value",
+      "text": "Desde $3,000 MXN"
+    },
+    {
+      "id": "claim-default-i18n-es-json-016",
+      "sourceDraftPath": "default/i18n/es.json",
+      "jsonPath": "$.dictionary.stats[0].label",
+      "text": "Precio sin IVA"
+    },
+    {
+      "id": "claim-default-i18n-es-json-017",
+      "sourceDraftPath": "default/i18n/es.json",
+      "jsonPath": "$.dictionary.stats[0].detail",
+      "text": "Una primera versión clara para publicar tu negocio, medir interés y abrir conversación."
+    },
+    {
+      "id": "claim-default-i18n-es-json-018",
+      "sourceDraftPath": "default/i18n/es.json",
+      "jsonPath": "$.dictionary.stats[1].value",
+      "text": "5 días"
+    },
+    {
+      "id": "claim-default-i18n-es-json-019",
+      "sourceDraftPath": "default/i18n/es.json",
+      "jsonPath": "$.dictionary.stats[1].label",
+      "text": "Primera ronda de pruebas"
+    },
+    {
+      "id": "claim-default-i18n-es-json-020",
+      "sourceDraftPath": "default/i18n/es.json",
+      "jsonPath": "$.dictionary.stats[1].detail",
+      "text": "Cuando contamos con alcance base, materiales e información mínima a tiempo."
+    },
+    {
+      "id": "claim-default-i18n-es-json-021",
+      "sourceDraftPath": "default/i18n/es.json",
+      "jsonPath": "$.dictionary.stats[2].value",
+      "text": "Soporte humano"
+    },
+    {
+      "id": "claim-default-i18n-es-json-022",
+      "sourceDraftPath": "default/i18n/es.json",
+      "jsonPath": "$.dictionary.stats[2].label",
+      "text": "Desarrolladores contigo"
+    },
+    {
+      "id": "claim-default-i18n-es-json-023",
+      "sourceDraftPath": "default/i18n/es.json",
+      "jsonPath": "$.dictionary.stats[2].detail",
+      "text": "Te orientamos en sitio, datos, nube, tecnología e IA durante el proceso."
+    },
+    {
+      "id": "claim-default-i18n-es-json-024",
+      "sourceDraftPath": "default/i18n/es.json",
+      "jsonPath": "$.dictionary.sections[0].eyebrow",
+      "text": "Qué vendemos"
+    },
+    {
+      "id": "claim-default-i18n-es-json-025",
+      "sourceDraftPath": "default/i18n/es.json",
+      "jsonPath": "$.dictionary.sections[0].title",
+      "text": "Un sitio completo para presentar tu negocio con claridad."
+    },
+    {
+      "id": "claim-default-i18n-es-json-026",
+      "sourceDraftPath": "default/i18n/es.json",
+      "jsonPath": "$.dictionary.sections[0].lead",
+      "text": "El objetivo es que tu negocio tenga una presencia clara, ordenada, lista para convertir visitas en conversaciones comerciales y capaz de aprender con datos propios."
+    },
+    {
+      "id": "claim-default-i18n-es-json-027",
+      "sourceDraftPath": "default/i18n/es.json",
+      "jsonPath": "$.dictionary.sections[0].cards[0].title",
+      "text": "Presencia profesional"
+    },
+    {
+      "id": "claim-default-i18n-es-json-028",
+      "sourceDraftPath": "default/i18n/es.json",
+      "jsonPath": "$.dictionary.sections[0].cards[0].description",
+      "text": "Nombre, propuesta, servicios y diferenciales organizados en una experiencia clara."
+    },
+    {
+      "id": "claim-default-i18n-es-json-029",
+      "sourceDraftPath": "default/i18n/es.json",
+      "jsonPath": "$.dictionary.sections[0].cards[0].benefits[0]",
+      "text": "Imagen sólida"
+    },
+    {
+      "id": "claim-default-i18n-es-json-030",
+      "sourceDraftPath": "default/i18n/es.json",
+      "jsonPath": "$.dictionary.sections[0].cards[0].benefits[1]",
+      "text": "Mensaje fácil de entender"
+    },
+    {
+      "id": "claim-default-i18n-es-json-031",
+      "sourceDraftPath": "default/i18n/es.json",
+      "jsonPath": "$.dictionary.sections[0].cards[0].benefits[2]",
+      "text": "Diseño adaptable a celular"
+    },
+    {
+      "id": "claim-default-i18n-es-json-032",
+      "sourceDraftPath": "default/i18n/es.json",
+      "jsonPath": "$.dictionary.sections[0].cards[1].title",
+      "text": "Páginas para cada decisión"
+    },
+    {
+      "id": "claim-default-i18n-es-json-033",
+      "sourceDraftPath": "default/i18n/es.json",
+      "jsonPath": "$.dictionary.sections[0].cards[1].description",
+      "text": "Servicios, planes, sectores y plataforma se explican con mensajes adecuados para cada etapa de compra."
+    },
+    {
+      "id": "claim-default-i18n-es-json-034",
+      "sourceDraftPath": "default/i18n/es.json",
+      "jsonPath": "$.dictionary.sections[0].cards[1].benefits[0]",
+      "text": "Oferta bien explicada"
+    },
+    {
+      "id": "claim-default-i18n-es-json-035",
+      "sourceDraftPath": "default/i18n/es.json",
+      "jsonPath": "$.dictionary.sections[0].cards[1].benefits[1]",
+      "text": "Contexto por tipo de cliente"
+    },
+    {
+      "id": "claim-default-i18n-es-json-036",
+      "sourceDraftPath": "default/i18n/es.json",
+      "jsonPath": "$.dictionary.sections[0].cards[1].benefits[2]",
+      "text": "Base para buscadores y pauta"
+    },
+    {
+      "id": "claim-default-i18n-es-json-037",
+      "sourceDraftPath": "default/i18n/es.json",
+      "jsonPath": "$.dictionary.sections[0].cards[2].title",
+      "text": "Datos propios y análisis"
+    },
+    {
+      "id": "claim-default-i18n-es-json-038",
+      "sourceDraftPath": "default/i18n/es.json",
+      "jsonPath": "$.dictionary.sections[0].cards[2].description",
+      "text": "Nuestro sistema registra clicks, secciones vistas y acciones hacia WhatsApp para analizar qué información genera más interés."
+    },
+    {
+      "id": "claim-default-i18n-es-json-039",
+      "sourceDraftPath": "default/i18n/es.json",
+      "jsonPath": "$.dictionary.sections[0].cards[2].benefits[0]",
+      "text": "Clicks importantes"
+    },
+    {
+      "id": "claim-default-i18n-es-json-040",
+      "sourceDraftPath": "default/i18n/es.json",
+      "jsonPath": "$.dictionary.sections[0].cards[2].benefits[1]",
+      "text": "Secciones consultadas"
+    },
+    {
+      "id": "claim-default-i18n-es-json-041",
+      "sourceDraftPath": "default/i18n/es.json",
+      "jsonPath": "$.dictionary.sections[0].cards[2].benefits[2]",
+      "text": "Interés por idioma o experiencia"
+    },
+    {
+      "id": "claim-default-i18n-es-json-042",
+      "sourceDraftPath": "default/i18n/es.json",
+      "jsonPath": "$.dictionary.sections[1].title",
+      "text": "Sitios web para sectores donde el cliente decide con información clara."
+    },
+    {
+      "id": "claim-default-i18n-es-json-043",
+      "sourceDraftPath": "default/i18n/es.json",
+      "jsonPath": "$.dictionary.sections[1].lead",
+      "text": "Un sitio bien orientado ayuda a presentar servicios, zonas, proceso de atención y siguiente paso según el tipo de negocio."
+    },
+    {
+      "id": "claim-default-i18n-es-json-044",
+      "sourceDraftPath": "default/i18n/es.json",
+      "jsonPath": "$.dictionary.sections[1].cards[0].title",
+      "text": "Consultorios médicos"
+    },
+    {
+      "id": "claim-default-i18n-es-json-045",
+      "sourceDraftPath": "default/i18n/es.json",
+      "jsonPath": "$.dictionary.sections[1].cards[0].description",
+      "text": "Convierte servicios, horarios, ubicación y especialidades en una página clara para pacientes potenciales."
+    },
+    {
+      "id": "claim-default-i18n-es-json-046",
+      "sourceDraftPath": "default/i18n/es.json",
+      "jsonPath": "$.dictionary.sections[1].cards[0].benefits[0]",
+      "text": "Especialidades visibles"
+    },
+    {
+      "id": "claim-default-i18n-es-json-047",
+      "sourceDraftPath": "default/i18n/es.json",
+      "jsonPath": "$.dictionary.sections[1].cards[0].benefits[1]",
+      "text": "Ubicación y horarios"
+    },
+    {
+      "id": "claim-default-i18n-es-json-048",
+      "sourceDraftPath": "default/i18n/es.json",
+      "jsonPath": "$.dictionary.sections[1].cards[0].benefits[2]",
+      "text": "WhatsApp directo"
+    },
+    {
+      "id": "claim-default-i18n-es-json-049",
+      "sourceDraftPath": "default/i18n/es.json",
+      "jsonPath": "$.dictionary.sections[1].cards[1].title",
+      "text": "Despachos de abogados"
+    },
+    {
+      "id": "claim-default-i18n-es-json-050",
+      "sourceDraftPath": "default/i18n/es.json",
+      "jsonPath": "$.dictionary.sections[1].cards[1].description",
+      "text": "Presenta áreas de práctica, trayectoria y proceso de atención con un tono profesional y comercial."
+    },
+    {
+      "id": "claim-default-i18n-es-json-051",
+      "sourceDraftPath": "default/i18n/es.json",
+      "jsonPath": "$.dictionary.sections[1].cards[1].benefits[0]",
+      "text": "Áreas de servicio"
+    },
+    {
+      "id": "claim-default-i18n-es-json-052",
+      "sourceDraftPath": "default/i18n/es.json",
+      "jsonPath": "$.dictionary.sections[1].cards[1].benefits[1]",
+      "text": "Perfil del equipo"
+    },
+    {
+      "id": "claim-default-i18n-es-json-053",
+      "sourceDraftPath": "default/i18n/es.json",
+      "jsonPath": "$.dictionary.sections[1].cards[1].benefits[2]",
+      "text": "Consulta inicial"
+    },
+    {
+      "id": "claim-default-i18n-es-json-054",
+      "sourceDraftPath": "default/i18n/es.json",
+      "jsonPath": "$.dictionary.sections[1].cards[2].title",
+      "text": "Inmobiliarias"
+    },
+    {
+      "id": "claim-default-i18n-es-json-055",
+      "sourceDraftPath": "default/i18n/es.json",
+      "jsonPath": "$.dictionary.sections[1].cards[2].description",
+      "text": "Muestra zonas, propiedades destacadas y forma de atención para compradores, vendedores o inversionistas."
+    },
+    {
+      "id": "claim-default-i18n-es-json-056",
+      "sourceDraftPath": "default/i18n/es.json",
+      "jsonPath": "$.dictionary.sections[1].cards[2].benefits[0]",
+      "text": "Zonas y propiedades"
+    },
+    {
+      "id": "claim-default-i18n-es-json-057",
+      "sourceDraftPath": "default/i18n/es.json",
+      "jsonPath": "$.dictionary.sections[1].cards[2].benefits[1]",
+      "text": "Proceso de atención"
+    },
+    {
+      "id": "claim-default-i18n-es-json-058",
+      "sourceDraftPath": "default/i18n/es.json",
+      "jsonPath": "$.dictionary.sections[1].cards[2].benefits[2]",
+      "text": "Contacto rápido"
+    },
+    {
+      "id": "claim-default-i18n-es-json-059",
+      "sourceDraftPath": "default/i18n/es.json",
+      "jsonPath": "$.dictionary.sections[1].cards[3].title",
+      "text": "Servicios locales"
+    },
+    {
+      "id": "claim-default-i18n-es-json-060",
+      "sourceDraftPath": "default/i18n/es.json",
+      "jsonPath": "$.dictionary.sections[1].cards[3].description",
+      "text": "Organiza servicios por zona, disponibilidad y forma de cotizar para negocios de atención cercana."
+    },
+    {
+      "id": "claim-default-i18n-es-json-061",
+      "sourceDraftPath": "default/i18n/es.json",
+      "jsonPath": "$.dictionary.sections[1].cards[3].benefits[0]",
+      "text": "Servicios por zona"
+    },
+    {
+      "id": "claim-default-i18n-es-json-062",
+      "sourceDraftPath": "default/i18n/es.json",
+      "jsonPath": "$.dictionary.sections[1].cards[3].benefits[1]",
+      "text": "Cotización rápida"
+    },
+    {
+      "id": "claim-default-i18n-es-json-063",
+      "sourceDraftPath": "default/i18n/es.json",
+      "jsonPath": "$.dictionary.sections[1].cards[3].benefits[2]",
+      "text": "Contacto directo"
+    },
+    {
+      "id": "claim-default-i18n-es-json-064",
+      "sourceDraftPath": "default/i18n/es.json",
+      "jsonPath": "$.dictionary.sections[1].cards[4].title",
+      "text": "Empresas constructoras"
+    },
+    {
+      "id": "claim-default-i18n-es-json-065",
+      "sourceDraftPath": "default/i18n/es.json",
+      "jsonPath": "$.dictionary.sections[1].cards[4].description",
+      "text": "Ayuda a mostrar proyectos, tipos de obra, proceso de trabajo y forma de solicitar una revisión."
+    },
+    {
+      "id": "claim-default-i18n-es-json-066",
+      "sourceDraftPath": "default/i18n/es.json",
+      "jsonPath": "$.dictionary.sections[1].cards[4].benefits[0]",
+      "text": "Proyectos destacados"
+    },
+    {
+      "id": "claim-default-i18n-es-json-067",
+      "sourceDraftPath": "default/i18n/es.json",
+      "jsonPath": "$.dictionary.sections[1].cards[4].benefits[1]",
+      "text": "Proceso explicado"
+    },
+    {
+      "id": "claim-default-i18n-es-json-068",
+      "sourceDraftPath": "default/i18n/es.json",
+      "jsonPath": "$.dictionary.sections[1].cards[4].benefits[2]",
+      "text": "Solicitud comercial"
+    },
+    {
+      "id": "claim-default-i18n-es-json-069",
+      "sourceDraftPath": "default/i18n/es.json",
+      "jsonPath": "$.dictionary.sections[1].cards[5].title",
+      "text": "Agencias de marketing digital"
+    },
+    {
+      "id": "claim-default-i18n-es-json-070",
+      "sourceDraftPath": "default/i18n/es.json",
+      "jsonPath": "$.dictionary.sections[1].cards[5].description",
+      "text": "Permite presentar servicios, casos, equipo y páginas específicas para campañas de captación."
+    },
+    {
+      "id": "claim-default-i18n-es-json-071",
+      "sourceDraftPath": "default/i18n/es.json",
+      "jsonPath": "$.dictionary.sections[1].cards[5].benefits[0]",
+      "text": "Servicios modulares"
+    },
+    {
+      "id": "claim-default-i18n-es-json-072",
+      "sourceDraftPath": "default/i18n/es.json",
+      "jsonPath": "$.dictionary.sections[1].cards[5].benefits[1]",
+      "text": "Casos y equipo"
+    },
+    {
+      "id": "claim-default-i18n-es-json-073",
+      "sourceDraftPath": "default/i18n/es.json",
+      "jsonPath": "$.dictionary.sections[1].cards[5].benefits[2]",
+      "text": "Páginas por campaña"
+    },
+    {
+      "id": "claim-default-i18n-es-json-074",
+      "sourceDraftPath": "default/i18n/es.json",
+      "jsonPath": "$.dictionary.faq.eyebrow",
+      "text": "Dudas comunes"
+    },
+    {
+      "id": "claim-default-i18n-es-json-075",
+      "sourceDraftPath": "default/i18n/es.json",
+      "jsonPath": "$.dictionary.faq.title",
+      "text": "Antes de pedir tu sitio"
+    },
+    {
+      "id": "claim-default-i18n-es-json-076",
+      "sourceDraftPath": "default/i18n/es.json",
+      "jsonPath": "$.dictionary.faq.lead",
+      "text": "Respuestas breves para entender cómo podemos ayudarte a ordenar tu presencia digital."
+    },
+    {
+      "id": "claim-default-i18n-es-json-077",
+      "sourceDraftPath": "default/i18n/es.json",
+      "jsonPath": "$.dictionary.faq.items[0].title",
+      "text": "¿Puedo empezar con pocos textos o fotos?"
+    },
+    {
+      "id": "claim-default-i18n-es-json-078",
+      "sourceDraftPath": "default/i18n/es.json",
+      "jsonPath": "$.dictionary.faq.items[0].content",
+      "text": "Sí. Te guiamos para convertir lo que ya sabes de tu negocio en textos claros, secciones útiles y materiales iniciales bien presentados."
+    },
+    {
+      "id": "claim-default-i18n-es-json-079",
+      "sourceDraftPath": "default/i18n/es.json",
+      "jsonPath": "$.dictionary.faq.items[1].title",
+      "text": "¿El contacto inicial es por WhatsApp?"
+    },
+    {
+      "id": "claim-default-i18n-es-json-080",
+      "sourceDraftPath": "default/i18n/es.json",
+      "jsonPath": "$.dictionary.faq.items[1].content",
+      "text": "Sí. El primer mensaje abre una conversación ágil para entender tu negocio, tu objetivo y el tipo de sitio que puede servirte."
+    },
+    {
+      "id": "claim-default-i18n-es-json-081",
+      "sourceDraftPath": "default/i18n/es.json",
+      "jsonPath": "$.dictionary.faq.items[2].title",
+      "text": "¿Cómo ayudan a mi negocio?"
+    },
+    {
+      "id": "claim-default-i18n-es-json-082",
+      "sourceDraftPath": "default/i18n/es.json",
+      "jsonPath": "$.dictionary.faq.items[2].content",
+      "text": "Convertimos tu oferta en una presencia digital clara, con rutas de contacto visibles y datos propios de interacción para tomar decisiones comerciales con más contexto."
+    },
+    {
+      "id": "claim-default-i18n-es-json-083",
+      "sourceDraftPath": "default/i18n/es.json",
+      "jsonPath": "$.dictionary.faq.items[3].title",
+      "text": "¿Qué información conviene preparar?"
+    },
+    {
+      "id": "claim-default-i18n-es-json-084",
+      "sourceDraftPath": "default/i18n/es.json",
+      "jsonPath": "$.dictionary.faq.items[3].content",
+      "text": "Servicios, zonas de atención, diferenciales, fotos disponibles, referencias visuales y la forma en la que prefieres recibir clientes."
+    },
+    {
+      "id": "claim-default-i18n-es-json-085",
+      "sourceDraftPath": "default/i18n/es.json",
+      "jsonPath": "$.dictionary.faq.items[4].title",
+      "text": "¿Pueden orientarme si todavía estoy definiendo mi sitio?"
+    },
+    {
+      "id": "claim-default-i18n-es-json-086",
+      "sourceDraftPath": "default/i18n/es.json",
+      "jsonPath": "$.dictionary.faq.items[4].content",
+      "text": "Sí. Te ayudamos a elegir estructura, plan y mensajes para que la primera versión tenga una dirección comercial clara."
+    },
+    {
+      "id": "claim-default-i18n-es-json-087",
+      "sourceDraftPath": "default/i18n/es.json",
+      "jsonPath": "$.dictionary.final.eyebrow",
+      "text": "Siguiente paso"
+    },
+    {
+      "id": "claim-default-i18n-es-json-088",
+      "sourceDraftPath": "default/i18n/es.json",
+      "jsonPath": "$.dictionary.final.title",
+      "text": "Conversemos sobre el sitio que necesita tu negocio."
+    },
+    {
+      "id": "claim-default-i18n-es-json-089",
+      "sourceDraftPath": "default/i18n/es.json",
+      "jsonPath": "$.dictionary.final.lead",
+      "text": "Te ayudamos a ordenar la idea, elegir el alcance inicial y convertirla en una primera versión lista para recibir clientes y recopilar datos útiles desde el inicio."
+    },
+    {
+      "id": "claim-default-i18n-es-json-090",
+      "sourceDraftPath": "default/i18n/es.json",
+      "jsonPath": "$.dictionary.final.primaryLabel",
+      "text": "Quiero mi sitio web"
+    },
+    {
+      "id": "claim-default-i18n-es-json-091",
+      "sourceDraftPath": "default/i18n/es.json",
+      "jsonPath": "$.dictionary.final.secondaryLabel",
+      "text": "Ir a contacto"
+    },
+    {
+      "id": "claim-default-i18n-es-json-092",
+      "sourceDraftPath": "default/i18n/es.json",
+      "jsonPath": "$.dictionary.sectorLinks[0].label",
+      "text": "Sitios web para consultorios médicos"
+    },
+    {
+      "id": "claim-default-i18n-es-json-093",
+      "sourceDraftPath": "default/i18n/es.json",
+      "jsonPath": "$.dictionary.sectorLinks[1].label",
+      "text": "Sitios web para despachos de abogados"
+    },
+    {
+      "id": "claim-default-i18n-es-json-094",
+      "sourceDraftPath": "default/i18n/es.json",
+      "jsonPath": "$.dictionary.sectorLinks[2].label",
+      "text": "Sitios web para inmobiliarias"
+    },
+    {
+      "id": "claim-default-i18n-es-json-095",
+      "sourceDraftPath": "default/i18n/es.json",
+      "jsonPath": "$.dictionary.sectorLinks[3].label",
+      "text": "Sitios web para servicios locales"
+    },
+    {
+      "id": "claim-default-i18n-es-json-096",
+      "sourceDraftPath": "default/i18n/es.json",
+      "jsonPath": "$.dictionary.sectorLinks[4].label",
+      "text": "Sitios web para empresas constructoras"
+    },
+    {
+      "id": "claim-default-i18n-es-json-097",
+      "sourceDraftPath": "default/i18n/es.json",
+      "jsonPath": "$.dictionary.sectorLinks[5].label",
+      "text": "Sitios web para agencias de marketing digital"
+    },
+    {
+      "id": "claim-default-i18n-es-json-098",
+      "sourceDraftPath": "default/i18n/es.json",
+      "jsonPath": "$.dictionary.teamSection.eyebrow",
+      "text": "Equipo experto"
+    },
+    {
+      "id": "claim-default-i18n-es-json-099",
+      "sourceDraftPath": "default/i18n/es.json",
+      "jsonPath": "$.dictionary.teamSection.title",
+      "text": "Detrás de tu sitio hay software, nube, datos e IA."
+    },
+    {
+      "id": "claim-default-i18n-es-json-100",
+      "sourceDraftPath": "default/i18n/es.json",
+      "jsonPath": "$.dictionary.teamSection.lead",
+      "text": "Nuestro valor no es sólo publicar páginas. Unimos desarrollo de software, arquitectura de nube, ingeniería de datos e IA para que el sitio explique mejor tu oferta, mida interés con datos propios y pueda crecer con orden."
+    },
+    {
+      "id": "claim-default-i18n-es-json-101",
+      "sourceDraftPath": "default/i18n/es.json",
+      "jsonPath": "$.dictionary.teamSection.linkLabel",
+      "text": "Conocer al equipo"
+    },
+    {
+      "id": "claim-default-i18n-es-json-102",
+      "sourceDraftPath": "default/i18n/es.json",
+      "jsonPath": "$.dictionary.teamPreview[0].name",
+      "text": "Alec Montaño"
+    },
+    {
+      "id": "claim-default-i18n-es-json-103",
+      "sourceDraftPath": "default/i18n/es.json",
+      "jsonPath": "$.dictionary.teamPreview[0].role",
+      "text": "Desarrollo de software, Arquitectura de Nube, Ingeniería de Datos e IA"
+    },
+    {
+      "id": "claim-default-i18n-es-json-104",
+      "sourceDraftPath": "default/i18n/es.json",
+      "jsonPath": "$.dictionary.teamPreview[0].proof[0]",
+      "text": "Experiencia en empresas grandes e internacionales como Bimbo, McGraw Hill y Audio Enhancement."
+    },
+    {
+      "id": "claim-default-i18n-es-json-105",
+      "sourceDraftPath": "default/i18n/es.json",
+      "jsonPath": "$.dictionary.teamPreview[0].proof[1]",
+      "text": "Arquitectura de nube, ingeniería de datos, IA y productos digitales medibles."
+    },
+    {
+      "id": "claim-default-i18n-es-json-106",
+      "sourceDraftPath": "default/i18n/es.json",
+      "jsonPath": "$.dictionary.teamPreview[0].imageAlt",
+      "text": "Foto de Alec Montaño"
+    },
+    {
+      "id": "claim-default-i18n-es-json-107",
+      "sourceDraftPath": "default/i18n/es.json",
+      "jsonPath": "$.dictionary.teamPreview[0].badges[0].label",
+      "text": "Nube"
+    },
+    {
+      "id": "claim-default-i18n-es-json-108",
+      "sourceDraftPath": "default/i18n/es.json",
+      "jsonPath": "$.dictionary.teamPreview[0].badges[1].label",
+      "text": "IA"
+    },
+    {
+      "id": "claim-default-i18n-es-json-109",
+      "sourceDraftPath": "default/i18n/es.json",
+      "jsonPath": "$.dictionary.teamPreview[0].badges[2].label",
+      "text": "Arquitectura"
+    },
+    {
+      "id": "claim-default-i18n-es-json-110",
+      "sourceDraftPath": "default/i18n/es.json",
+      "jsonPath": "$.dictionary.teamPreview[1].name",
+      "text": "Héctor Coronado"
+    },
+    {
+      "id": "claim-default-i18n-es-json-111",
+      "sourceDraftPath": "default/i18n/es.json",
+      "jsonPath": "$.dictionary.teamPreview[1].role",
+      "text": "Desarrollo de software, Arquitectura de Nube, Ingeniería de Datos e IA"
+    },
+    {
+      "id": "claim-default-i18n-es-json-112",
+      "sourceDraftPath": "default/i18n/es.json",
+      "jsonPath": "$.dictionary.teamPreview[1].proof[0]",
+      "text": "Experiencia con Coppel."
+    },
+    {
+      "id": "claim-default-i18n-es-json-113",
+      "sourceDraftPath": "default/i18n/es.json",
+      "jsonPath": "$.dictionary.teamPreview[1].proof[1]",
+      "text": "Arquitectura de nube, IA, datos y desarrollo de software para sitios profesionales."
+    },
+    {
+      "id": "claim-default-i18n-es-json-114",
+      "sourceDraftPath": "default/i18n/es.json",
+      "jsonPath": "$.dictionary.teamPreview[1].imageAlt",
+      "text": "Foto de Héctor Coronado"
+    },
+    {
+      "id": "claim-default-i18n-es-json-115",
+      "sourceDraftPath": "default/i18n/es.json",
+      "jsonPath": "$.dictionary.teamPreview[1].badges[0].label",
+      "text": "Nube"
+    },
+    {
+      "id": "claim-default-i18n-es-json-116",
+      "sourceDraftPath": "default/i18n/es.json",
+      "jsonPath": "$.dictionary.teamPreview[1].badges[1].label",
+      "text": "IA"
+    },
+    {
+      "id": "claim-default-i18n-es-json-117",
+      "sourceDraftPath": "default/i18n/es.json",
+      "jsonPath": "$.dictionary.teamPreview[1].badges[2].label",
+      "text": "Datos"
+    },
+    {
+      "id": "claim-default-i18n-es-json-118",
+      "sourceDraftPath": "default/i18n/es.json",
+      "jsonPath": "$.dictionary.teamPreview[2].name",
+      "text": "Oswaldo García"
+    },
+    {
+      "id": "claim-default-i18n-es-json-119",
+      "sourceDraftPath": "default/i18n/es.json",
+      "jsonPath": "$.dictionary.teamPreview[2].role",
+      "text": "Desarrollo web y Google Ads"
+    },
+    {
+      "id": "claim-default-i18n-es-json-120",
+      "sourceDraftPath": "default/i18n/es.json",
+      "jsonPath": "$.dictionary.teamPreview[2].proof[0]",
+      "text": "Apoyo clave en desarrollo web y Google Ads."
+    },
+    {
+      "id": "claim-default-i18n-es-json-121",
+      "sourceDraftPath": "default/i18n/es.json",
+      "jsonPath": "$.dictionary.teamPreview[2].proof[1]",
+      "text": "Construcción de páginas, componentes y ajustes del sitio."
+    },
+    {
+      "id": "claim-default-i18n-es-json-122",
+      "sourceDraftPath": "default/i18n/es.json",
+      "jsonPath": "$.dictionary.teamPreview[2].imageAlt",
+      "text": "Foto de Oswaldo García"
+    },
+    {
+      "id": "claim-default-i18n-es-json-123",
+      "sourceDraftPath": "default/i18n/es.json",
+      "jsonPath": "$.dictionary.teamPreview[2].badges[0].label",
+      "text": "Desarrollo web"
+    },
+    {
+      "id": "claim-default-i18n-es-json-124",
+      "sourceDraftPath": "default/i18n/es.json",
+      "jsonPath": "$.dictionary.teamPreview[2].badges[1].label",
+      "text": "Responsive"
+    },
+    {
+      "id": "claim-default-i18n-es-json-125",
+      "sourceDraftPath": "default/i18n/es.json",
+      "jsonPath": "$.dictionary.teamPreview[2].badges[2].label",
+      "text": "Google Ads"
+    },
+    {
+      "id": "claim-default-i18n-es-json-126",
+      "sourceDraftPath": "default/i18n/es.json",
+      "jsonPath": "$.dictionary.teamPreview[3].name",
+      "text": "Pamela Betancourt"
+    },
+    {
+      "id": "claim-default-i18n-es-json-127",
+      "sourceDraftPath": "default/i18n/es.json",
+      "jsonPath": "$.dictionary.teamPreview[3].role",
+      "text": "Diseño, marketing y análisis de mercado"
+    },
+    {
+      "id": "claim-default-i18n-es-json-128",
+      "sourceDraftPath": "default/i18n/es.json",
+      "jsonPath": "$.dictionary.teamPreview[3].proof[0]",
+      "text": "Criterio visual y comunicación digital."
+    },
+    {
+      "id": "claim-default-i18n-es-json-129",
+      "sourceDraftPath": "default/i18n/es.json",
+      "jsonPath": "$.dictionary.teamPreview[3].proof[1]",
+      "text": "Marketing, datos y análisis de mercado."
+    },
+    {
+      "id": "claim-default-i18n-es-json-130",
+      "sourceDraftPath": "default/i18n/es.json",
+      "jsonPath": "$.dictionary.teamPreview[3].imageAlt",
+      "text": "Foto de Pamela Betancourt"
+    },
+    {
+      "id": "claim-default-i18n-es-json-131",
+      "sourceDraftPath": "default/i18n/es.json",
+      "jsonPath": "$.dictionary.teamPreview[3].badges[0].label",
+      "text": "Diseño"
+    },
+    {
+      "id": "claim-default-i18n-es-json-132",
+      "sourceDraftPath": "default/i18n/es.json",
+      "jsonPath": "$.dictionary.teamPreview[3].badges[1].label",
+      "text": "Marketing"
+    },
+    {
+      "id": "claim-default-i18n-es-json-133",
+      "sourceDraftPath": "default/i18n/es.json",
+      "jsonPath": "$.dictionary.teamPreview[3].badges[2].label",
+      "text": "Análisis"
+    },
+    {
+      "id": "claim-sector-servicios-locales-i18n-es-json-001",
+      "sourceDraftPath": "sector-servicios-locales/i18n/es.json",
+      "jsonPath": "$.dictionary.hero.eyebrow",
+      "text": "Sector"
+    },
+    {
+      "id": "claim-sector-servicios-locales-i18n-es-json-002",
+      "sourceDraftPath": "sector-servicios-locales/i18n/es.json",
+      "jsonPath": "$.dictionary.hero.title",
+      "text": "Sitios web para servicios locales que quieren recibir solicitudes por zona."
+    },
+    {
+      "id": "claim-sector-servicios-locales-i18n-es-json-003",
+      "sourceDraftPath": "sector-servicios-locales/i18n/es.json",
+      "jsonPath": "$.dictionary.hero.lead",
+      "text": "Presenta qué haces, dónde atiendes, horarios, disponibilidad y contacto por WhatsApp para clientes que buscan resolver algo cerca. También dejamos medición para recopilar datos propios sobre interés por sector."
+    },
+    {
+      "id": "claim-sector-servicios-locales-i18n-es-json-004",
+      "sourceDraftPath": "sector-servicios-locales/i18n/es.json",
+      "jsonPath": "$.dictionary.hero.primaryLabel",
+      "text": "Quiero un sitio para mi servicio local"
+    },
+    {
+      "id": "claim-sector-servicios-locales-i18n-es-json-005",
+      "sourceDraftPath": "sector-servicios-locales/i18n/es.json",
+      "jsonPath": "$.dictionary.hero.secondaryLabel",
+      "text": "Ver planes"
+    },
+    {
+      "id": "claim-sector-servicios-locales-i18n-es-json-006",
+      "sourceDraftPath": "sector-servicios-locales/i18n/es.json",
+      "jsonPath": "$.dictionary.hero.panel.kicker",
+      "text": "Página por intención"
+    },
+    {
+      "id": "claim-sector-servicios-locales-i18n-es-json-007",
+      "sourceDraftPath": "sector-servicios-locales/i18n/es.json",
+      "jsonPath": "$.dictionary.hero.panel.title",
+      "text": "Negocios de atención cercana que necesitan explicar servicio, zona y contacto."
+    },
+    {
+      "id": "claim-sector-servicios-locales-i18n-es-json-008",
+      "sourceDraftPath": "sector-servicios-locales/i18n/es.json",
+      "jsonPath": "$.dictionary.hero.panel.lead",
+      "text": "La página ayuda a que el cliente entienda rápido si atiendes su zona y cómo iniciar conversación."
+    },
+    {
+      "id": "claim-sector-servicios-locales-i18n-es-json-009",
+      "sourceDraftPath": "sector-servicios-locales/i18n/es.json",
+      "jsonPath": "$.dictionary.hero.panel.items[0].title",
+      "text": "Qué debe quedar claro"
+    },
+    {
+      "id": "claim-sector-servicios-locales-i18n-es-json-010",
+      "sourceDraftPath": "sector-servicios-locales/i18n/es.json",
+      "jsonPath": "$.dictionary.hero.panel.items[0].content",
+      "text": "Servicios, zonas, proceso y forma de contacto."
+    },
+    {
+      "id": "claim-sector-servicios-locales-i18n-es-json-011",
+      "sourceDraftPath": "sector-servicios-locales/i18n/es.json",
+      "jsonPath": "$.dictionary.hero.panel.items[1].title",
+      "text": "Cómo orientamos el contenido"
+    },
+    {
+      "id": "claim-sector-servicios-locales-i18n-es-json-012",
+      "sourceDraftPath": "sector-servicios-locales/i18n/es.json",
+      "jsonPath": "$.dictionary.hero.panel.items[1].content",
+      "text": "Trabajamos con información comercial aprobada y mensajes adecuados para el sector."
+    },
+    {
+      "id": "claim-sector-servicios-locales-i18n-es-json-013",
+      "sourceDraftPath": "sector-servicios-locales/i18n/es.json",
+      "jsonPath": "$.dictionary.hero.panel.items[2].title",
+      "text": "Cómo se mide"
+    },
+    {
+      "id": "claim-sector-servicios-locales-i18n-es-json-014",
+      "sourceDraftPath": "sector-servicios-locales/i18n/es.json",
+      "jsonPath": "$.dictionary.hero.panel.items[2].content",
+      "text": "Nuestro sistema registra clicks por sector, página, idioma y acción de contacto para analizar interés."
+    },
+    {
+      "id": "claim-sector-servicios-locales-i18n-es-json-015",
+      "sourceDraftPath": "sector-servicios-locales/i18n/es.json",
+      "jsonPath": "$.dictionary.stats[0].value",
+      "text": "Zona"
+    },
+    {
+      "id": "claim-sector-servicios-locales-i18n-es-json-016",
+      "sourceDraftPath": "sector-servicios-locales/i18n/es.json",
+      "jsonPath": "$.dictionary.stats[0].label",
+      "text": "Cobertura clara"
+    },
+    {
+      "id": "claim-sector-servicios-locales-i18n-es-json-017",
+      "sourceDraftPath": "sector-servicios-locales/i18n/es.json",
+      "jsonPath": "$.dictionary.stats[0].detail",
+      "text": "El visitante entiende dónde atiendes y qué puede pedir."
+    },
+    {
+      "id": "claim-sector-servicios-locales-i18n-es-json-018",
+      "sourceDraftPath": "sector-servicios-locales/i18n/es.json",
+      "jsonPath": "$.dictionary.stats[1].value",
+      "text": "Servicio"
+    },
+    {
+      "id": "claim-sector-servicios-locales-i18n-es-json-019",
+      "sourceDraftPath": "sector-servicios-locales/i18n/es.json",
+      "jsonPath": "$.dictionary.stats[1].label",
+      "text": "Oferta directa"
+    },
+    {
+      "id": "claim-sector-servicios-locales-i18n-es-json-020",
+      "sourceDraftPath": "sector-servicios-locales/i18n/es.json",
+      "jsonPath": "$.dictionary.stats[1].detail",
+      "text": "Los servicios se explican con lenguaje sencillo y comercial."
+    },
+    {
+      "id": "claim-sector-servicios-locales-i18n-es-json-021",
+      "sourceDraftPath": "sector-servicios-locales/i18n/es.json",
+      "jsonPath": "$.dictionary.stats[2].value",
+      "text": "Datos"
+    },
+    {
+      "id": "claim-sector-servicios-locales-i18n-es-json-022",
+      "sourceDraftPath": "sector-servicios-locales/i18n/es.json",
+      "jsonPath": "$.dictionary.stats[2].label",
+      "text": "Interés medible"
+    },
+    {
+      "id": "claim-sector-servicios-locales-i18n-es-json-023",
+      "sourceDraftPath": "sector-servicios-locales/i18n/es.json",
+      "jsonPath": "$.dictionary.stats[2].detail",
+      "text": "Las acciones ayudan a entender qué busca cada tipo de cliente."
+    },
+    {
+      "id": "claim-sector-servicios-locales-i18n-es-json-024",
+      "sourceDraftPath": "sector-servicios-locales/i18n/es.json",
+      "jsonPath": "$.dictionary.sections[0].eyebrow",
+      "text": "Necesidades"
+    },
+    {
+      "id": "claim-sector-servicios-locales-i18n-es-json-025",
+      "sourceDraftPath": "sector-servicios-locales/i18n/es.json",
+      "jsonPath": "$.dictionary.sections[0].title",
+      "text": "Tu cliente quiere saber si puedes atenderlo y cómo pedirte una cotización."
+    },
+    {
+      "id": "claim-sector-servicios-locales-i18n-es-json-026",
+      "sourceDraftPath": "sector-servicios-locales/i18n/es.json",
+      "jsonPath": "$.dictionary.sections[0].lead",
+      "text": "La página ordena servicio, zona, horarios y formas de contacto para abrir conversación con más claridad."
+    },
+    {
+      "id": "claim-sector-servicios-locales-i18n-es-json-027",
+      "sourceDraftPath": "sector-servicios-locales/i18n/es.json",
+      "jsonPath": "$.dictionary.sections[0].cards[0].title",
+      "text": "Servicios por zona"
+    },
+    {
+      "id": "claim-sector-servicios-locales-i18n-es-json-028",
+      "sourceDraftPath": "sector-servicios-locales/i18n/es.json",
+      "jsonPath": "$.dictionary.sections[0].cards[0].description",
+      "text": "Explica qué ofreces y en qué ciudades, colonias o áreas puedes atender."
+    },
+    {
+      "id": "claim-sector-servicios-locales-i18n-es-json-029",
+      "sourceDraftPath": "sector-servicios-locales/i18n/es.json",
+      "jsonPath": "$.dictionary.sections[0].cards[0].benefits[0]",
+      "text": "Servicios principales"
+    },
+    {
+      "id": "claim-sector-servicios-locales-i18n-es-json-030",
+      "sourceDraftPath": "sector-servicios-locales/i18n/es.json",
+      "jsonPath": "$.dictionary.sections[0].cards[0].benefits[1]",
+      "text": "Zonas de atención"
+    },
+    {
+      "id": "claim-sector-servicios-locales-i18n-es-json-031",
+      "sourceDraftPath": "sector-servicios-locales/i18n/es.json",
+      "jsonPath": "$.dictionary.sections[0].cards[0].benefits[2]",
+      "text": "Disponibilidad clara"
+    },
+    {
+      "id": "claim-sector-servicios-locales-i18n-es-json-032",
+      "sourceDraftPath": "sector-servicios-locales/i18n/es.json",
+      "jsonPath": "$.dictionary.sections[0].cards[1].title",
+      "text": "Solicitud rápida"
+    },
+    {
+      "id": "claim-sector-servicios-locales-i18n-es-json-033",
+      "sourceDraftPath": "sector-servicios-locales/i18n/es.json",
+      "jsonPath": "$.dictionary.sections[0].cards[1].description",
+      "text": "Botones de WhatsApp con un mensaje inicial orientado al sector y acciones medibles para seguimiento."
+    },
+    {
+      "id": "claim-sector-servicios-locales-i18n-es-json-034",
+      "sourceDraftPath": "sector-servicios-locales/i18n/es.json",
+      "jsonPath": "$.dictionary.sections[0].cards[1].benefits[0]",
+      "text": "Servicio solicitado"
+    },
+    {
+      "id": "claim-sector-servicios-locales-i18n-es-json-035",
+      "sourceDraftPath": "sector-servicios-locales/i18n/es.json",
+      "jsonPath": "$.dictionary.sections[0].cards[1].benefits[1]",
+      "text": "Ubicación del cliente"
+    },
+    {
+      "id": "claim-sector-servicios-locales-i18n-es-json-036",
+      "sourceDraftPath": "sector-servicios-locales/i18n/es.json",
+      "jsonPath": "$.dictionary.sections[0].cards[1].benefits[2]",
+      "text": "Primer contexto"
+    },
+    {
+      "id": "claim-sector-servicios-locales-i18n-es-json-037",
+      "sourceDraftPath": "sector-servicios-locales/i18n/es.json",
+      "jsonPath": "$.dictionary.sections[0].cards[2].title",
+      "text": "Presentación profesional"
+    },
+    {
+      "id": "claim-sector-servicios-locales-i18n-es-json-038",
+      "sourceDraftPath": "sector-servicios-locales/i18n/es.json",
+      "jsonPath": "$.dictionary.sections[0].cards[2].description",
+      "text": "Organiza fotos, proceso, referencias públicas y detalles que ayudan a elegirte."
+    },
+    {
+      "id": "claim-sector-servicios-locales-i18n-es-json-039",
+      "sourceDraftPath": "sector-servicios-locales/i18n/es.json",
+      "jsonPath": "$.dictionary.sections[0].cards[2].benefits[0]",
+      "text": "Proceso visible"
+    },
+    {
+      "id": "claim-sector-servicios-locales-i18n-es-json-040",
+      "sourceDraftPath": "sector-servicios-locales/i18n/es.json",
+      "jsonPath": "$.dictionary.sections[0].cards[2].benefits[1]",
+      "text": "Materiales públicos"
+    },
+    {
+      "id": "claim-sector-servicios-locales-i18n-es-json-041",
+      "sourceDraftPath": "sector-servicios-locales/i18n/es.json",
+      "jsonPath": "$.dictionary.sections[0].cards[2].benefits[2]",
+      "text": "Información ordenada"
+    },
+    {
+      "id": "claim-sector-servicios-locales-i18n-es-json-042",
+      "sourceDraftPath": "sector-servicios-locales/i18n/es.json",
+      "jsonPath": "$.dictionary.sections[1].eyebrow",
+      "text": "Contenido recomendado"
+    },
+    {
+      "id": "claim-sector-servicios-locales-i18n-es-json-043",
+      "sourceDraftPath": "sector-servicios-locales/i18n/es.json",
+      "jsonPath": "$.dictionary.sections[1].title",
+      "text": "Secciones útiles para negocios de atención cercana."
+    },
+    {
+      "id": "claim-sector-servicios-locales-i18n-es-json-044",
+      "sourceDraftPath": "sector-servicios-locales/i18n/es.json",
+      "jsonPath": "$.dictionary.sections[1].lead",
+      "text": "Cada sector necesita sus propios matices, pero la base comercial y los datos de interacción ayudan a decidir mejor."
+    },
+    {
+      "id": "claim-sector-servicios-locales-i18n-es-json-045",
+      "sourceDraftPath": "sector-servicios-locales/i18n/es.json",
+      "jsonPath": "$.dictionary.sections[1].cards[0].title",
+      "text": "Cobertura y horarios"
+    },
+    {
+      "id": "claim-sector-servicios-locales-i18n-es-json-046",
+      "sourceDraftPath": "sector-servicios-locales/i18n/es.json",
+      "jsonPath": "$.dictionary.sections[1].cards[0].description",
+      "text": "Muestra zonas, horarios y condiciones de atención con una estructura fácil de revisar."
+    },
+    {
+      "id": "claim-sector-servicios-locales-i18n-es-json-047",
+      "sourceDraftPath": "sector-servicios-locales/i18n/es.json",
+      "jsonPath": "$.dictionary.sections[1].cards[0].benefits[0]",
+      "text": "Zonas"
+    },
+    {
+      "id": "claim-sector-servicios-locales-i18n-es-json-048",
+      "sourceDraftPath": "sector-servicios-locales/i18n/es.json",
+      "jsonPath": "$.dictionary.sections[1].cards[0].benefits[1]",
+      "text": "Horarios"
+    },
+    {
+      "id": "claim-sector-servicios-locales-i18n-es-json-049",
+      "sourceDraftPath": "sector-servicios-locales/i18n/es.json",
+      "jsonPath": "$.dictionary.sections[1].cards[0].benefits[2]",
+      "text": "Modalidad"
+    },
+    {
+      "id": "claim-sector-servicios-locales-i18n-es-json-050",
+      "sourceDraftPath": "sector-servicios-locales/i18n/es.json",
+      "jsonPath": "$.dictionary.sections[1].cards[1].title",
+      "text": "Servicios principales"
+    },
+    {
+      "id": "claim-sector-servicios-locales-i18n-es-json-051",
+      "sourceDraftPath": "sector-servicios-locales/i18n/es.json",
+      "jsonPath": "$.dictionary.sections[1].cards[1].description",
+      "text": "Cada servicio puede tener una explicación breve orientada a la solicitud comercial."
+    },
+    {
+      "id": "claim-sector-servicios-locales-i18n-es-json-052",
+      "sourceDraftPath": "sector-servicios-locales/i18n/es.json",
+      "jsonPath": "$.dictionary.sections[1].cards[1].benefits[0]",
+      "text": "Qué incluye"
+    },
+    {
+      "id": "claim-sector-servicios-locales-i18n-es-json-053",
+      "sourceDraftPath": "sector-servicios-locales/i18n/es.json",
+      "jsonPath": "$.dictionary.sections[1].cards[1].benefits[1]",
+      "text": "Para quién es"
+    },
+    {
+      "id": "claim-sector-servicios-locales-i18n-es-json-054",
+      "sourceDraftPath": "sector-servicios-locales/i18n/es.json",
+      "jsonPath": "$.dictionary.sections[1].cards[1].benefits[2]",
+      "text": "Cómo pedirlo"
+    },
+    {
+      "id": "claim-sector-servicios-locales-i18n-es-json-055",
+      "sourceDraftPath": "sector-servicios-locales/i18n/es.json",
+      "jsonPath": "$.dictionary.sections[1].cards[2].title",
+      "text": "Interés por servicio"
+    },
+    {
+      "id": "claim-sector-servicios-locales-i18n-es-json-056",
+      "sourceDraftPath": "sector-servicios-locales/i18n/es.json",
+      "jsonPath": "$.dictionary.sections[1].cards[2].description",
+      "text": "Los clicks ayudan a ver qué servicios o rutas reciben más atención."
+    },
+    {
+      "id": "claim-sector-servicios-locales-i18n-es-json-057",
+      "sourceDraftPath": "sector-servicios-locales/i18n/es.json",
+      "jsonPath": "$.dictionary.sections[1].cards[2].benefits[0]",
+      "text": "Servicio consultado"
+    },
+    {
+      "id": "claim-sector-servicios-locales-i18n-es-json-058",
+      "sourceDraftPath": "sector-servicios-locales/i18n/es.json",
+      "jsonPath": "$.dictionary.sections[1].cards[2].benefits[1]",
+      "text": "Página vista"
+    },
+    {
+      "id": "claim-sector-servicios-locales-i18n-es-json-059",
+      "sourceDraftPath": "sector-servicios-locales/i18n/es.json",
+      "jsonPath": "$.dictionary.sections[1].cards[2].benefits[2]",
+      "text": "Contacto iniciado"
+    },
+    {
+      "id": "claim-sector-servicios-locales-i18n-es-json-060",
+      "sourceDraftPath": "sector-servicios-locales/i18n/es.json",
+      "jsonPath": "$.dictionary.faq.eyebrow",
+      "text": "Preguntas del sector"
+    },
+    {
+      "id": "claim-sector-servicios-locales-i18n-es-json-061",
+      "sourceDraftPath": "sector-servicios-locales/i18n/es.json",
+      "jsonPath": "$.dictionary.faq.title",
+      "text": "Lo que conviene aclarar"
+    },
+    {
+      "id": "claim-sector-servicios-locales-i18n-es-json-062",
+      "sourceDraftPath": "sector-servicios-locales/i18n/es.json",
+      "jsonPath": "$.dictionary.faq.lead",
+      "text": "Estas respuestas se ajustan con información real del negocio."
+    },
+    {
+      "id": "claim-sector-servicios-locales-i18n-es-json-063",
+      "sourceDraftPath": "sector-servicios-locales/i18n/es.json",
+      "jsonPath": "$.dictionary.faq.items[0].title",
+      "text": "¿Puedo empezar con pocos textos o fotos?"
+    },
+    {
+      "id": "claim-sector-servicios-locales-i18n-es-json-064",
+      "sourceDraftPath": "sector-servicios-locales/i18n/es.json",
+      "jsonPath": "$.dictionary.faq.items[0].content",
+      "text": "Sí. Te guiamos para convertir lo que ya sabes de tu negocio en textos claros, secciones útiles y materiales iniciales bien presentados."
+    },
+    {
+      "id": "claim-sector-servicios-locales-i18n-es-json-065",
+      "sourceDraftPath": "sector-servicios-locales/i18n/es.json",
+      "jsonPath": "$.dictionary.faq.items[1].title",
+      "text": "¿El contacto inicial es por WhatsApp?"
+    },
+    {
+      "id": "claim-sector-servicios-locales-i18n-es-json-066",
+      "sourceDraftPath": "sector-servicios-locales/i18n/es.json",
+      "jsonPath": "$.dictionary.faq.items[1].content",
+      "text": "Sí. El primer mensaje abre una conversación ágil para entender tu negocio, tu objetivo y el tipo de sitio que puede servirte."
+    },
+    {
+      "id": "claim-sector-servicios-locales-i18n-es-json-067",
+      "sourceDraftPath": "sector-servicios-locales/i18n/es.json",
+      "jsonPath": "$.dictionary.faq.items[2].title",
+      "text": "¿Cómo ayudan a mi negocio?"
+    },
+    {
+      "id": "claim-sector-servicios-locales-i18n-es-json-068",
+      "sourceDraftPath": "sector-servicios-locales/i18n/es.json",
+      "jsonPath": "$.dictionary.faq.items[2].content",
+      "text": "Convertimos tu oferta en una presencia digital clara, con rutas de contacto visibles y datos propios de interacción para tomar decisiones comerciales con más contexto."
+    },
+    {
+      "id": "claim-sector-servicios-locales-i18n-es-json-069",
+      "sourceDraftPath": "sector-servicios-locales/i18n/es.json",
+      "jsonPath": "$.dictionary.faq.items[3].title",
+      "text": "¿Qué información conviene preparar?"
+    },
+    {
+      "id": "claim-sector-servicios-locales-i18n-es-json-070",
+      "sourceDraftPath": "sector-servicios-locales/i18n/es.json",
+      "jsonPath": "$.dictionary.faq.items[3].content",
+      "text": "Servicios, zonas de atención, diferenciales, fotos disponibles, referencias visuales y la forma en la que prefieres recibir clientes."
+    },
+    {
+      "id": "claim-sector-servicios-locales-i18n-es-json-071",
+      "sourceDraftPath": "sector-servicios-locales/i18n/es.json",
+      "jsonPath": "$.dictionary.faq.items[4].title",
+      "text": "¿Pueden orientarme si todavía estoy definiendo mi sitio?"
+    },
+    {
+      "id": "claim-sector-servicios-locales-i18n-es-json-072",
+      "sourceDraftPath": "sector-servicios-locales/i18n/es.json",
+      "jsonPath": "$.dictionary.faq.items[4].content",
+      "text": "Sí. Te ayudamos a elegir estructura, plan y mensajes para que la primera versión tenga una dirección comercial clara."
+    },
+    {
+      "id": "claim-sector-servicios-locales-i18n-es-json-073",
+      "sourceDraftPath": "sector-servicios-locales/i18n/es.json",
+      "jsonPath": "$.dictionary.final.eyebrow",
+      "text": "Sector"
+    },
+    {
+      "id": "claim-sector-servicios-locales-i18n-es-json-074",
+      "sourceDraftPath": "sector-servicios-locales/i18n/es.json",
+      "jsonPath": "$.dictionary.final.title",
+      "text": "Crea una página clara para tu servicio local."
+    },
+    {
+      "id": "claim-sector-servicios-locales-i18n-es-json-075",
+      "sourceDraftPath": "sector-servicios-locales/i18n/es.json",
+      "jsonPath": "$.dictionary.final.lead",
+      "text": "El mensaje de WhatsApp ya incluye el sector para orientar la conversación y analizar mejor el interés."
+    },
+    {
+      "id": "claim-sector-servicios-locales-i18n-es-json-076",
+      "sourceDraftPath": "sector-servicios-locales/i18n/es.json",
+      "jsonPath": "$.dictionary.final.primaryLabel",
+      "text": "Quiero mi página de servicio local"
+    },
+    {
+      "id": "claim-sector-servicios-locales-i18n-es-json-077",
+      "sourceDraftPath": "sector-servicios-locales/i18n/es.json",
+      "jsonPath": "$.dictionary.final.secondaryLabel",
+      "text": "Ir a contacto"
+    },
+    {
+      "id": "claim-sector-consultorios-i18n-es-json-001",
+      "sourceDraftPath": "sector-consultorios/i18n/es.json",
+      "jsonPath": "$.dictionary.hero.eyebrow",
+      "text": "Sector inicial"
+    },
+    {
+      "id": "claim-sector-consultorios-i18n-es-json-002",
+      "sourceDraftPath": "sector-consultorios/i18n/es.json",
+      "jsonPath": "$.dictionary.hero.title",
+      "text": "Sitios web para consultorios que facilitan la primera cita."
+    },
+    {
+      "id": "claim-sector-consultorios-i18n-es-json-003",
+      "sourceDraftPath": "sector-consultorios/i18n/es.json",
+      "jsonPath": "$.dictionary.hero.lead",
+      "text": "Presenta servicios, ubicación, horarios, equipo y contacto por WhatsApp con información clara para pacientes potenciales. También dejamos medición para recopilar datos propios sobre interés por sector."
+    },
+    {
+      "id": "claim-sector-consultorios-i18n-es-json-004",
+      "sourceDraftPath": "sector-consultorios/i18n/es.json",
+      "jsonPath": "$.dictionary.hero.primaryLabel",
+      "text": "Quiero un sitio para mi consultorio"
+    },
+    {
+      "id": "claim-sector-consultorios-i18n-es-json-005",
+      "sourceDraftPath": "sector-consultorios/i18n/es.json",
+      "jsonPath": "$.dictionary.hero.secondaryLabel",
+      "text": "Ver planes"
+    },
+    {
+      "id": "claim-sector-consultorios-i18n-es-json-006",
+      "sourceDraftPath": "sector-consultorios/i18n/es.json",
+      "jsonPath": "$.dictionary.hero.panel.kicker",
+      "text": "Página por intención"
+    },
+    {
+      "id": "claim-sector-consultorios-i18n-es-json-007",
+      "sourceDraftPath": "sector-consultorios/i18n/es.json",
+      "jsonPath": "$.dictionary.hero.panel.title",
+      "text": "Consulta médica, dental, terapéutica o de bienestar con presencia profesional."
+    },
+    {
+      "id": "claim-sector-consultorios-i18n-es-json-008",
+      "sourceDraftPath": "sector-consultorios/i18n/es.json",
+      "jsonPath": "$.dictionary.hero.panel.lead",
+      "text": "El contenido se adapta al tipo de cliente y a las dudas que suelen aparecer antes del contacto."
+    },
+    {
+      "id": "claim-sector-consultorios-i18n-es-json-009",
+      "sourceDraftPath": "sector-consultorios/i18n/es.json",
+      "jsonPath": "$.dictionary.hero.panel.items[0].title",
+      "text": "Qué debe quedar claro"
+    },
+    {
+      "id": "claim-sector-consultorios-i18n-es-json-010",
+      "sourceDraftPath": "sector-consultorios/i18n/es.json",
+      "jsonPath": "$.dictionary.hero.panel.items[0].content",
+      "text": "Servicios, zonas, proceso y forma de contacto."
+    },
+    {
+      "id": "claim-sector-consultorios-i18n-es-json-011",
+      "sourceDraftPath": "sector-consultorios/i18n/es.json",
+      "jsonPath": "$.dictionary.hero.panel.items[1].title",
+      "text": "Cómo orientamos el contenido"
+    },
+    {
+      "id": "claim-sector-consultorios-i18n-es-json-012",
+      "sourceDraftPath": "sector-consultorios/i18n/es.json",
+      "jsonPath": "$.dictionary.hero.panel.items[1].content",
+      "text": "Trabajamos con información comercial aprobada y mensajes adecuados para el sector."
+    },
+    {
+      "id": "claim-sector-consultorios-i18n-es-json-013",
+      "sourceDraftPath": "sector-consultorios/i18n/es.json",
+      "jsonPath": "$.dictionary.hero.panel.items[2].title",
+      "text": "Cómo se mide"
+    },
+    {
+      "id": "claim-sector-consultorios-i18n-es-json-014",
+      "sourceDraftPath": "sector-consultorios/i18n/es.json",
+      "jsonPath": "$.dictionary.hero.panel.items[2].content",
+      "text": "Nuestro sistema registra clicks por sector, página, idioma y acción de contacto para analizar interés."
+    },
+    {
+      "id": "claim-sector-consultorios-i18n-es-json-015",
+      "sourceDraftPath": "sector-consultorios/i18n/es.json",
+      "jsonPath": "$.dictionary.stats[0].value",
+      "text": "Sector"
+    },
+    {
+      "id": "claim-sector-consultorios-i18n-es-json-016",
+      "sourceDraftPath": "sector-consultorios/i18n/es.json",
+      "jsonPath": "$.dictionary.stats[0].label",
+      "text": "Mensaje específico"
+    },
+    {
+      "id": "claim-sector-consultorios-i18n-es-json-017",
+      "sourceDraftPath": "sector-consultorios/i18n/es.json",
+      "jsonPath": "$.dictionary.stats[0].detail",
+      "text": "La página habla con el contexto del giro."
+    },
+    {
+      "id": "claim-sector-consultorios-i18n-es-json-018",
+      "sourceDraftPath": "sector-consultorios/i18n/es.json",
+      "jsonPath": "$.dictionary.stats[1].value",
+      "text": "Respaldo"
+    },
+    {
+      "id": "claim-sector-consultorios-i18n-es-json-019",
+      "sourceDraftPath": "sector-consultorios/i18n/es.json",
+      "jsonPath": "$.dictionary.stats[1].label",
+      "text": "Señales claras"
+    },
+    {
+      "id": "claim-sector-consultorios-i18n-es-json-020",
+      "sourceDraftPath": "sector-consultorios/i18n/es.json",
+      "jsonPath": "$.dictionary.stats[1].detail",
+      "text": "Experiencia, proceso y contacto presentados con orden."
+    },
+    {
+      "id": "claim-sector-consultorios-i18n-es-json-021",
+      "sourceDraftPath": "sector-consultorios/i18n/es.json",
+      "jsonPath": "$.dictionary.stats[2].value",
+      "text": "Datos"
+    },
+    {
+      "id": "claim-sector-consultorios-i18n-es-json-022",
+      "sourceDraftPath": "sector-consultorios/i18n/es.json",
+      "jsonPath": "$.dictionary.stats[2].label",
+      "text": "Interés medible"
+    },
+    {
+      "id": "claim-sector-consultorios-i18n-es-json-023",
+      "sourceDraftPath": "sector-consultorios/i18n/es.json",
+      "jsonPath": "$.dictionary.stats[2].detail",
+      "text": "Las acciones ayudan a entender qué busca cada tipo de cliente."
+    },
+    {
+      "id": "claim-sector-consultorios-i18n-es-json-024",
+      "sourceDraftPath": "sector-consultorios/i18n/es.json",
+      "jsonPath": "$.dictionary.sections[0].eyebrow",
+      "text": "Necesidades"
+    },
+    {
+      "id": "claim-sector-consultorios-i18n-es-json-025",
+      "sourceDraftPath": "sector-consultorios/i18n/es.json",
+      "jsonPath": "$.dictionary.sections[0].title",
+      "text": "El cliente necesita entender rápido si eres opción."
+    },
+    {
+      "id": "claim-sector-consultorios-i18n-es-json-026",
+      "sourceDraftPath": "sector-consultorios/i18n/es.json",
+      "jsonPath": "$.dictionary.sections[0].lead",
+      "text": "La página se enfoca en claridad, respaldo y contacto directo."
+    },
+    {
+      "id": "claim-sector-consultorios-i18n-es-json-027",
+      "sourceDraftPath": "sector-consultorios/i18n/es.json",
+      "jsonPath": "$.dictionary.sections[0].cards[0].title",
+      "text": "Oferta clara"
+    },
+    {
+      "id": "claim-sector-consultorios-i18n-es-json-028",
+      "sourceDraftPath": "sector-consultorios/i18n/es.json",
+      "jsonPath": "$.dictionary.sections[0].cards[0].description",
+      "text": "Servicios y beneficios explicados con lenguaje comercial directo."
+    },
+    {
+      "id": "claim-sector-consultorios-i18n-es-json-029",
+      "sourceDraftPath": "sector-consultorios/i18n/es.json",
+      "jsonPath": "$.dictionary.sections[0].cards[0].benefits[0]",
+      "text": "Qué haces"
+    },
+    {
+      "id": "claim-sector-consultorios-i18n-es-json-030",
+      "sourceDraftPath": "sector-consultorios/i18n/es.json",
+      "jsonPath": "$.dictionary.sections[0].cards[0].benefits[1]",
+      "text": "A quién ayudas"
+    },
+    {
+      "id": "claim-sector-consultorios-i18n-es-json-031",
+      "sourceDraftPath": "sector-consultorios/i18n/es.json",
+      "jsonPath": "$.dictionary.sections[0].cards[0].benefits[2]",
+      "text": "Por qué elegirte"
+    },
+    {
+      "id": "claim-sector-consultorios-i18n-es-json-032",
+      "sourceDraftPath": "sector-consultorios/i18n/es.json",
+      "jsonPath": "$.dictionary.sections[0].cards[1].title",
+      "text": "Contacto ágil"
+    },
+    {
+      "id": "claim-sector-consultorios-i18n-es-json-033",
+      "sourceDraftPath": "sector-consultorios/i18n/es.json",
+      "jsonPath": "$.dictionary.sections[0].cards[1].description",
+      "text": "Botones de WhatsApp con un mensaje inicial orientado al sector y acciones medibles para seguimiento."
+    },
+    {
+      "id": "claim-sector-consultorios-i18n-es-json-034",
+      "sourceDraftPath": "sector-consultorios/i18n/es.json",
+      "jsonPath": "$.dictionary.sections[0].cards[1].benefits[0]",
+      "text": "Menos pasos"
+    },
+    {
+      "id": "claim-sector-consultorios-i18n-es-json-035",
+      "sourceDraftPath": "sector-consultorios/i18n/es.json",
+      "jsonPath": "$.dictionary.sections[0].cards[1].benefits[1]",
+      "text": "Más contexto"
+    },
+    {
+      "id": "claim-sector-consultorios-i18n-es-json-036",
+      "sourceDraftPath": "sector-consultorios/i18n/es.json",
+      "jsonPath": "$.dictionary.sections[0].cards[1].benefits[2]",
+      "text": "Seguimiento claro"
+    },
+    {
+      "id": "claim-sector-consultorios-i18n-es-json-037",
+      "sourceDraftPath": "sector-consultorios/i18n/es.json",
+      "jsonPath": "$.dictionary.sections[0].cards[2].title",
+      "text": "Respaldo visible"
+    },
+    {
+      "id": "claim-sector-consultorios-i18n-es-json-038",
+      "sourceDraftPath": "sector-consultorios/i18n/es.json",
+      "jsonPath": "$.dictionary.sections[0].cards[2].description",
+      "text": "Experiencia, equipo, proceso o zonas de atención se muestran con orden."
+    },
+    {
+      "id": "claim-sector-consultorios-i18n-es-json-039",
+      "sourceDraftPath": "sector-consultorios/i18n/es.json",
+      "jsonPath": "$.dictionary.sections[0].cards[2].benefits[0]",
+      "text": "Equipo"
+    },
+    {
+      "id": "claim-sector-consultorios-i18n-es-json-040",
+      "sourceDraftPath": "sector-consultorios/i18n/es.json",
+      "jsonPath": "$.dictionary.sections[0].cards[2].benefits[1]",
+      "text": "Proceso"
+    },
+    {
+      "id": "claim-sector-consultorios-i18n-es-json-041",
+      "sourceDraftPath": "sector-consultorios/i18n/es.json",
+      "jsonPath": "$.dictionary.sections[0].cards[2].benefits[2]",
+      "text": "Pruebas públicas"
+    },
+    {
+      "id": "claim-sector-consultorios-i18n-es-json-042",
+      "sourceDraftPath": "sector-consultorios/i18n/es.json",
+      "jsonPath": "$.dictionary.sections[1].eyebrow",
+      "text": "Contenido recomendado"
+    },
+    {
+      "id": "claim-sector-consultorios-i18n-es-json-043",
+      "sourceDraftPath": "sector-consultorios/i18n/es.json",
+      "jsonPath": "$.dictionary.sections[1].title",
+      "text": "Secciones que ayudan a decidir."
+    },
+    {
+      "id": "claim-sector-consultorios-i18n-es-json-044",
+      "sourceDraftPath": "sector-consultorios/i18n/es.json",
+      "jsonPath": "$.dictionary.sections[1].lead",
+      "text": "Cada sector necesita sus propios matices, pero la base comercial y los datos de interacción ayudan a decidir mejor."
+    },
+    {
+      "id": "claim-sector-consultorios-i18n-es-json-045",
+      "sourceDraftPath": "sector-consultorios/i18n/es.json",
+      "jsonPath": "$.dictionary.sections[1].cards[0].title",
+      "text": "Servicios o especialidades"
+    },
+    {
+      "id": "claim-sector-consultorios-i18n-es-json-046",
+      "sourceDraftPath": "sector-consultorios/i18n/es.json",
+      "jsonPath": "$.dictionary.sections[1].cards[0].description",
+      "text": "Separar lo que ofreces evita que el visitante tenga que adivinar."
+    },
+    {
+      "id": "claim-sector-consultorios-i18n-es-json-047",
+      "sourceDraftPath": "sector-consultorios/i18n/es.json",
+      "jsonPath": "$.dictionary.sections[1].cards[0].benefits[0]",
+      "text": "Servicios principales"
+    },
+    {
+      "id": "claim-sector-consultorios-i18n-es-json-048",
+      "sourceDraftPath": "sector-consultorios/i18n/es.json",
+      "jsonPath": "$.dictionary.sections[1].cards[0].benefits[1]",
+      "text": "Casos frecuentes"
+    },
+    {
+      "id": "claim-sector-consultorios-i18n-es-json-049",
+      "sourceDraftPath": "sector-consultorios/i18n/es.json",
+      "jsonPath": "$.dictionary.sections[1].cards[0].benefits[2]",
+      "text": "Alcance claro"
+    },
+    {
+      "id": "claim-sector-consultorios-i18n-es-json-050",
+      "sourceDraftPath": "sector-consultorios/i18n/es.json",
+      "jsonPath": "$.dictionary.sections[1].cards[1].title",
+      "text": "Zona o modalidad"
+    },
+    {
+      "id": "claim-sector-consultorios-i18n-es-json-051",
+      "sourceDraftPath": "sector-consultorios/i18n/es.json",
+      "jsonPath": "$.dictionary.sections[1].cards[1].description",
+      "text": "La ubicación, cobertura o modalidad de atención debe ser fácil de encontrar."
+    },
+    {
+      "id": "claim-sector-consultorios-i18n-es-json-052",
+      "sourceDraftPath": "sector-consultorios/i18n/es.json",
+      "jsonPath": "$.dictionary.sections[1].cards[1].benefits[0]",
+      "text": "Ciudad o zona"
+    },
+    {
+      "id": "claim-sector-consultorios-i18n-es-json-053",
+      "sourceDraftPath": "sector-consultorios/i18n/es.json",
+      "jsonPath": "$.dictionary.sections[1].cards[1].benefits[1]",
+      "text": "Presencial o remoto"
+    },
+    {
+      "id": "claim-sector-consultorios-i18n-es-json-054",
+      "sourceDraftPath": "sector-consultorios/i18n/es.json",
+      "jsonPath": "$.dictionary.sections[1].cards[1].benefits[2]",
+      "text": "Horarios si aplican"
+    },
+    {
+      "id": "claim-sector-consultorios-i18n-es-json-055",
+      "sourceDraftPath": "sector-consultorios/i18n/es.json",
+      "jsonPath": "$.dictionary.sections[1].cards[2].title",
+      "text": "Preguntas frecuentes"
+    },
+    {
+      "id": "claim-sector-consultorios-i18n-es-json-056",
+      "sourceDraftPath": "sector-consultorios/i18n/es.json",
+      "jsonPath": "$.dictionary.sections[1].cards[2].description",
+      "text": "Responder dudas antes del contacto mejora la calidad del primer mensaje."
+    },
+    {
+      "id": "claim-sector-consultorios-i18n-es-json-057",
+      "sourceDraftPath": "sector-consultorios/i18n/es.json",
+      "jsonPath": "$.dictionary.sections[1].cards[2].benefits[0]",
+      "text": "Requisitos"
+    },
+    {
+      "id": "claim-sector-consultorios-i18n-es-json-058",
+      "sourceDraftPath": "sector-consultorios/i18n/es.json",
+      "jsonPath": "$.dictionary.sections[1].cards[2].benefits[1]",
+      "text": "Proceso"
+    },
+    {
+      "id": "claim-sector-consultorios-i18n-es-json-059",
+      "sourceDraftPath": "sector-consultorios/i18n/es.json",
+      "jsonPath": "$.dictionary.sections[1].cards[2].benefits[2]",
+      "text": "Siguientes pasos"
+    },
+    {
+      "id": "claim-sector-consultorios-i18n-es-json-060",
+      "sourceDraftPath": "sector-consultorios/i18n/es.json",
+      "jsonPath": "$.dictionary.faq.eyebrow",
+      "text": "Preguntas del sector"
+    },
+    {
+      "id": "claim-sector-consultorios-i18n-es-json-061",
+      "sourceDraftPath": "sector-consultorios/i18n/es.json",
+      "jsonPath": "$.dictionary.faq.title",
+      "text": "Lo que conviene aclarar"
+    },
+    {
+      "id": "claim-sector-consultorios-i18n-es-json-062",
+      "sourceDraftPath": "sector-consultorios/i18n/es.json",
+      "jsonPath": "$.dictionary.faq.lead",
+      "text": "Estas respuestas se ajustan con información real del negocio."
+    },
+    {
+      "id": "claim-sector-consultorios-i18n-es-json-063",
+      "sourceDraftPath": "sector-consultorios/i18n/es.json",
+      "jsonPath": "$.dictionary.faq.items[0].title",
+      "text": "¿Puedo empezar con pocos textos o fotos?"
+    },
+    {
+      "id": "claim-sector-consultorios-i18n-es-json-064",
+      "sourceDraftPath": "sector-consultorios/i18n/es.json",
+      "jsonPath": "$.dictionary.faq.items[0].content",
+      "text": "Sí. Te guiamos para convertir lo que ya sabes de tu negocio en textos claros, secciones útiles y materiales iniciales bien presentados."
+    },
+    {
+      "id": "claim-sector-consultorios-i18n-es-json-065",
+      "sourceDraftPath": "sector-consultorios/i18n/es.json",
+      "jsonPath": "$.dictionary.faq.items[1].title",
+      "text": "¿El contacto inicial es por WhatsApp?"
+    },
+    {
+      "id": "claim-sector-consultorios-i18n-es-json-066",
+      "sourceDraftPath": "sector-consultorios/i18n/es.json",
+      "jsonPath": "$.dictionary.faq.items[1].content",
+      "text": "Sí. El primer mensaje abre una conversación ágil para entender tu negocio, tu objetivo y el tipo de sitio que puede servirte."
+    },
+    {
+      "id": "claim-sector-consultorios-i18n-es-json-067",
+      "sourceDraftPath": "sector-consultorios/i18n/es.json",
+      "jsonPath": "$.dictionary.faq.items[2].title",
+      "text": "¿Cómo ayudan a mi negocio?"
+    },
+    {
+      "id": "claim-sector-consultorios-i18n-es-json-068",
+      "sourceDraftPath": "sector-consultorios/i18n/es.json",
+      "jsonPath": "$.dictionary.faq.items[2].content",
+      "text": "Convertimos tu oferta en una presencia digital clara, con rutas de contacto visibles y datos propios de interacción para tomar decisiones comerciales con más contexto."
+    },
+    {
+      "id": "claim-sector-consultorios-i18n-es-json-069",
+      "sourceDraftPath": "sector-consultorios/i18n/es.json",
+      "jsonPath": "$.dictionary.faq.items[3].title",
+      "text": "¿Qué información conviene preparar?"
+    },
+    {
+      "id": "claim-sector-consultorios-i18n-es-json-070",
+      "sourceDraftPath": "sector-consultorios/i18n/es.json",
+      "jsonPath": "$.dictionary.faq.items[3].content",
+      "text": "Servicios, zonas de atención, diferenciales, fotos disponibles, referencias visuales y la forma en la que prefieres recibir clientes."
+    },
+    {
+      "id": "claim-sector-consultorios-i18n-es-json-071",
+      "sourceDraftPath": "sector-consultorios/i18n/es.json",
+      "jsonPath": "$.dictionary.faq.items[4].title",
+      "text": "¿Pueden orientarme si todavía estoy definiendo mi sitio?"
+    },
+    {
+      "id": "claim-sector-consultorios-i18n-es-json-072",
+      "sourceDraftPath": "sector-consultorios/i18n/es.json",
+      "jsonPath": "$.dictionary.faq.items[4].content",
+      "text": "Sí. Te ayudamos a elegir estructura, plan y mensajes para que la primera versión tenga una dirección comercial clara."
+    },
+    {
+      "id": "claim-sector-consultorios-i18n-es-json-073",
+      "sourceDraftPath": "sector-consultorios/i18n/es.json",
+      "jsonPath": "$.dictionary.final.eyebrow",
+      "text": "Sector"
+    },
+    {
+      "id": "claim-sector-consultorios-i18n-es-json-074",
+      "sourceDraftPath": "sector-consultorios/i18n/es.json",
+      "jsonPath": "$.dictionary.final.title",
+      "text": "Crea una página pensada para tu consultorio."
+    },
+    {
+      "id": "claim-sector-consultorios-i18n-es-json-075",
+      "sourceDraftPath": "sector-consultorios/i18n/es.json",
+      "jsonPath": "$.dictionary.final.lead",
+      "text": "El mensaje de WhatsApp ya incluye el sector para orientar la conversación y analizar mejor el interés."
+    },
+    {
+      "id": "claim-sector-consultorios-i18n-es-json-076",
+      "sourceDraftPath": "sector-consultorios/i18n/es.json",
+      "jsonPath": "$.dictionary.final.primaryLabel",
+      "text": "Quiero una página de sector"
+    },
+    {
+      "id": "claim-sector-consultorios-i18n-es-json-077",
+      "sourceDraftPath": "sector-consultorios/i18n/es.json",
+      "jsonPath": "$.dictionary.final.secondaryLabel",
+      "text": "Ir a contacto"
+    },
+    {
+      "id": "claim-sector-despachos-i18n-es-json-001",
+      "sourceDraftPath": "sector-despachos/i18n/es.json",
+      "jsonPath": "$.dictionary.hero.eyebrow",
+      "text": "Sector inicial"
+    },
+    {
+      "id": "claim-sector-despachos-i18n-es-json-002",
+      "sourceDraftPath": "sector-despachos/i18n/es.json",
+      "jsonPath": "$.dictionary.hero.title",
+      "text": "Sitios web para despachos que deben explicar experiencia con seriedad."
+    },
+    {
+      "id": "claim-sector-despachos-i18n-es-json-003",
+      "sourceDraftPath": "sector-despachos/i18n/es.json",
+      "jsonPath": "$.dictionary.hero.lead",
+      "text": "Ordena áreas de práctica, equipo, proceso de contacto y elementos de respaldo con lenguaje profesional y comercial. También dejamos medición para recopilar datos propios sobre interés por sector."
+    },
+    {
+      "id": "claim-sector-despachos-i18n-es-json-004",
+      "sourceDraftPath": "sector-despachos/i18n/es.json",
+      "jsonPath": "$.dictionary.hero.primaryLabel",
+      "text": "Quiero un sitio para mi despacho"
+    },
+    {
+      "id": "claim-sector-despachos-i18n-es-json-005",
+      "sourceDraftPath": "sector-despachos/i18n/es.json",
+      "jsonPath": "$.dictionary.hero.secondaryLabel",
+      "text": "Ver planes"
+    },
+    {
+      "id": "claim-sector-despachos-i18n-es-json-006",
+      "sourceDraftPath": "sector-despachos/i18n/es.json",
+      "jsonPath": "$.dictionary.hero.panel.kicker",
+      "text": "Página por intención"
+    },
+    {
+      "id": "claim-sector-despachos-i18n-es-json-007",
+      "sourceDraftPath": "sector-despachos/i18n/es.json",
+      "jsonPath": "$.dictionary.hero.panel.title",
+      "text": "Despachos legales, contables o consultivos que necesitan una presencia clara."
+    },
+    {
+      "id": "claim-sector-despachos-i18n-es-json-008",
+      "sourceDraftPath": "sector-despachos/i18n/es.json",
+      "jsonPath": "$.dictionary.hero.panel.lead",
+      "text": "El contenido se adapta al tipo de cliente y a las dudas que suelen aparecer antes del contacto."
+    },
+    {
+      "id": "claim-sector-despachos-i18n-es-json-009",
+      "sourceDraftPath": "sector-despachos/i18n/es.json",
+      "jsonPath": "$.dictionary.hero.panel.items[0].title",
+      "text": "Qué debe quedar claro"
+    },
+    {
+      "id": "claim-sector-despachos-i18n-es-json-010",
+      "sourceDraftPath": "sector-despachos/i18n/es.json",
+      "jsonPath": "$.dictionary.hero.panel.items[0].content",
+      "text": "Servicios, zonas, proceso y forma de contacto."
+    },
+    {
+      "id": "claim-sector-despachos-i18n-es-json-011",
+      "sourceDraftPath": "sector-despachos/i18n/es.json",
+      "jsonPath": "$.dictionary.hero.panel.items[1].title",
+      "text": "Cómo orientamos el contenido"
+    },
+    {
+      "id": "claim-sector-despachos-i18n-es-json-012",
+      "sourceDraftPath": "sector-despachos/i18n/es.json",
+      "jsonPath": "$.dictionary.hero.panel.items[1].content",
+      "text": "Trabajamos con información comercial aprobada y mensajes adecuados para el sector."
+    },
+    {
+      "id": "claim-sector-despachos-i18n-es-json-013",
+      "sourceDraftPath": "sector-despachos/i18n/es.json",
+      "jsonPath": "$.dictionary.hero.panel.items[2].title",
+      "text": "Cómo se mide"
+    },
+    {
+      "id": "claim-sector-despachos-i18n-es-json-014",
+      "sourceDraftPath": "sector-despachos/i18n/es.json",
+      "jsonPath": "$.dictionary.hero.panel.items[2].content",
+      "text": "Nuestro sistema registra clicks por sector, página, idioma y acción de contacto para analizar interés."
+    },
+    {
+      "id": "claim-sector-despachos-i18n-es-json-015",
+      "sourceDraftPath": "sector-despachos/i18n/es.json",
+      "jsonPath": "$.dictionary.stats[0].value",
+      "text": "Sector"
+    },
+    {
+      "id": "claim-sector-despachos-i18n-es-json-016",
+      "sourceDraftPath": "sector-despachos/i18n/es.json",
+      "jsonPath": "$.dictionary.stats[0].label",
+      "text": "Mensaje específico"
+    },
+    {
+      "id": "claim-sector-despachos-i18n-es-json-017",
+      "sourceDraftPath": "sector-despachos/i18n/es.json",
+      "jsonPath": "$.dictionary.stats[0].detail",
+      "text": "La página habla con el contexto del giro."
+    },
+    {
+      "id": "claim-sector-despachos-i18n-es-json-018",
+      "sourceDraftPath": "sector-despachos/i18n/es.json",
+      "jsonPath": "$.dictionary.stats[1].value",
+      "text": "Respaldo"
+    },
+    {
+      "id": "claim-sector-despachos-i18n-es-json-019",
+      "sourceDraftPath": "sector-despachos/i18n/es.json",
+      "jsonPath": "$.dictionary.stats[1].label",
+      "text": "Señales claras"
+    },
+    {
+      "id": "claim-sector-despachos-i18n-es-json-020",
+      "sourceDraftPath": "sector-despachos/i18n/es.json",
+      "jsonPath": "$.dictionary.stats[1].detail",
+      "text": "Experiencia, proceso y contacto presentados con orden."
+    },
+    {
+      "id": "claim-sector-despachos-i18n-es-json-021",
+      "sourceDraftPath": "sector-despachos/i18n/es.json",
+      "jsonPath": "$.dictionary.stats[2].value",
+      "text": "Datos"
+    },
+    {
+      "id": "claim-sector-despachos-i18n-es-json-022",
+      "sourceDraftPath": "sector-despachos/i18n/es.json",
+      "jsonPath": "$.dictionary.stats[2].label",
+      "text": "Interés medible"
+    },
+    {
+      "id": "claim-sector-despachos-i18n-es-json-023",
+      "sourceDraftPath": "sector-despachos/i18n/es.json",
+      "jsonPath": "$.dictionary.stats[2].detail",
+      "text": "Las acciones ayudan a entender qué busca cada tipo de cliente."
+    },
+    {
+      "id": "claim-sector-despachos-i18n-es-json-024",
+      "sourceDraftPath": "sector-despachos/i18n/es.json",
+      "jsonPath": "$.dictionary.sections[0].eyebrow",
+      "text": "Necesidades"
+    },
+    {
+      "id": "claim-sector-despachos-i18n-es-json-025",
+      "sourceDraftPath": "sector-despachos/i18n/es.json",
+      "jsonPath": "$.dictionary.sections[0].title",
+      "text": "El cliente necesita entender rápido si eres opción."
+    },
+    {
+      "id": "claim-sector-despachos-i18n-es-json-026",
+      "sourceDraftPath": "sector-despachos/i18n/es.json",
+      "jsonPath": "$.dictionary.sections[0].lead",
+      "text": "La página se enfoca en claridad, respaldo y contacto directo."
+    },
+    {
+      "id": "claim-sector-despachos-i18n-es-json-027",
+      "sourceDraftPath": "sector-despachos/i18n/es.json",
+      "jsonPath": "$.dictionary.sections[0].cards[0].title",
+      "text": "Oferta clara"
+    },
+    {
+      "id": "claim-sector-despachos-i18n-es-json-028",
+      "sourceDraftPath": "sector-despachos/i18n/es.json",
+      "jsonPath": "$.dictionary.sections[0].cards[0].description",
+      "text": "Servicios y beneficios explicados con lenguaje comercial directo."
+    },
+    {
+      "id": "claim-sector-despachos-i18n-es-json-029",
+      "sourceDraftPath": "sector-despachos/i18n/es.json",
+      "jsonPath": "$.dictionary.sections[0].cards[0].benefits[0]",
+      "text": "Qué haces"
+    },
+    {
+      "id": "claim-sector-despachos-i18n-es-json-030",
+      "sourceDraftPath": "sector-despachos/i18n/es.json",
+      "jsonPath": "$.dictionary.sections[0].cards[0].benefits[1]",
+      "text": "A quién ayudas"
+    },
+    {
+      "id": "claim-sector-despachos-i18n-es-json-031",
+      "sourceDraftPath": "sector-despachos/i18n/es.json",
+      "jsonPath": "$.dictionary.sections[0].cards[0].benefits[2]",
+      "text": "Por qué elegirte"
+    },
+    {
+      "id": "claim-sector-despachos-i18n-es-json-032",
+      "sourceDraftPath": "sector-despachos/i18n/es.json",
+      "jsonPath": "$.dictionary.sections[0].cards[1].title",
+      "text": "Contacto ágil"
+    },
+    {
+      "id": "claim-sector-despachos-i18n-es-json-033",
+      "sourceDraftPath": "sector-despachos/i18n/es.json",
+      "jsonPath": "$.dictionary.sections[0].cards[1].description",
+      "text": "Botones de WhatsApp con un mensaje inicial orientado al sector y acciones medibles para seguimiento."
+    },
+    {
+      "id": "claim-sector-despachos-i18n-es-json-034",
+      "sourceDraftPath": "sector-despachos/i18n/es.json",
+      "jsonPath": "$.dictionary.sections[0].cards[1].benefits[0]",
+      "text": "Menos pasos"
+    },
+    {
+      "id": "claim-sector-despachos-i18n-es-json-035",
+      "sourceDraftPath": "sector-despachos/i18n/es.json",
+      "jsonPath": "$.dictionary.sections[0].cards[1].benefits[1]",
+      "text": "Más contexto"
+    },
+    {
+      "id": "claim-sector-despachos-i18n-es-json-036",
+      "sourceDraftPath": "sector-despachos/i18n/es.json",
+      "jsonPath": "$.dictionary.sections[0].cards[1].benefits[2]",
+      "text": "Seguimiento claro"
+    },
+    {
+      "id": "claim-sector-despachos-i18n-es-json-037",
+      "sourceDraftPath": "sector-despachos/i18n/es.json",
+      "jsonPath": "$.dictionary.sections[0].cards[2].title",
+      "text": "Respaldo visible"
+    },
+    {
+      "id": "claim-sector-despachos-i18n-es-json-038",
+      "sourceDraftPath": "sector-despachos/i18n/es.json",
+      "jsonPath": "$.dictionary.sections[0].cards[2].description",
+      "text": "Experiencia, equipo, proceso o zonas de atención se muestran con orden."
+    },
+    {
+      "id": "claim-sector-despachos-i18n-es-json-039",
+      "sourceDraftPath": "sector-despachos/i18n/es.json",
+      "jsonPath": "$.dictionary.sections[0].cards[2].benefits[0]",
+      "text": "Equipo"
+    },
+    {
+      "id": "claim-sector-despachos-i18n-es-json-040",
+      "sourceDraftPath": "sector-despachos/i18n/es.json",
+      "jsonPath": "$.dictionary.sections[0].cards[2].benefits[1]",
+      "text": "Proceso"
+    },
+    {
+      "id": "claim-sector-despachos-i18n-es-json-041",
+      "sourceDraftPath": "sector-despachos/i18n/es.json",
+      "jsonPath": "$.dictionary.sections[0].cards[2].benefits[2]",
+      "text": "Pruebas públicas"
+    },
+    {
+      "id": "claim-sector-despachos-i18n-es-json-042",
+      "sourceDraftPath": "sector-despachos/i18n/es.json",
+      "jsonPath": "$.dictionary.sections[1].eyebrow",
+      "text": "Contenido recomendado"
+    },
+    {
+      "id": "claim-sector-despachos-i18n-es-json-043",
+      "sourceDraftPath": "sector-despachos/i18n/es.json",
+      "jsonPath": "$.dictionary.sections[1].title",
+      "text": "Secciones que ayudan a decidir."
+    },
+    {
+      "id": "claim-sector-despachos-i18n-es-json-044",
+      "sourceDraftPath": "sector-despachos/i18n/es.json",
+      "jsonPath": "$.dictionary.sections[1].lead",
+      "text": "Cada sector necesita sus propios matices, pero la base comercial y los datos de interacción ayudan a decidir mejor."
+    },
+    {
+      "id": "claim-sector-despachos-i18n-es-json-045",
+      "sourceDraftPath": "sector-despachos/i18n/es.json",
+      "jsonPath": "$.dictionary.sections[1].cards[0].title",
+      "text": "Servicios o especialidades"
+    },
+    {
+      "id": "claim-sector-despachos-i18n-es-json-046",
+      "sourceDraftPath": "sector-despachos/i18n/es.json",
+      "jsonPath": "$.dictionary.sections[1].cards[0].description",
+      "text": "Separar lo que ofreces evita que el visitante tenga que adivinar."
+    },
+    {
+      "id": "claim-sector-despachos-i18n-es-json-047",
+      "sourceDraftPath": "sector-despachos/i18n/es.json",
+      "jsonPath": "$.dictionary.sections[1].cards[0].benefits[0]",
+      "text": "Servicios principales"
+    },
+    {
+      "id": "claim-sector-despachos-i18n-es-json-048",
+      "sourceDraftPath": "sector-despachos/i18n/es.json",
+      "jsonPath": "$.dictionary.sections[1].cards[0].benefits[1]",
+      "text": "Casos frecuentes"
+    },
+    {
+      "id": "claim-sector-despachos-i18n-es-json-049",
+      "sourceDraftPath": "sector-despachos/i18n/es.json",
+      "jsonPath": "$.dictionary.sections[1].cards[0].benefits[2]",
+      "text": "Alcance claro"
+    },
+    {
+      "id": "claim-sector-despachos-i18n-es-json-050",
+      "sourceDraftPath": "sector-despachos/i18n/es.json",
+      "jsonPath": "$.dictionary.sections[1].cards[1].title",
+      "text": "Zona o modalidad"
+    },
+    {
+      "id": "claim-sector-despachos-i18n-es-json-051",
+      "sourceDraftPath": "sector-despachos/i18n/es.json",
+      "jsonPath": "$.dictionary.sections[1].cards[1].description",
+      "text": "La ubicación, cobertura o modalidad de atención debe ser fácil de encontrar."
+    },
+    {
+      "id": "claim-sector-despachos-i18n-es-json-052",
+      "sourceDraftPath": "sector-despachos/i18n/es.json",
+      "jsonPath": "$.dictionary.sections[1].cards[1].benefits[0]",
+      "text": "Ciudad o zona"
+    },
+    {
+      "id": "claim-sector-despachos-i18n-es-json-053",
+      "sourceDraftPath": "sector-despachos/i18n/es.json",
+      "jsonPath": "$.dictionary.sections[1].cards[1].benefits[1]",
+      "text": "Presencial o remoto"
+    },
+    {
+      "id": "claim-sector-despachos-i18n-es-json-054",
+      "sourceDraftPath": "sector-despachos/i18n/es.json",
+      "jsonPath": "$.dictionary.sections[1].cards[1].benefits[2]",
+      "text": "Horarios si aplican"
+    },
+    {
+      "id": "claim-sector-despachos-i18n-es-json-055",
+      "sourceDraftPath": "sector-despachos/i18n/es.json",
+      "jsonPath": "$.dictionary.sections[1].cards[2].title",
+      "text": "Preguntas frecuentes"
+    },
+    {
+      "id": "claim-sector-despachos-i18n-es-json-056",
+      "sourceDraftPath": "sector-despachos/i18n/es.json",
+      "jsonPath": "$.dictionary.sections[1].cards[2].description",
+      "text": "Responder dudas antes del contacto mejora la calidad del primer mensaje."
+    },
+    {
+      "id": "claim-sector-despachos-i18n-es-json-057",
+      "sourceDraftPath": "sector-despachos/i18n/es.json",
+      "jsonPath": "$.dictionary.sections[1].cards[2].benefits[0]",
+      "text": "Requisitos"
+    },
+    {
+      "id": "claim-sector-despachos-i18n-es-json-058",
+      "sourceDraftPath": "sector-despachos/i18n/es.json",
+      "jsonPath": "$.dictionary.sections[1].cards[2].benefits[1]",
+      "text": "Proceso"
+    },
+    {
+      "id": "claim-sector-despachos-i18n-es-json-059",
+      "sourceDraftPath": "sector-despachos/i18n/es.json",
+      "jsonPath": "$.dictionary.sections[1].cards[2].benefits[2]",
+      "text": "Siguientes pasos"
+    },
+    {
+      "id": "claim-sector-despachos-i18n-es-json-060",
+      "sourceDraftPath": "sector-despachos/i18n/es.json",
+      "jsonPath": "$.dictionary.faq.eyebrow",
+      "text": "Preguntas del sector"
+    },
+    {
+      "id": "claim-sector-despachos-i18n-es-json-061",
+      "sourceDraftPath": "sector-despachos/i18n/es.json",
+      "jsonPath": "$.dictionary.faq.title",
+      "text": "Lo que conviene aclarar"
+    },
+    {
+      "id": "claim-sector-despachos-i18n-es-json-062",
+      "sourceDraftPath": "sector-despachos/i18n/es.json",
+      "jsonPath": "$.dictionary.faq.lead",
+      "text": "Estas respuestas se ajustan con información real del negocio."
+    },
+    {
+      "id": "claim-sector-despachos-i18n-es-json-063",
+      "sourceDraftPath": "sector-despachos/i18n/es.json",
+      "jsonPath": "$.dictionary.faq.items[0].title",
+      "text": "¿Puedo empezar con pocos textos o fotos?"
+    },
+    {
+      "id": "claim-sector-despachos-i18n-es-json-064",
+      "sourceDraftPath": "sector-despachos/i18n/es.json",
+      "jsonPath": "$.dictionary.faq.items[0].content",
+      "text": "Sí. Te guiamos para convertir lo que ya sabes de tu negocio en textos claros, secciones útiles y materiales iniciales bien presentados."
+    },
+    {
+      "id": "claim-sector-despachos-i18n-es-json-065",
+      "sourceDraftPath": "sector-despachos/i18n/es.json",
+      "jsonPath": "$.dictionary.faq.items[1].title",
+      "text": "¿El contacto inicial es por WhatsApp?"
+    },
+    {
+      "id": "claim-sector-despachos-i18n-es-json-066",
+      "sourceDraftPath": "sector-despachos/i18n/es.json",
+      "jsonPath": "$.dictionary.faq.items[1].content",
+      "text": "Sí. El primer mensaje abre una conversación ágil para entender tu negocio, tu objetivo y el tipo de sitio que puede servirte."
+    },
+    {
+      "id": "claim-sector-despachos-i18n-es-json-067",
+      "sourceDraftPath": "sector-despachos/i18n/es.json",
+      "jsonPath": "$.dictionary.faq.items[2].title",
+      "text": "¿Cómo ayudan a mi negocio?"
+    },
+    {
+      "id": "claim-sector-despachos-i18n-es-json-068",
+      "sourceDraftPath": "sector-despachos/i18n/es.json",
+      "jsonPath": "$.dictionary.faq.items[2].content",
+      "text": "Convertimos tu oferta en una presencia digital clara, con rutas de contacto visibles y datos propios de interacción para tomar decisiones comerciales con más contexto."
+    },
+    {
+      "id": "claim-sector-despachos-i18n-es-json-069",
+      "sourceDraftPath": "sector-despachos/i18n/es.json",
+      "jsonPath": "$.dictionary.faq.items[3].title",
+      "text": "¿Qué información conviene preparar?"
+    },
+    {
+      "id": "claim-sector-despachos-i18n-es-json-070",
+      "sourceDraftPath": "sector-despachos/i18n/es.json",
+      "jsonPath": "$.dictionary.faq.items[3].content",
+      "text": "Servicios, zonas de atención, diferenciales, fotos disponibles, referencias visuales y la forma en la que prefieres recibir clientes."
+    },
+    {
+      "id": "claim-sector-despachos-i18n-es-json-071",
+      "sourceDraftPath": "sector-despachos/i18n/es.json",
+      "jsonPath": "$.dictionary.faq.items[4].title",
+      "text": "¿Pueden orientarme si todavía estoy definiendo mi sitio?"
+    },
+    {
+      "id": "claim-sector-despachos-i18n-es-json-072",
+      "sourceDraftPath": "sector-despachos/i18n/es.json",
+      "jsonPath": "$.dictionary.faq.items[4].content",
+      "text": "Sí. Te ayudamos a elegir estructura, plan y mensajes para que la primera versión tenga una dirección comercial clara."
+    },
+    {
+      "id": "claim-sector-despachos-i18n-es-json-073",
+      "sourceDraftPath": "sector-despachos/i18n/es.json",
+      "jsonPath": "$.dictionary.final.eyebrow",
+      "text": "Sector"
+    },
+    {
+      "id": "claim-sector-despachos-i18n-es-json-074",
+      "sourceDraftPath": "sector-despachos/i18n/es.json",
+      "jsonPath": "$.dictionary.final.title",
+      "text": "Crea una página pensada para tu despacho."
+    },
+    {
+      "id": "claim-sector-despachos-i18n-es-json-075",
+      "sourceDraftPath": "sector-despachos/i18n/es.json",
+      "jsonPath": "$.dictionary.final.lead",
+      "text": "El mensaje de WhatsApp ya incluye el sector para orientar la conversación y analizar mejor el interés."
+    },
+    {
+      "id": "claim-sector-despachos-i18n-es-json-076",
+      "sourceDraftPath": "sector-despachos/i18n/es.json",
+      "jsonPath": "$.dictionary.final.primaryLabel",
+      "text": "Quiero una página de sector"
+    },
+    {
+      "id": "claim-sector-despachos-i18n-es-json-077",
+      "sourceDraftPath": "sector-despachos/i18n/es.json",
+      "jsonPath": "$.dictionary.final.secondaryLabel",
+      "text": "Ir a contacto"
+    },
+    {
+      "id": "claim-planes-i18n-es-json-001",
+      "sourceDraftPath": "planes/i18n/es.json",
+      "jsonPath": "$.dictionary.hero.eyebrow",
+      "text": "Planes por resultado"
+    },
+    {
+      "id": "claim-planes-i18n-es-json-002",
+      "sourceDraftPath": "planes/i18n/es.json",
+      "jsonPath": "$.dictionary.hero.title",
+      "text": "Elige el alcance que tu negocio necesita hoy."
+    },
+    {
+      "id": "claim-planes-i18n-es-json-003",
+      "sourceDraftPath": "planes/i18n/es.json",
+      "jsonPath": "$.dictionary.hero.lead",
+      "text": "Compara cada plan por el resultado que aporta. Los precios publicados son sin IVA, el servicio es 100% facturable y el acompañamiento es humano en cada etapa."
+    },
+    {
+      "id": "claim-planes-i18n-es-json-004",
+      "sourceDraftPath": "planes/i18n/es.json",
+      "jsonPath": "$.dictionary.hero.primaryLabel",
+      "text": "Cotizar mi sitio"
+    },
+    {
+      "id": "claim-planes-i18n-es-json-005",
+      "sourceDraftPath": "planes/i18n/es.json",
+      "jsonPath": "$.dictionary.hero.secondaryLabel",
+      "text": "Ir a contacto"
+    },
+    {
+      "id": "claim-planes-i18n-es-json-006",
+      "sourceDraftPath": "planes/i18n/es.json",
+      "jsonPath": "$.dictionary.hero.panel.kicker",
+      "text": "Comparación clara"
+    },
+    {
+      "id": "claim-planes-i18n-es-json-007",
+      "sourceDraftPath": "planes/i18n/es.json",
+      "jsonPath": "$.dictionary.hero.panel.title",
+      "text": "Presencia, Clientes o Crecimiento."
+    },
+    {
+      "id": "claim-planes-i18n-es-json-008",
+      "sourceDraftPath": "planes/i18n/es.json",
+      "jsonPath": "$.dictionary.hero.panel.lead",
+      "text": "Presencia te ayuda a publicar una base profesional. Clientes agrega más explicación comercial. Crecimiento prepara rutas por sectores, campañas o líneas de servicio."
+    },
+    {
+      "id": "claim-planes-i18n-es-json-009",
+      "sourceDraftPath": "planes/i18n/es.json",
+      "jsonPath": "$.dictionary.hero.panel.items[0].title",
+      "text": "Presencia"
+    },
+    {
+      "id": "claim-planes-i18n-es-json-010",
+      "sourceDraftPath": "planes/i18n/es.json",
+      "jsonPath": "$.dictionary.hero.panel.items[0].content",
+      "text": "Para publicar una base profesional."
+    },
+    {
+      "id": "claim-planes-i18n-es-json-011",
+      "sourceDraftPath": "planes/i18n/es.json",
+      "jsonPath": "$.dictionary.hero.panel.items[1].title",
+      "text": "Clientes"
+    },
+    {
+      "id": "claim-planes-i18n-es-json-012",
+      "sourceDraftPath": "planes/i18n/es.json",
+      "jsonPath": "$.dictionary.hero.panel.items[1].content",
+      "text": "Para explicar más y recibir contactos más claros."
+    },
+    {
+      "id": "claim-planes-i18n-es-json-013",
+      "sourceDraftPath": "planes/i18n/es.json",
+      "jsonPath": "$.dictionary.hero.panel.items[2].title",
+      "text": "Crecimiento"
+    },
+    {
+      "id": "claim-planes-i18n-es-json-014",
+      "sourceDraftPath": "planes/i18n/es.json",
+      "jsonPath": "$.dictionary.hero.panel.items[2].content",
+      "text": "Para ampliar contenido por sectores, campañas o líneas de servicio."
+    },
+    {
+      "id": "claim-planes-i18n-es-json-015",
+      "sourceDraftPath": "planes/i18n/es.json",
+      "jsonPath": "$.dictionary.stats[0].value",
+      "text": "$3,000 sin IVA"
+    },
+    {
+      "id": "claim-planes-i18n-es-json-016",
+      "sourceDraftPath": "planes/i18n/es.json",
+      "jsonPath": "$.dictionary.stats[0].label",
+      "text": "Presencia"
+    },
+    {
+      "id": "claim-planes-i18n-es-json-017",
+      "sourceDraftPath": "planes/i18n/es.json",
+      "jsonPath": "$.dictionary.stats[0].detail",
+      "text": "Publica una primera versión profesional con oferta, servicios, contacto claro y primera ronda de pruebas en 5 días cuando la base está lista."
+    },
+    {
+      "id": "claim-planes-i18n-es-json-018",
+      "sourceDraftPath": "planes/i18n/es.json",
+      "jsonPath": "$.dictionary.stats[1].value",
+      "text": "$6,000 sin IVA"
+    },
+    {
+      "id": "claim-planes-i18n-es-json-019",
+      "sourceDraftPath": "planes/i18n/es.json",
+      "jsonPath": "$.dictionary.stats[1].label",
+      "text": "Clientes"
+    },
+    {
+      "id": "claim-planes-i18n-es-json-020",
+      "sourceDraftPath": "planes/i18n/es.json",
+      "jsonPath": "$.dictionary.stats[1].detail",
+      "text": "Agrega más páginas o secciones para explicar servicios, resolver preguntas y orientar contactos con soporte humano."
+    },
+    {
+      "id": "claim-planes-i18n-es-json-021",
+      "sourceDraftPath": "planes/i18n/es.json",
+      "jsonPath": "$.dictionary.stats[2].value",
+      "text": "$10,000+ sin IVA"
+    },
+    {
+      "id": "claim-planes-i18n-es-json-022",
+      "sourceDraftPath": "planes/i18n/es.json",
+      "jsonPath": "$.dictionary.stats[2].label",
+      "text": "Crecimiento"
+    },
+    {
+      "id": "claim-planes-i18n-es-json-023",
+      "sourceDraftPath": "planes/i18n/es.json",
+      "jsonPath": "$.dictionary.stats[2].detail",
+      "text": "Prepara una base ampliable para sectores, campañas, líneas de servicio, datos propios y consultoría tecnológica."
+    },
+    {
+      "id": "claim-planes-i18n-es-json-024",
+      "sourceDraftPath": "planes/i18n/es.json",
+      "jsonPath": "$.dictionary.plansSection.eyebrow",
+      "text": "Comparar"
+    },
+    {
+      "id": "claim-planes-i18n-es-json-025",
+      "sourceDraftPath": "planes/i18n/es.json",
+      "jsonPath": "$.dictionary.plansSection.title",
+      "text": "Planes claros por objetivo."
+    },
+    {
+      "id": "claim-planes-i18n-es-json-026",
+      "sourceDraftPath": "planes/i18n/es.json",
+      "jsonPath": "$.dictionary.plansSection.lead",
+      "text": "La tabla se centra en el valor comercial de cada plan, el tipo de negocio al que puede servir y el nivel de datos que conviene recopilar."
+    },
+    {
+      "id": "claim-planes-i18n-es-json-027",
+      "sourceDraftPath": "planes/i18n/es.json",
+      "jsonPath": "$.dictionary.plans[0].name",
+      "text": "Presencia"
+    },
+    {
+      "id": "claim-planes-i18n-es-json-028",
+      "sourceDraftPath": "planes/i18n/es.json",
+      "jsonPath": "$.dictionary.plans[0].price",
+      "text": "$3,000 MXN sin IVA"
+    },
+    {
+      "id": "claim-planes-i18n-es-json-029",
+      "sourceDraftPath": "planes/i18n/es.json",
+      "jsonPath": "$.dictionary.plans[0].fit",
+      "text": "Para negocios que quieren una presencia profesional, clara y lista para recibir primeros contactos."
+    },
+    {
+      "id": "claim-planes-i18n-es-json-030",
+      "sourceDraftPath": "planes/i18n/es.json",
+      "jsonPath": "$.dictionary.plans[0].result",
+      "text": "Resultado esperado: una base comercial para explicar qué haces, a quién atiendes y cómo iniciar contacto."
+    },
+    {
+      "id": "claim-planes-i18n-es-json-031",
+      "sourceDraftPath": "planes/i18n/es.json",
+      "jsonPath": "$.dictionary.plans[0].benefits[0]",
+      "text": "Presentación del negocio y servicios principales."
+    },
+    {
+      "id": "claim-planes-i18n-es-json-032",
+      "sourceDraftPath": "planes/i18n/es.json",
+      "jsonPath": "$.dictionary.plans[0].benefits[1]",
+      "text": "Contacto por WhatsApp con mensaje inicial."
+    },
+    {
+      "id": "claim-planes-i18n-es-json-033",
+      "sourceDraftPath": "planes/i18n/es.json",
+      "jsonPath": "$.dictionary.plans[0].benefits[2]",
+      "text": "Contenido claro, medición básica y primera ronda de pruebas en 5 días con información base completa."
+    },
+    {
+      "id": "claim-planes-i18n-es-json-034",
+      "sourceDraftPath": "planes/i18n/es.json",
+      "jsonPath": "$.dictionary.plans[0].technology[0].title",
+      "text": "Aspectos tecnológicos"
+    },
+    {
+      "id": "claim-planes-i18n-es-json-035",
+      "sourceDraftPath": "planes/i18n/es.json",
+      "jsonPath": "$.dictionary.plans[0].technology[0].content",
+      "text": "Base ligera para publicar una primera versión profesional con medición propia básica."
+    },
+    {
+      "id": "claim-planes-i18n-es-json-036",
+      "sourceDraftPath": "planes/i18n/es.json",
+      "jsonPath": "$.dictionary.plans[0].technology[0].detailItems[0]",
+      "text": "Sitio responsivo para celular y escritorio."
+    },
+    {
+      "id": "claim-planes-i18n-es-json-037",
+      "sourceDraftPath": "planes/i18n/es.json",
+      "jsonPath": "$.dictionary.plans[0].technology[0].detailItems[1]",
+      "text": "Entrega desde infraestructura en la nube."
+    },
+    {
+      "id": "claim-planes-i18n-es-json-038",
+      "sourceDraftPath": "planes/i18n/es.json",
+      "jsonPath": "$.dictionary.plans[0].technology[0].detailItems[2]",
+      "text": "Recopilación inicial de visitas, clicks y acciones de contacto."
+    },
+    {
+      "id": "claim-planes-i18n-es-json-039",
+      "sourceDraftPath": "planes/i18n/es.json",
+      "jsonPath": "$.dictionary.plans[0].cta",
+      "text": "Me interesa Presencia"
+    },
+    {
+      "id": "claim-planes-i18n-es-json-040",
+      "sourceDraftPath": "planes/i18n/es.json",
+      "jsonPath": "$.dictionary.plans[1].name",
+      "text": "Clientes"
+    },
+    {
+      "id": "claim-planes-i18n-es-json-041",
+      "sourceDraftPath": "planes/i18n/es.json",
+      "jsonPath": "$.dictionary.plans[1].price",
+      "text": "$6,000 MXN sin IVA"
+    },
+    {
+      "id": "claim-planes-i18n-es-json-042",
+      "sourceDraftPath": "planes/i18n/es.json",
+      "jsonPath": "$.dictionary.plans[1].fit",
+      "text": "Para negocios que quieren explicar su oferta con más profundidad y recibir conversaciones más calificadas."
+    },
+    {
+      "id": "claim-planes-i18n-es-json-043",
+      "sourceDraftPath": "planes/i18n/es.json",
+      "jsonPath": "$.dictionary.plans[1].result",
+      "text": "Resultado esperado: más claridad por servicio, plan o perfil de cliente."
+    },
+    {
+      "id": "claim-planes-i18n-es-json-044",
+      "sourceDraftPath": "planes/i18n/es.json",
+      "jsonPath": "$.dictionary.plans[1].benefits[0]",
+      "text": "Más secciones o páginas para explicar la oferta."
+    },
+    {
+      "id": "claim-planes-i18n-es-json-045",
+      "sourceDraftPath": "planes/i18n/es.json",
+      "jsonPath": "$.dictionary.plans[1].benefits[1]",
+      "text": "Mensajes directos a WhatsApp con más contexto comercial."
+    },
+    {
+      "id": "claim-planes-i18n-es-json-046",
+      "sourceDraftPath": "planes/i18n/es.json",
+      "jsonPath": "$.dictionary.plans[1].benefits[2]",
+      "text": "Medición de interacciones comerciales clave con soporte humano y orientación técnica durante el proceso."
+    },
+    {
+      "id": "claim-planes-i18n-es-json-047",
+      "sourceDraftPath": "planes/i18n/es.json",
+      "jsonPath": "$.dictionary.plans[1].technology[0].title",
+      "text": "Aspectos tecnológicos"
+    },
+    {
+      "id": "claim-planes-i18n-es-json-048",
+      "sourceDraftPath": "planes/i18n/es.json",
+      "jsonPath": "$.dictionary.plans[1].technology[0].content",
+      "text": "Estructura pensada para explicar mejor la oferta y analizar qué genera más interés."
+    },
+    {
+      "id": "claim-planes-i18n-es-json-049",
+      "sourceDraftPath": "planes/i18n/es.json",
+      "jsonPath": "$.dictionary.plans[1].technology[0].detailItems[0]",
+      "text": "Más páginas o secciones públicas organizadas por servicio o intención."
+    },
+    {
+      "id": "claim-planes-i18n-es-json-050",
+      "sourceDraftPath": "planes/i18n/es.json",
+      "jsonPath": "$.dictionary.plans[1].technology[0].detailItems[1]",
+      "text": "Botones a WhatsApp con mensajes más específicos."
+    },
+    {
+      "id": "claim-planes-i18n-es-json-051",
+      "sourceDraftPath": "planes/i18n/es.json",
+      "jsonPath": "$.dictionary.plans[1].technology[0].detailItems[2]",
+      "text": "Eventos por página, plan o acción comercial clave dentro de nuestro sistema."
+    },
+    {
+      "id": "claim-planes-i18n-es-json-052",
+      "sourceDraftPath": "planes/i18n/es.json",
+      "jsonPath": "$.dictionary.plans[1].cta",
+      "text": "Me interesa Clientes"
+    },
+    {
+      "id": "claim-planes-i18n-es-json-053",
+      "sourceDraftPath": "planes/i18n/es.json",
+      "jsonPath": "$.dictionary.plans[2].name",
+      "text": "Crecimiento"
+    },
+    {
+      "id": "claim-planes-i18n-es-json-054",
+      "sourceDraftPath": "planes/i18n/es.json",
+      "jsonPath": "$.dictionary.plans[2].price",
+      "text": "desde $10,000 MXN sin IVA"
+    },
+    {
+      "id": "claim-planes-i18n-es-json-055",
+      "sourceDraftPath": "planes/i18n/es.json",
+      "jsonPath": "$.dictionary.plans[2].fit",
+      "text": "Para negocios con más oferta, varias audiencias o necesidad de crecer por sectores."
+    },
+    {
+      "id": "claim-planes-i18n-es-json-056",
+      "sourceDraftPath": "planes/i18n/es.json",
+      "jsonPath": "$.dictionary.plans[2].result",
+      "text": "Resultado esperado: una base ampliable para páginas, campañas y aprendizaje continuo."
+    },
+    {
+      "id": "claim-planes-i18n-es-json-057",
+      "sourceDraftPath": "planes/i18n/es.json",
+      "jsonPath": "$.dictionary.plans[2].benefits[0]",
+      "text": "Arquitectura de contenido para crecer por tema o sector."
+    },
+    {
+      "id": "claim-planes-i18n-es-json-058",
+      "sourceDraftPath": "planes/i18n/es.json",
+      "jsonPath": "$.dictionary.plans[2].benefits[1]",
+      "text": "Mayor profundidad comercial y elementos de respaldo para decidir."
+    },
+    {
+      "id": "claim-planes-i18n-es-json-059",
+      "sourceDraftPath": "planes/i18n/es.json",
+      "jsonPath": "$.dictionary.plans[2].benefits[2]",
+      "text": "Preparación para optimización, futuras mejoras y consultoría en tecnología, datos e IA cuando aporta valor."
+    },
+    {
+      "id": "claim-planes-i18n-es-json-060",
+      "sourceDraftPath": "planes/i18n/es.json",
+      "jsonPath": "$.dictionary.plans[2].technology[0].title",
+      "text": "Aspectos tecnológicos"
+    },
+    {
+      "id": "claim-planes-i18n-es-json-061",
+      "sourceDraftPath": "planes/i18n/es.json",
+      "jsonPath": "$.dictionary.plans[2].technology[0].content",
+      "text": "Base preparada para ampliar rutas, contenido, medición y análisis de datos conforme crece la estrategia."
+    },
+    {
+      "id": "claim-planes-i18n-es-json-062",
+      "sourceDraftPath": "planes/i18n/es.json",
+      "jsonPath": "$.dictionary.plans[2].technology[0].detailItems[0]",
+      "text": "Arquitectura ampliable por sector, campaña o línea de servicio."
+    },
+    {
+      "id": "claim-planes-i18n-es-json-063",
+      "sourceDraftPath": "planes/i18n/es.json",
+      "jsonPath": "$.dictionary.plans[2].technology[0].detailItems[1]",
+      "text": "Datos por ruta, sector, plan y llamadas a la acción."
+    },
+    {
+      "id": "claim-planes-i18n-es-json-064",
+      "sourceDraftPath": "planes/i18n/es.json",
+      "jsonPath": "$.dictionary.plans[2].technology[0].detailItems[2]",
+      "text": "Preparación para optimización continua y futuras integraciones."
+    },
+    {
+      "id": "claim-planes-i18n-es-json-065",
+      "sourceDraftPath": "planes/i18n/es.json",
+      "jsonPath": "$.dictionary.plans[2].cta",
+      "text": "Me interesa Crecimiento"
+    },
+    {
+      "id": "claim-planes-i18n-es-json-066",
+      "sourceDraftPath": "planes/i18n/es.json",
+      "jsonPath": "$.dictionary.sections[0].eyebrow",
+      "text": "Cómo decidir"
+    },
+    {
+      "id": "claim-planes-i18n-es-json-067",
+      "sourceDraftPath": "planes/i18n/es.json",
+      "jsonPath": "$.dictionary.sections[0].title",
+      "text": "Elige el plan por etapa y objetivo comercial."
+    },
+    {
+      "id": "claim-planes-i18n-es-json-068",
+      "sourceDraftPath": "planes/i18n/es.json",
+      "jsonPath": "$.dictionary.sections[0].lead",
+      "text": "La recomendación depende de qué tan desarrollada está tu oferta, cuántos servicios necesitas explicar y qué datos quieres obtener de las interacciones."
+    },
+    {
+      "id": "claim-planes-i18n-es-json-069",
+      "sourceDraftPath": "planes/i18n/es.json",
+      "jsonPath": "$.dictionary.sections[0].cards[0].title",
+      "text": "Empieza por tu etapa"
+    },
+    {
+      "id": "claim-planes-i18n-es-json-070",
+      "sourceDraftPath": "planes/i18n/es.json",
+      "jsonPath": "$.dictionary.sections[0].cards[0].description",
+      "text": "Presencia funciona cuando necesitas publicar una base profesional y abrir contacto de forma ordenada."
+    },
+    {
+      "id": "claim-planes-i18n-es-json-071",
+      "sourceDraftPath": "planes/i18n/es.json",
+      "jsonPath": "$.dictionary.sections[0].cards[0].benefits[0]",
+      "text": "Una oferta principal"
+    },
+    {
+      "id": "claim-planes-i18n-es-json-072",
+      "sourceDraftPath": "planes/i18n/es.json",
+      "jsonPath": "$.dictionary.sections[0].cards[0].benefits[1]",
+      "text": "Contacto directo"
+    },
+    {
+      "id": "claim-planes-i18n-es-json-073",
+      "sourceDraftPath": "planes/i18n/es.json",
+      "jsonPath": "$.dictionary.sections[0].cards[0].benefits[2]",
+      "text": "Primera versión publicable"
+    },
+    {
+      "id": "claim-planes-i18n-es-json-074",
+      "sourceDraftPath": "planes/i18n/es.json",
+      "jsonPath": "$.dictionary.sections[0].cards[1].title",
+      "text": "Piensa en tus clientes"
+    },
+    {
+      "id": "claim-planes-i18n-es-json-075",
+      "sourceDraftPath": "planes/i18n/es.json",
+      "jsonPath": "$.dictionary.sections[0].cards[1].description",
+      "text": "Clientes ayuda cuando atiendes varios perfiles o necesitas explicar servicios con más detalle."
+    },
+    {
+      "id": "claim-planes-i18n-es-json-076",
+      "sourceDraftPath": "planes/i18n/es.json",
+      "jsonPath": "$.dictionary.sections[0].cards[1].benefits[0]",
+      "text": "Preguntas respondidas"
+    },
+    {
+      "id": "claim-planes-i18n-es-json-077",
+      "sourceDraftPath": "planes/i18n/es.json",
+      "jsonPath": "$.dictionary.sections[0].cards[1].benefits[1]",
+      "text": "Mensajes más claros"
+    },
+    {
+      "id": "claim-planes-i18n-es-json-078",
+      "sourceDraftPath": "planes/i18n/es.json",
+      "jsonPath": "$.dictionary.sections[0].cards[1].benefits[2]",
+      "text": "Base para pauta"
+    },
+    {
+      "id": "claim-planes-i18n-es-json-079",
+      "sourceDraftPath": "planes/i18n/es.json",
+      "jsonPath": "$.dictionary.sections[0].cards[2].title",
+      "text": "Planea crecimiento"
+    },
+    {
+      "id": "claim-planes-i18n-es-json-080",
+      "sourceDraftPath": "planes/i18n/es.json",
+      "jsonPath": "$.dictionary.sections[0].cards[2].description",
+      "text": "Crecimiento sirve cuando quieres ampliar páginas por sectores, campañas o líneas de servicio."
+    },
+    {
+      "id": "claim-planes-i18n-es-json-081",
+      "sourceDraftPath": "planes/i18n/es.json",
+      "jsonPath": "$.dictionary.sections[0].cards[2].benefits[0]",
+      "text": "Más profundidad"
+    },
+    {
+      "id": "claim-planes-i18n-es-json-082",
+      "sourceDraftPath": "planes/i18n/es.json",
+      "jsonPath": "$.dictionary.sections[0].cards[2].benefits[1]",
+      "text": "Nuevas rutas"
+    },
+    {
+      "id": "claim-planes-i18n-es-json-083",
+      "sourceDraftPath": "planes/i18n/es.json",
+      "jsonPath": "$.dictionary.sections[0].cards[2].benefits[2]",
+      "text": "Datos continuos"
+    },
+    {
+      "id": "claim-planes-i18n-es-json-084",
+      "sourceDraftPath": "planes/i18n/es.json",
+      "jsonPath": "$.dictionary.faq.eyebrow",
+      "text": "Dudas sobre planes"
+    },
+    {
+      "id": "claim-planes-i18n-es-json-085",
+      "sourceDraftPath": "planes/i18n/es.json",
+      "jsonPath": "$.dictionary.faq.title",
+      "text": "Precios y alcance inicial"
+    },
+    {
+      "id": "claim-planes-i18n-es-json-086",
+      "sourceDraftPath": "planes/i18n/es.json",
+      "jsonPath": "$.dictionary.faq.lead",
+      "text": "La conversación por WhatsApp ayuda a aterrizar el alcance adecuado."
+    },
+    {
+      "id": "claim-planes-i18n-es-json-087",
+      "sourceDraftPath": "planes/i18n/es.json",
+      "jsonPath": "$.dictionary.faq.items[0].title",
+      "text": "¿Cómo sé qué plan elegir?"
+    },
+    {
+      "id": "claim-planes-i18n-es-json-088",
+      "sourceDraftPath": "planes/i18n/es.json",
+      "jsonPath": "$.dictionary.faq.items[0].content",
+      "text": "Te orientamos con base en tu oferta, cantidad de servicios, materiales disponibles y objetivo comercial."
+    },
+    {
+      "id": "claim-planes-i18n-es-json-089",
+      "sourceDraftPath": "planes/i18n/es.json",
+      "jsonPath": "$.dictionary.faq.items[1].title",
+      "text": "¿Puedo iniciar con Presencia y ampliar después?"
+    },
+    {
+      "id": "claim-planes-i18n-es-json-090",
+      "sourceDraftPath": "planes/i18n/es.json",
+      "jsonPath": "$.dictionary.faq.items[1].content",
+      "text": "Sí. Podemos plantear una primera versión profesional y después agregar páginas por servicio, sector o campaña."
+    },
+    {
+      "id": "claim-planes-i18n-es-json-091",
+      "sourceDraftPath": "planes/i18n/es.json",
+      "jsonPath": "$.dictionary.faq.items[2].title",
+      "text": "¿El precio cambia según el proyecto?"
+    },
+    {
+      "id": "claim-planes-i18n-es-json-092",
+      "sourceDraftPath": "planes/i18n/es.json",
+      "jsonPath": "$.dictionary.faq.items[2].content",
+      "text": "Los planes dan una referencia inicial. La conversación ayuda a confirmar alcance, materiales, tiempos y prioridades."
+    },
+    {
+      "id": "claim-planes-i18n-es-json-093",
+      "sourceDraftPath": "planes/i18n/es.json",
+      "jsonPath": "$.dictionary.faq.items[3].title",
+      "text": "¿Qué plan conviene para campañas?"
+    },
+    {
+      "id": "claim-planes-i18n-es-json-094",
+      "sourceDraftPath": "planes/i18n/es.json",
+      "jsonPath": "$.dictionary.faq.items[3].content",
+      "text": "Clientes o Crecimiento suelen dar más espacio para mensajes por audiencia, páginas específicas y análisis de datos propios por ruta."
+    },
+    {
+      "id": "claim-planes-i18n-es-json-095",
+      "sourceDraftPath": "planes/i18n/es.json",
+      "jsonPath": "$.dictionary.final.eyebrow",
+      "text": "Elegir"
+    },
+    {
+      "id": "claim-planes-i18n-es-json-096",
+      "sourceDraftPath": "planes/i18n/es.json",
+      "jsonPath": "$.dictionary.final.title",
+      "text": "Pide una recomendación de plan."
+    },
+    {
+      "id": "claim-planes-i18n-es-json-097",
+      "sourceDraftPath": "planes/i18n/es.json",
+      "jsonPath": "$.dictionary.final.lead",
+      "text": "Te responderemos con una ruta clara según tu negocio, tus materiales, el resultado que buscas y las señales que conviene medir."
+    },
+    {
+      "id": "claim-planes-i18n-es-json-098",
+      "sourceDraftPath": "planes/i18n/es.json",
+      "jsonPath": "$.dictionary.final.primaryLabel",
+      "text": "Ayúdame a elegir"
+    },
+    {
+      "id": "claim-planes-i18n-es-json-099",
+      "sourceDraftPath": "planes/i18n/es.json",
+      "jsonPath": "$.dictionary.final.secondaryLabel",
+      "text": "Ir a contacto"
+    },
+    {
+      "id": "claim-planes-i18n-es-json-100",
+      "sourceDraftPath": "planes/i18n/es.json",
+      "jsonPath": "$.dictionary.zoolandingpageSection.eyebrow",
+      "text": "También disponible"
+    },
+    {
+      "id": "claim-planes-i18n-es-json-101",
+      "sourceDraftPath": "planes/i18n/es.json",
+      "jsonPath": "$.dictionary.zoolandingpageSection.title",
+      "text": "Para campañas puntuales, conoce Zoolandingpage."
+    },
+    {
+      "id": "claim-planes-i18n-es-json-102",
+      "sourceDraftPath": "planes/i18n/es.json",
+      "jsonPath": "$.dictionary.zoolandingpageSection.lead",
+      "text": "Si buscas una landing page para pauta, lanzamiento o una oferta específica, Zoolandingpage es la línea enfocada en páginas de campaña."
+    },
+    {
+      "id": "claim-planes-i18n-es-json-103",
+      "sourceDraftPath": "planes/i18n/es.json",
+      "jsonPath": "$.dictionary.zoolandingpageSection.linkLabel",
+      "text": "Conocer Zoolandingpage"
+    },
+    {
+      "id": "claim-servicios-i18n-es-json-001",
+      "sourceDraftPath": "servicios/i18n/es.json",
+      "jsonPath": "$.dictionary.hero.eyebrow",
+      "text": "Servicio completo"
+    },
+    {
+      "id": "claim-servicios-i18n-es-json-002",
+      "sourceDraftPath": "servicios/i18n/es.json",
+      "jsonPath": "$.dictionary.hero.title",
+      "text": "Convierte tu oferta en un sitio claro para vender."
+    },
+    {
+      "id": "claim-servicios-i18n-es-json-003",
+      "sourceDraftPath": "servicios/i18n/es.json",
+      "jsonPath": "$.dictionary.hero.lead",
+      "text": "Te acompañamos desde la idea hasta la publicación: estructura, textos, diseño, revisión en móvil y recopilación de datos propios para analizar interés real."
+    },
+    {
+      "id": "claim-servicios-i18n-es-json-004",
+      "sourceDraftPath": "servicios/i18n/es.json",
+      "jsonPath": "$.dictionary.hero.primaryLabel",
+      "text": "Quiero revisar mi proyecto"
+    },
+    {
+      "id": "claim-servicios-i18n-es-json-005",
+      "sourceDraftPath": "servicios/i18n/es.json",
+      "jsonPath": "$.dictionary.hero.secondaryLabel",
+      "text": "Comparar planes"
+    },
+    {
+      "id": "claim-servicios-i18n-es-json-006",
+      "sourceDraftPath": "servicios/i18n/es.json",
+      "jsonPath": "$.dictionary.hero.panel.kicker",
+      "text": "Entrega orientada a negocio"
+    },
+    {
+      "id": "claim-servicios-i18n-es-json-007",
+      "sourceDraftPath": "servicios/i18n/es.json",
+      "jsonPath": "$.dictionary.hero.panel.title",
+      "text": "Cada página ayuda a que el cliente avance."
+    },
+    {
+      "id": "claim-servicios-i18n-es-json-008",
+      "sourceDraftPath": "servicios/i18n/es.json",
+      "jsonPath": "$.dictionary.hero.panel.lead",
+      "text": "Cada bloque tiene una intención clara: explicar tu oferta, resolver preguntas habituales y abrir una conversación comercial."
+    },
+    {
+      "id": "claim-servicios-i18n-es-json-009",
+      "sourceDraftPath": "servicios/i18n/es.json",
+      "jsonPath": "$.dictionary.hero.panel.items[0].title",
+      "text": "Estructura"
+    },
+    {
+      "id": "claim-servicios-i18n-es-json-010",
+      "sourceDraftPath": "servicios/i18n/es.json",
+      "jsonPath": "$.dictionary.hero.panel.items[0].content",
+      "text": "Ordenamos la oferta en páginas y secciones fáciles de recorrer."
+    },
+    {
+      "id": "claim-servicios-i18n-es-json-011",
+      "sourceDraftPath": "servicios/i18n/es.json",
+      "jsonPath": "$.dictionary.hero.panel.items[1].title",
+      "text": "Contenido"
+    },
+    {
+      "id": "claim-servicios-i18n-es-json-012",
+      "sourceDraftPath": "servicios/i18n/es.json",
+      "jsonPath": "$.dictionary.hero.panel.items[1].content",
+      "text": "Escribimos textos comerciales en lenguaje directo para que el cliente entienda rápido tu valor."
+    },
+    {
+      "id": "claim-servicios-i18n-es-json-013",
+      "sourceDraftPath": "servicios/i18n/es.json",
+      "jsonPath": "$.dictionary.hero.panel.items[2].title",
+      "text": "Datos propios"
+    },
+    {
+      "id": "claim-servicios-i18n-es-json-014",
+      "sourceDraftPath": "servicios/i18n/es.json",
+      "jsonPath": "$.dictionary.hero.panel.items[2].content",
+      "text": "Nuestro sistema registra interacciones importantes para saber qué páginas, secciones y botones reciben más atención."
+    },
+    {
+      "id": "claim-servicios-i18n-es-json-015",
+      "sourceDraftPath": "servicios/i18n/es.json",
+      "jsonPath": "$.dictionary.stats[0].value",
+      "text": "4 pasos"
+    },
+    {
+      "id": "claim-servicios-i18n-es-json-016",
+      "sourceDraftPath": "servicios/i18n/es.json",
+      "jsonPath": "$.dictionary.stats[0].label",
+      "text": "De idea a publicación"
+    },
+    {
+      "id": "claim-servicios-i18n-es-json-017",
+      "sourceDraftPath": "servicios/i18n/es.json",
+      "jsonPath": "$.dictionary.stats[0].detail",
+      "text": "Entender, estructurar, producir y ajustar tu sitio."
+    },
+    {
+      "id": "claim-servicios-i18n-es-json-018",
+      "sourceDraftPath": "servicios/i18n/es.json",
+      "jsonPath": "$.dictionary.stats[1].value",
+      "text": "Móvil"
+    },
+    {
+      "id": "claim-servicios-i18n-es-json-019",
+      "sourceDraftPath": "servicios/i18n/es.json",
+      "jsonPath": "$.dictionary.stats[1].label",
+      "text": "Experiencia lista para celular"
+    },
+    {
+      "id": "claim-servicios-i18n-es-json-020",
+      "sourceDraftPath": "servicios/i18n/es.json",
+      "jsonPath": "$.dictionary.stats[1].detail",
+      "text": "Tus clientes pueden leer, comparar y escribirte con fluidez desde el teléfono."
+    },
+    {
+      "id": "claim-servicios-i18n-es-json-021",
+      "sourceDraftPath": "servicios/i18n/es.json",
+      "jsonPath": "$.dictionary.stats[2].value",
+      "text": "Datos"
+    },
+    {
+      "id": "claim-servicios-i18n-es-json-022",
+      "sourceDraftPath": "servicios/i18n/es.json",
+      "jsonPath": "$.dictionary.stats[2].label",
+      "text": "Datos y análisis"
+    },
+    {
+      "id": "claim-servicios-i18n-es-json-023",
+      "sourceDraftPath": "servicios/i18n/es.json",
+      "jsonPath": "$.dictionary.stats[2].detail",
+      "text": "Lectura de páginas, secciones, clicks y acciones importantes desde el inicio."
+    },
+    {
+      "id": "claim-servicios-i18n-es-json-024",
+      "sourceDraftPath": "servicios/i18n/es.json",
+      "jsonPath": "$.dictionary.sections[0].eyebrow",
+      "text": "Qué incluye"
+    },
+    {
+      "id": "claim-servicios-i18n-es-json-025",
+      "sourceDraftPath": "servicios/i18n/es.json",
+      "jsonPath": "$.dictionary.sections[0].title",
+      "text": "Una base lista para vender tu oferta."
+    },
+    {
+      "id": "claim-servicios-i18n-es-json-026",
+      "sourceDraftPath": "servicios/i18n/es.json",
+      "jsonPath": "$.dictionary.sections[0].lead",
+      "text": "Reunimos estrategia comercial, contenido, diseño, publicación y medición propia para que tu sitio ayude a explicar tu negocio y abrir conversaciones."
+    },
+    {
+      "id": "claim-servicios-i18n-es-json-027",
+      "sourceDraftPath": "servicios/i18n/es.json",
+      "jsonPath": "$.dictionary.sections[0].cards[0].title",
+      "text": "Mapa de páginas"
+    },
+    {
+      "id": "claim-servicios-i18n-es-json-028",
+      "sourceDraftPath": "servicios/i18n/es.json",
+      "jsonPath": "$.dictionary.sections[0].cards[0].description",
+      "text": "Definimos qué necesita cada ruta: inicio, servicios, planes, contacto, sectores o páginas de respaldo comercial."
+    },
+    {
+      "id": "claim-servicios-i18n-es-json-029",
+      "sourceDraftPath": "servicios/i18n/es.json",
+      "jsonPath": "$.dictionary.sections[0].cards[0].benefits[0]",
+      "text": "Intención por página"
+    },
+    {
+      "id": "claim-servicios-i18n-es-json-030",
+      "sourceDraftPath": "servicios/i18n/es.json",
+      "jsonPath": "$.dictionary.sections[0].cards[0].benefits[1]",
+      "text": "Enlaces internos"
+    },
+    {
+      "id": "claim-servicios-i18n-es-json-031",
+      "sourceDraftPath": "servicios/i18n/es.json",
+      "jsonPath": "$.dictionary.sections[0].cards[0].benefits[2]",
+      "text": "Contenido escalable"
+    },
+    {
+      "id": "claim-servicios-i18n-es-json-032",
+      "sourceDraftPath": "servicios/i18n/es.json",
+      "jsonPath": "$.dictionary.sections[0].cards[1].title",
+      "text": "Texto comercial con apoyo de IA"
+    },
+    {
+      "id": "claim-servicios-i18n-es-json-033",
+      "sourceDraftPath": "servicios/i18n/es.json",
+      "jsonPath": "$.dictionary.sections[0].cards[1].description",
+      "text": "Usamos IA como apoyo para ordenar ideas, proponer textos y afinarlos con criterio comercial."
+    },
+    {
+      "id": "claim-servicios-i18n-es-json-034",
+      "sourceDraftPath": "servicios/i18n/es.json",
+      "jsonPath": "$.dictionary.sections[0].cards[1].benefits[0]",
+      "text": "Lenguaje directo"
+    },
+    {
+      "id": "claim-servicios-i18n-es-json-035",
+      "sourceDraftPath": "servicios/i18n/es.json",
+      "jsonPath": "$.dictionary.sections[0].cards[1].benefits[1]",
+      "text": "Revisión humana"
+    },
+    {
+      "id": "claim-servicios-i18n-es-json-036",
+      "sourceDraftPath": "servicios/i18n/es.json",
+      "jsonPath": "$.dictionary.sections[0].cards[1].benefits[2]",
+      "text": "Mensajes directos a WhatsApp"
+    },
+    {
+      "id": "claim-servicios-i18n-es-json-037",
+      "sourceDraftPath": "servicios/i18n/es.json",
+      "jsonPath": "$.dictionary.sections[0].cards[2].title",
+      "text": "Datos propios y análisis"
+    },
+    {
+      "id": "claim-servicios-i18n-es-json-038",
+      "sourceDraftPath": "servicios/i18n/es.json",
+      "jsonPath": "$.dictionary.sections[0].cards[2].description",
+      "text": "Se recopila qué páginas, planes, sectores y botones reciben más atención para orientar próximos ajustes con evidencia."
+    },
+    {
+      "id": "claim-servicios-i18n-es-json-039",
+      "sourceDraftPath": "servicios/i18n/es.json",
+      "jsonPath": "$.dictionary.sections[0].cards[2].benefits[0]",
+      "text": "Clicks importantes"
+    },
+    {
+      "id": "claim-servicios-i18n-es-json-040",
+      "sourceDraftPath": "servicios/i18n/es.json",
+      "jsonPath": "$.dictionary.sections[0].cards[2].benefits[1]",
+      "text": "Secciones consultadas"
+    },
+    {
+      "id": "claim-servicios-i18n-es-json-041",
+      "sourceDraftPath": "servicios/i18n/es.json",
+      "jsonPath": "$.dictionary.sections[0].cards[2].benefits[2]",
+      "text": "Acciones hacia WhatsApp"
+    },
+    {
+      "id": "claim-servicios-i18n-es-json-042",
+      "sourceDraftPath": "servicios/i18n/es.json",
+      "jsonPath": "$.dictionary.sections[1].eyebrow",
+      "text": "Cómo trabajamos"
+    },
+    {
+      "id": "claim-servicios-i18n-es-json-043",
+      "sourceDraftPath": "servicios/i18n/es.json",
+      "jsonPath": "$.dictionary.sections[1].title",
+      "text": "Cuatro pasos para avanzar con dirección."
+    },
+    {
+      "id": "claim-servicios-i18n-es-json-044",
+      "sourceDraftPath": "servicios/i18n/es.json",
+      "jsonPath": "$.dictionary.sections[1].lead",
+      "text": "El proyecto avanza con decisiones concretas sobre oferta, estructura, contenido, publicación y seguimiento inicial."
+    },
+    {
+      "id": "claim-servicios-i18n-es-json-045",
+      "sourceDraftPath": "servicios/i18n/es.json",
+      "jsonPath": "$.dictionary.sections[1].cards[0].title",
+      "text": "1. Entender el negocio"
+    },
+    {
+      "id": "claim-servicios-i18n-es-json-046",
+      "sourceDraftPath": "servicios/i18n/es.json",
+      "jsonPath": "$.dictionary.sections[1].cards[0].description",
+      "text": "Revisamos qué vendes, a quién atiendes, qué preguntas recibe tu cliente y cómo te contactan hoy."
+    },
+    {
+      "id": "claim-servicios-i18n-es-json-047",
+      "sourceDraftPath": "servicios/i18n/es.json",
+      "jsonPath": "$.dictionary.sections[1].cards[0].benefits[0]",
+      "text": "Giro y zona"
+    },
+    {
+      "id": "claim-servicios-i18n-es-json-048",
+      "sourceDraftPath": "servicios/i18n/es.json",
+      "jsonPath": "$.dictionary.sections[1].cards[0].benefits[1]",
+      "text": "Oferta principal"
+    },
+    {
+      "id": "claim-servicios-i18n-es-json-049",
+      "sourceDraftPath": "servicios/i18n/es.json",
+      "jsonPath": "$.dictionary.sections[1].cards[0].benefits[2]",
+      "text": "Prioridad comercial"
+    },
+    {
+      "id": "claim-servicios-i18n-es-json-050",
+      "sourceDraftPath": "servicios/i18n/es.json",
+      "jsonPath": "$.dictionary.sections[1].cards[1].title",
+      "text": "2. Definir la estructura"
+    },
+    {
+      "id": "claim-servicios-i18n-es-json-051",
+      "sourceDraftPath": "servicios/i18n/es.json",
+      "jsonPath": "$.dictionary.sections[1].cards[1].description",
+      "text": "Ordenamos páginas, secciones y mensajes para que cada visitante encuentre lo que necesita."
+    },
+    {
+      "id": "claim-servicios-i18n-es-json-052",
+      "sourceDraftPath": "servicios/i18n/es.json",
+      "jsonPath": "$.dictionary.sections[1].cards[1].benefits[0]",
+      "text": "Rutas iniciales"
+    },
+    {
+      "id": "claim-servicios-i18n-es-json-053",
+      "sourceDraftPath": "servicios/i18n/es.json",
+      "jsonPath": "$.dictionary.sections[1].cards[1].benefits[1]",
+      "text": "Jerarquía de contenido"
+    },
+    {
+      "id": "claim-servicios-i18n-es-json-054",
+      "sourceDraftPath": "servicios/i18n/es.json",
+      "jsonPath": "$.dictionary.sections[1].cards[1].benefits[2]",
+      "text": "Recorrido de contacto"
+    },
+    {
+      "id": "claim-servicios-i18n-es-json-055",
+      "sourceDraftPath": "servicios/i18n/es.json",
+      "jsonPath": "$.dictionary.sections[1].cards[2].title",
+      "text": "3. Producir el sitio"
+    },
+    {
+      "id": "claim-servicios-i18n-es-json-056",
+      "sourceDraftPath": "servicios/i18n/es.json",
+      "jsonPath": "$.dictionary.sections[1].cards[2].description",
+      "text": "Creamos páginas y componentes con contenido claro para revisar y ajustar contigo."
+    },
+    {
+      "id": "claim-servicios-i18n-es-json-057",
+      "sourceDraftPath": "servicios/i18n/es.json",
+      "jsonPath": "$.dictionary.sections[1].cards[2].benefits[0]",
+      "text": "Diseño claro"
+    },
+    {
+      "id": "claim-servicios-i18n-es-json-058",
+      "sourceDraftPath": "servicios/i18n/es.json",
+      "jsonPath": "$.dictionary.sections[1].cards[2].benefits[1]",
+      "text": "Contenido útil"
+    },
+    {
+      "id": "claim-servicios-i18n-es-json-059",
+      "sourceDraftPath": "servicios/i18n/es.json",
+      "jsonPath": "$.dictionary.sections[1].cards[2].benefits[2]",
+      "text": "WhatsApp directo"
+    },
+    {
+      "id": "claim-servicios-i18n-es-json-060",
+      "sourceDraftPath": "servicios/i18n/es.json",
+      "jsonPath": "$.dictionary.sections[1].cards[3].title",
+      "text": "4. Publicar y ajustar"
+    },
+    {
+      "id": "claim-servicios-i18n-es-json-061",
+      "sourceDraftPath": "servicios/i18n/es.json",
+      "jsonPath": "$.dictionary.sections[1].cards[3].description",
+      "text": "Revisamos móvil y escritorio, afinamos detalles y dejamos la base lista para recopilar datos propios de interés."
+    },
+    {
+      "id": "claim-servicios-i18n-es-json-062",
+      "sourceDraftPath": "servicios/i18n/es.json",
+      "jsonPath": "$.dictionary.sections[1].cards[3].benefits[0]",
+      "text": "Revisión visual"
+    },
+    {
+      "id": "claim-servicios-i18n-es-json-063",
+      "sourceDraftPath": "servicios/i18n/es.json",
+      "jsonPath": "$.dictionary.sections[1].cards[3].benefits[1]",
+      "text": "Ajustes finales"
+    },
+    {
+      "id": "claim-servicios-i18n-es-json-064",
+      "sourceDraftPath": "servicios/i18n/es.json",
+      "jsonPath": "$.dictionary.sections[1].cards[3].benefits[2]",
+      "text": "Aprendizaje inicial"
+    },
+    {
+      "id": "claim-servicios-i18n-es-json-065",
+      "sourceDraftPath": "servicios/i18n/es.json",
+      "jsonPath": "$.dictionary.faq.eyebrow",
+      "text": "Servicio"
+    },
+    {
+      "id": "claim-servicios-i18n-es-json-066",
+      "sourceDraftPath": "servicios/i18n/es.json",
+      "jsonPath": "$.dictionary.faq.title",
+      "text": "Cómo se trabaja el proyecto"
+    },
+    {
+      "id": "claim-servicios-i18n-es-json-067",
+      "sourceDraftPath": "servicios/i18n/es.json",
+      "jsonPath": "$.dictionary.faq.lead",
+      "text": "Respuestas enfocadas en el proceso de creación y acompañamiento."
+    },
+    {
+      "id": "claim-servicios-i18n-es-json-068",
+      "sourceDraftPath": "servicios/i18n/es.json",
+      "jsonPath": "$.dictionary.faq.items[0].title",
+      "text": "¿Qué entregan en el servicio?"
+    },
+    {
+      "id": "claim-servicios-i18n-es-json-069",
+      "sourceDraftPath": "servicios/i18n/es.json",
+      "jsonPath": "$.dictionary.faq.items[0].content",
+      "text": "Un sitio con estructura, textos comerciales, diseño adaptable, contacto por WhatsApp y lectura inicial de datos propios de interacción."
+    },
+    {
+      "id": "claim-servicios-i18n-es-json-070",
+      "sourceDraftPath": "servicios/i18n/es.json",
+      "jsonPath": "$.dictionary.faq.items[1].title",
+      "text": "¿Me ayudan a ordenar mis ideas?"
+    },
+    {
+      "id": "claim-servicios-i18n-es-json-071",
+      "sourceDraftPath": "servicios/i18n/es.json",
+      "jsonPath": "$.dictionary.faq.items[1].content",
+      "text": "Sí. Partimos de tu oferta y la convertimos en páginas, secciones y mensajes que una persona pueda entender rápido."
+    },
+    {
+      "id": "claim-servicios-i18n-es-json-072",
+      "sourceDraftPath": "servicios/i18n/es.json",
+      "jsonPath": "$.dictionary.faq.items[2].title",
+      "text": "¿Puedo avanzar por etapas?"
+    },
+    {
+      "id": "claim-servicios-i18n-es-json-073",
+      "sourceDraftPath": "servicios/i18n/es.json",
+      "jsonPath": "$.dictionary.faq.items[2].content",
+      "text": "Sí. Definimos una primera versión útil y dejamos una ruta clara para ampliar contenido, sectores o campañas después."
+    },
+    {
+      "id": "claim-servicios-i18n-es-json-074",
+      "sourceDraftPath": "servicios/i18n/es.json",
+      "jsonPath": "$.dictionary.faq.items[3].title",
+      "text": "¿Qué necesito preparar?"
+    },
+    {
+      "id": "claim-servicios-i18n-es-json-075",
+      "sourceDraftPath": "servicios/i18n/es.json",
+      "jsonPath": "$.dictionary.faq.items[3].content",
+      "text": "Servicios, zona de atención, diferenciales, fotos disponibles, referencias visuales y forma ideal de recibir contactos."
+    },
+    {
+      "id": "claim-servicios-i18n-es-json-076",
+      "sourceDraftPath": "servicios/i18n/es.json",
+      "jsonPath": "$.dictionary.final.eyebrow",
+      "text": "Empezar"
+    },
+    {
+      "id": "claim-servicios-i18n-es-json-077",
+      "sourceDraftPath": "servicios/i18n/es.json",
+      "jsonPath": "$.dictionary.final.title",
+      "text": "Cuéntanos qué vendes y qué quieres lograr con tu sitio."
+    },
+    {
+      "id": "claim-servicios-i18n-es-json-078",
+      "sourceDraftPath": "servicios/i18n/es.json",
+      "jsonPath": "$.dictionary.final.lead",
+      "text": "Te orientamos para elegir alcance, páginas, contenido y señales de datos que conviene medir según el momento de tu negocio."
+    },
+    {
+      "id": "claim-servicios-i18n-es-json-079",
+      "sourceDraftPath": "servicios/i18n/es.json",
+      "jsonPath": "$.dictionary.final.primaryLabel",
+      "text": "Revisar mi proyecto"
+    },
+    {
+      "id": "claim-servicios-i18n-es-json-080",
+      "sourceDraftPath": "servicios/i18n/es.json",
+      "jsonPath": "$.dictionary.final.secondaryLabel",
+      "text": "Ir a contacto"
+    }
+  ]
+}

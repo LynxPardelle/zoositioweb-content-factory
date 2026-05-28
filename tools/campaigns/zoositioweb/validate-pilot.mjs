@@ -4,6 +4,7 @@ import { fileURLToPath } from 'node:url';
 
 import {
   parseJsonl,
+  validateAssetPickRecord,
   validateIdeaRecord,
   validateKnowledgeCardRecord,
   validatePublishLogRecord,
@@ -20,6 +21,7 @@ const JSONL_FILES = [
   ['knowledgeCards', 'knowledge-cards.jsonl', validateKnowledgeCardRecord],
   ['qaDecisions', 'qa-decisions.jsonl', validateQaDecisionRecord],
   ['renderQueue', 'render-queue.jsonl', validateRenderQueueRecord],
+  ['assetPicks', 'asset-picks.jsonl', validateAssetPickRecord, { optional: true }],
   ['publishLog', 'publish-log.jsonl', validatePublishLogRecord],
   ['blogBacklog', 'blog-backlog.jsonl', null],
 ];
@@ -44,13 +46,25 @@ export async function readPilotDataset(pilotDir = DEFAULT_PILOT_DIR) {
     approvedClaims,
   };
 
-  for (const [key, file] of JSONL_FILES) {
+  for (const [key, file, , options] of JSONL_FILES) {
     const filePath = path.join(resolvedPilotDir, file);
-    const records = parseJsonl(await readFile(filePath, 'utf8'), file);
+    const records = await readJsonlFile({ filePath, file, optional: options?.optional === true });
     dataset[key] = records.map(record => record.value);
   }
 
   return dataset;
+}
+
+async function readJsonlFile({ filePath, file, optional }) {
+  try {
+    return parseJsonl(await readFile(filePath, 'utf8'), file);
+  } catch (error) {
+    if (optional && error.code === 'ENOENT') {
+      return [];
+    }
+
+    throw error;
+  }
 }
 
 export function validatePilotDataset(dataset) {
@@ -60,6 +74,7 @@ export function validatePilotDataset(dataset) {
   const knowledgeCards = dataset?.knowledgeCards ?? [];
   const qaDecisions = dataset?.qaDecisions ?? [];
   const renderQueue = dataset?.renderQueue ?? [];
+  const assetPicks = dataset?.assetPicks ?? [];
   const publishLog = dataset?.publishLog ?? [];
   const approvedClaims = Array.isArray(dataset?.approvedClaims?.claims) ? dataset.approvedClaims.claims : [];
   const approvedClaimIds = new Set(approvedClaims.map(claim => claim.id));
@@ -78,6 +93,7 @@ export function validatePilotDataset(dataset) {
   validateRecords(errors, 'knowledge-cards.jsonl', knowledgeCards, validateKnowledgeCardRecord);
   validateRecords(errors, 'qa-decisions.jsonl', qaDecisions, validateQaDecisionRecord);
   validateRecords(errors, 'render-queue.jsonl', renderQueue, validateRenderQueueRecord);
+  validateRecords(errors, 'asset-picks.jsonl', assetPicks, validateAssetPickRecord);
   validateRecords(errors, 'publish-log.jsonl', publishLog, validatePublishLogRecord);
 
   if (ideas.length !== 0 || scripts.length !== 0 || knowledgeCards.length !== 0) {
@@ -126,6 +142,16 @@ export function validatePilotDataset(dataset) {
 
     if (!approvedQaScriptIds.has(record.scriptId)) {
       errors.push(`render-queue.jsonl record ${record.id} references script without approved QA decision with complete QA checklist set to true: ${record.scriptId}`);
+    }
+  }
+
+  for (const record of assetPicks) {
+    if (!renderIds.has(record.renderId)) {
+      errors.push(`asset-picks.jsonl record ${record.id} references missing render ID: ${record.renderId}`);
+    }
+
+    if (!scriptIds.has(record.scriptId)) {
+      errors.push(`asset-picks.jsonl record ${record.id} references missing script: ${record.scriptId}`);
     }
   }
 

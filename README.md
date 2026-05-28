@@ -9,7 +9,7 @@ This repo keeps campaign strategy, pilot scripts, knowledge cards, render-brief 
 - Product: `zoositioweb.com.mx`
 - Pilot: `campaigns/zoositioweb/pilot-2026-05-sector-shortform`
 - Sectors: servicios locales, consultorios, despachos
-- Current content: 30 ideas, 30 scripts, 30 knowledge cards, 9 human-gated render queue records, 15 blog backlog candidates
+- Current content: 30 ideas, 30 scripts, 30 knowledge cards, 9 human-gated render queue records, 0 selected asset records, 15 blog backlog candidates
 - Published videos: none recorded yet
 
 ## Commands
@@ -30,3 +30,6 @@ The UI runs locally and reads the campaign files through a small Node server. It
 - Keep MoneyPrinterTurbo and generated render steps local-only.
 - Use only approved claims extracted from the product source of truth.
 - Keep the render queue human-gated until scripts, assets, voice, and licenses are manually approved.
+- Source visual/audio assets only from Pexels or Pixabay for this pilot.
+- Store only local downloaded files in the renderer; do not hotlink provider URLs in generated videos.
+- Record every selected asset in `asset-picks.jsonl` with source page, creator, license URL, commercial-use check, and notes about trademarks or recognizable people.

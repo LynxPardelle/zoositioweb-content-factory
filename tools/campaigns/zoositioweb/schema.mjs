@@ -13,6 +13,9 @@ const STRICT_UTC_ISO_TIMESTAMP_REGEX = /^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}\.\d
 
 const BLOG_POTENTIAL_VALUES = new Set(['low', 'medium', 'high']);
 const QA_DECISION_VALUES = new Set(['approved', 'rejected', 'needs-review']);
+const ASSET_SOURCE_VALUES = new Set(['pexels', 'pixabay']);
+const ASSET_MEDIA_TYPE_VALUES = new Set(['image', 'video', 'audio']);
+const ASSET_PICK_STATUS_VALUES = new Set(['candidate', 'selected', 'rejected']);
 const PUBLISH_METRIC_FIELDS = [
   'views',
   'threeSecondRetention',
@@ -159,6 +162,30 @@ export function validateRenderQueueRecord(record) {
   requireExactValue(record, 'humanApprovalStatus', 'pending', errors);
   requireExactValue(record, 'assetLicenseStatus', 'pending-local-asset-selection', errors);
   requireString(record, 'notes', errors);
+
+  return errors;
+}
+
+export function validateAssetPickRecord(record) {
+  const errors = baseRecordErrors(record);
+
+  requireString(record, 'id', errors);
+  requireString(record, 'renderId', errors);
+  requireString(record, 'scriptId', errors);
+  requireEnum(record, 'sector', SECTOR_IDS, errors);
+  requireEnum(record, 'source', ASSET_SOURCE_VALUES, errors);
+  requireEnum(record, 'mediaType', ASSET_MEDIA_TYPE_VALUES, errors);
+  requireString(record, 'sourcePageUrl', errors);
+  requireString(record, 'creator', errors);
+  requireString(record, 'licenseName', errors);
+  requireString(record, 'licenseUrl', errors);
+  requireExactValue(record, 'commercialUseAllowed', true, errors);
+  requireExactValue(record, 'attributionRequired', false, errors);
+  requireExactValue(record, 'standaloneRedistributionProhibited', true, errors);
+  requireString(record, 'trademarkOrRecognizablePeopleCheck', errors);
+  requireString(record, 'localFilePath', errors, { allowEmpty: true });
+  requireString(record, 'notes', errors, { allowEmpty: true });
+  requireEnum(record, 'status', ASSET_PICK_STATUS_VALUES, errors);
 
   return errors;
 }

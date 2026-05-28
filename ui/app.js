@@ -2,6 +2,7 @@ const tabs = [
   { id: 'overview', label: 'Overview', icon: iconHome },
   { id: 'scripts', label: 'Scripts', icon: iconFile },
   { id: 'knowledge', label: 'Knowledge', icon: iconBook },
+  { id: 'assets', label: 'Assets', icon: iconImage },
   { id: 'render', label: 'Render Queue', icon: iconPlay },
   { id: 'blog', label: 'Blog Backlog', icon: iconEdit },
   { id: 'report', label: 'Report', icon: iconChart },
@@ -101,6 +102,8 @@ function render() {
     renderScripts();
   } else if (state.activeTab === 'knowledge') {
     renderKnowledge();
+  } else if (state.activeTab === 'assets') {
+    renderAssets();
   } else if (state.activeTab === 'render') {
     renderRenderQueue();
   } else if (state.activeTab === 'blog') {
@@ -118,6 +121,7 @@ function renderMetrics() {
     ['Ideas', state.data.metrics.ideas, 'sector pilot'],
     ['Scripts', state.data.metrics.scripts, 'short-form records'],
     ['Render Queue', state.data.metrics.renderQueue, 'human-gated'],
+    ['Assets', state.data.metrics.assetPicks, 'selected picks'],
     ['Blog Backlog', state.data.metrics.blogBacklog, 'candidate topics'],
     ['Publish Log', state.data.metrics.publishLog, 'published records'],
   ];
@@ -238,6 +242,37 @@ function renderKnowledge() {
           </div>
         </article>
       `).join('') || emptyState('No hay knowledge cards con estos filtros.')}
+    </div>
+  `;
+}
+
+function renderAssets() {
+  const assets = state.data.assetPicks.filter(asset => recordMatches(asset));
+
+  elements.primaryPanel.innerHTML = `
+    <div class="panel-header">
+      <div>
+        <h2>Assets</h2>
+        <p>${assets.length} asset picks registrados</p>
+      </div>
+      ${badge('Pexels / Pixabay only', 'blue')}
+    </div>
+    <div class="stack">
+      ${assets.map(asset => `
+        <article class="list-item">
+          <div class="split-line">
+            <strong>${escapeHtml(asset.id)}</strong>
+            ${badge(asset.status, asset.status === 'selected' ? 'green' : 'amber')}
+          </div>
+          <p>${escapeHtml(asset.notes || asset.sourcePageUrl)}</p>
+          <div class="badge-row">
+            ${badge(asset.source, asset.source === 'pexels' ? 'blue' : 'green')}
+            ${badge(asset.mediaType)}
+            ${badge(asset.sector)}
+            ${badge(asset.renderId, 'blue')}
+          </div>
+        </article>
+      `).join('') || emptyState('No hay assets seleccionados todavia.')}
     </div>
   `;
 }
@@ -486,6 +521,10 @@ function iconFile() {
 
 function iconBook() {
   return svg('<path d="M4 5.5A2.5 2.5 0 0 1 6.5 3H20v17H7a3 3 0 0 0-3 3z"/><path d="M4 5.5V21"/><path d="M8 7h8"/><path d="M8 11h8"/>');
+}
+
+function iconImage() {
+  return svg('<rect x="4" y="5" width="16" height="14" rx="2"/><path d="m8 15 3-3 3 3 2-2 4 4"/><circle cx="9" cy="9" r="1.5"/>');
 }
 
 function iconPlay() {

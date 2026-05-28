@@ -4,6 +4,7 @@ import test from 'node:test';
 import {
   groupBy,
   parseJsonl,
+  validateAssetPickRecord,
   validateIdeaRecord,
   validateKnowledgeCardRecord,
   validatePublishLogRecord,
@@ -59,6 +60,7 @@ test('record validators require cross-reference fields', () => {
   assert.equal(validateKnowledgeCardRecord({ id: 'knowledge-servicios-locales-001' }).length > 0, true);
   assert.equal(validateQaDecisionRecord({ scriptId: 'script-servicios-locales-001' }).length > 0, true);
   assert.equal(validateRenderQueueRecord({ id: 'render-servicios-locales-001' }).length > 0, true);
+  assert.equal(validateAssetPickRecord({ id: 'asset-servicios-locales-001' }).length > 0, true);
   assert.equal(validatePublishLogRecord({ renderId: 'render-servicios-locales-001' }).length > 0, true);
 });
 
@@ -167,6 +169,22 @@ test('validatePublishLogRecord accepts null metrics and rejects negative metrics
   })).some(error => error.includes('views')), true);
 });
 
+test('validateAssetPickRecord accepts Pexels and Pixabay license evidence', () => {
+  assert.deepEqual(validateAssetPickRecord(validAssetPickRecord()), []);
+
+  const errors = validateAssetPickRecord(validAssetPickRecord({
+    source: 'unsplash',
+    commercialUseAllowed: false,
+    attributionRequired: true,
+    standaloneRedistributionProhibited: false,
+  }));
+
+  assert.equal(errors.some(error => error.includes('source must be one of: pexels, pixabay')), true);
+  assert.equal(errors.some(error => error.includes('commercialUseAllowed must be true')), true);
+  assert.equal(errors.some(error => error.includes('attributionRequired must be false')), true);
+  assert.equal(errors.some(error => error.includes('standaloneRedistributionProhibited must be true')), true);
+});
+
 function validScriptRecord(overrides = {}) {
   return {
     id: 'script-servicios-locales-001',
@@ -239,6 +257,29 @@ function validPublishLogRecord(overrides = {}) {
     linkClicks: 0,
     whatsappConversations: 0,
     notes: '',
+    ...overrides,
+  };
+}
+
+function validAssetPickRecord(overrides = {}) {
+  return {
+    id: 'asset-servicios-locales-001',
+    renderId: 'render-servicios-locales-001',
+    scriptId: 'script-servicios-locales-001',
+    sector: 'servicios-locales',
+    source: 'pexels',
+    mediaType: 'video',
+    sourcePageUrl: 'https://www.pexels.com/video/example',
+    creator: 'Example Creator',
+    licenseName: 'Pexels License',
+    licenseUrl: 'https://www.pexels.com/legal-pages/license/',
+    commercialUseAllowed: true,
+    attributionRequired: false,
+    standaloneRedistributionProhibited: true,
+    trademarkOrRecognizablePeopleCheck: 'No visible trademarks or recognizable people selected.',
+    localFilePath: '',
+    notes: 'Candidate b-roll for pilot.',
+    status: 'selected',
     ...overrides,
   };
 }

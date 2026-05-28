@@ -18,6 +18,7 @@ Outputs:
 - 10 knowledge cards per sector
 - 3 manually selected render candidates per sector
 - 9 render briefs total
+- Pexels/Pixabay asset picks with license evidence before rendering
 - Manual publishing only
 - One learning report and one blog backlog
 
@@ -33,3 +34,4 @@ Campaign tone:
 - No guaranteed ROI
 - No fake testimonials
 - No unsupported statistics
+- No unverified media assets

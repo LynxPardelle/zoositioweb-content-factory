@@ -22,14 +22,16 @@ Operating order:
 3. Validate campaign JSONL files.
 4. Manually approve scripts in `qa-decisions.jsonl`.
 5. Add exactly 9 approved records to `render-queue.jsonl`.
-6. Generate render briefs into ignored `devonly/` output.
-7. Render locally with MoneyPrinterTurbo only after human approval.
-8. Publish manually and record metrics in `publish-log.jsonl`.
-9. Build the learning report and blog backlog.
+6. Select only Pexels/Pixabay assets and record license evidence in `asset-picks.jsonl`.
+7. Generate render briefs into ignored `devonly/` output.
+8. Render locally with MoneyPrinterTurbo only after human approval.
+9. Publish manually and record metrics in `publish-log.jsonl`.
+10. Build the learning report and blog backlog.
 
 Security and quality rules:
 
 - Do not store secrets, tokens, credential paths, signed URLs, or private customer information here.
 - Do not invent ROI guarantees, fake testimonials, fake case studies, or unsupported statistics.
 - Do not commit generated videos or third-party media.
+- Do not use provider CDN URLs as permanent media; download selected assets locally before rendering.
 - Keep MoneyPrinterTurbo local-only and do not expose it to the internet.

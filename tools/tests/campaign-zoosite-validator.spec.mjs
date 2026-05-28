@@ -14,6 +14,7 @@ test('empty pre-content dataset passes', () => {
     knowledgeCards: [],
     qaDecisions: [],
     renderQueue: [],
+    assetPicks: [],
     publishLog: [],
   })), { ok: true, errors: [] });
 });
@@ -152,6 +153,20 @@ test('dataset with 8 render queue records fails', () => {
   assert.equal(result.errors.some(error => error.includes('render queue')), true);
 });
 
+test('asset pick records must reference existing render and script IDs', () => {
+  const result = validatePilotDataset(validDataset({
+    assetPicks: [
+      validAssetPickRecord({
+        renderId: 'render-missing-001',
+        scriptId: 'script-missing-001',
+      }),
+    ],
+  }));
+
+  assert.equal(result.ok, false);
+  assert.equal(result.errors.some(error => error.includes('asset-picks.jsonl record')), true);
+});
+
 function validDataset(overrides = {}) {
   return {
     sectors: [
@@ -171,6 +186,7 @@ function validDataset(overrides = {}) {
     knowledgeCards: validKnowledgeCardRecords(30),
     qaDecisions: validQaDecisionRecords(30),
     renderQueue: validRenderQueueRecords(9),
+    assetPicks: [],
     publishLog: validPublishLogRecords(9),
     ...overrides,
   };
@@ -353,6 +369,29 @@ function validPublishLogRecords(count) {
   return Array.from({ length: count }, (_, index) => validPublishLogRecord({
     renderId: `render-servicios-locales-${recordSuffix(index)}`,
   }));
+}
+
+function validAssetPickRecord(overrides = {}) {
+  return {
+    id: 'asset-servicios-locales-001',
+    renderId: 'render-servicios-locales-001',
+    scriptId: 'script-servicios-locales-001',
+    sector: 'servicios-locales',
+    source: 'pixabay',
+    mediaType: 'video',
+    sourcePageUrl: 'https://pixabay.com/videos/example-123',
+    creator: 'Example Creator',
+    licenseName: 'Pixabay Content License',
+    licenseUrl: 'https://pixabay.com/service/license-summary/',
+    commercialUseAllowed: true,
+    attributionRequired: false,
+    standaloneRedistributionProhibited: true,
+    trademarkOrRecognizablePeopleCheck: 'No visible trademarks or recognizable people selected.',
+    localFilePath: '',
+    notes: '',
+    status: 'selected',
+    ...overrides,
+  };
 }
 
 function recordSuffix(index) {

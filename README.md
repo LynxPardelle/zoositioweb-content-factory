@@ -19,6 +19,8 @@ npm test
 npm run campaign:zoosite:validate
 npm run campaign:zoosite:render-briefs
 npm run campaign:zoosite:report
+npm run campaign:zoosite:assets:plan
+npm run campaign:zoosite:assets:fetch
 npm run campaign:zoosite:polly:plan
 npm run campaign:zoosite:polly:synthesize -- --render-id=render-servicios-locales-001 --voice-id=Mia --engine=neural --language-code=es-MX
 npm run ui
@@ -29,6 +31,8 @@ The UI runs locally and reads the campaign files through a small Node server. It
 ## Local Secrets
 
 Copy `.env.example` to `.env` on your machine and fill provider keys there. `.env` files are ignored by git.
+
+Asset candidate searches use `PEXELS_API_KEY` and `PIXABAY_API_KEY`. Results are written under `devonly/` and must be reviewed before adding anything to `asset-picks.jsonl`.
 
 ## Safety Rules
 

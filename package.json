@@ -13,6 +13,8 @@
     "campaign:zoosite:validate": "node tools/campaigns/zoositioweb/validate-pilot.mjs",
     "campaign:zoosite:render-briefs": "node tools/campaigns/zoositioweb/build-render-briefs.mjs",
     "campaign:zoosite:report": "node tools/campaigns/zoositioweb/build-learning-report.mjs",
+    "campaign:zoosite:assets:plan": "node tools/campaigns/zoositioweb/find-asset-candidates.mjs",
+    "campaign:zoosite:assets:fetch": "node tools/campaigns/zoositioweb/find-asset-candidates.mjs --execute",
     "campaign:zoosite:polly:plan": "node tools/campaigns/zoositioweb/synthesize-polly-audio.mjs",
     "campaign:zoosite:polly:synthesize": "node tools/campaigns/zoositioweb/synthesize-polly-audio.mjs --execute"
   },

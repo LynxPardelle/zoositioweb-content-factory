@@ -10,6 +10,10 @@ import { DEFAULT_PILOT_DIR, readPilotDataset, validatePilotDataset } from './cam
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const REPO_ROOT = path.resolve(__dirname, '..');
 const UI_ROOT = path.join(REPO_ROOT, 'ui');
+const ASSET_CANDIDATES_PATH = path.join(
+  REPO_ROOT,
+  'devonly/campaigns/zoositioweb/pilot-2026-05-sector-shortform/asset-candidates/candidates.json',
+);
 const HOST = process.env.HOST || '127.0.0.1';
 const DEFAULT_PORT = Number(process.env.PORT || 48210);
 const MIME_TYPES = new Map([
@@ -49,6 +53,9 @@ async function campaignPayload() {
   const learningReport = existsSync(learningReportPath)
     ? await readFile(learningReportPath, 'utf8')
     : '';
+  const assetCandidates = existsSync(ASSET_CANDIDATES_PATH)
+    ? JSON.parse(await readFile(ASSET_CANDIDATES_PATH, 'utf8')).candidates || []
+    : [];
   const sectors = Array.isArray(dataset.sectors?.sectors) ? dataset.sectors.sectors : dataset.sectors;
   const scriptsById = new Map(dataset.scripts.map(script => [script.id, script]));
   const ideasById = new Map(dataset.ideas.map(idea => [idea.id, idea]));
@@ -92,6 +99,7 @@ async function campaignPayload() {
       qaDecisions: dataset.qaDecisions.length,
       renderQueue: dataset.renderQueue.length,
       assetPicks: dataset.assetPicks.length,
+      assetCandidates: assetCandidates.length,
       blogBacklog: dataset.blogBacklog.length,
       publishLog: dataset.publishLog.length,
     },
@@ -102,6 +110,7 @@ async function campaignPayload() {
     qaDecisions: dataset.qaDecisions,
     renderQueue: dataset.renderQueue,
     assetPicks: dataset.assetPicks,
+    assetCandidates,
     renderBriefs,
     blogBacklog: dataset.blogBacklog,
     publishLog: dataset.publishLog,

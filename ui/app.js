@@ -122,6 +122,7 @@ function renderMetrics() {
     ['Scripts', state.data.metrics.scripts, 'short-form records'],
     ['Render Queue', state.data.metrics.renderQueue, 'human-gated'],
     ['Assets', state.data.metrics.assetPicks, 'selected picks'],
+    ['Candidates', state.data.metrics.assetCandidates, 'API suggestions'],
     ['Blog Backlog', state.data.metrics.blogBacklog, 'candidate topics'],
     ['Publish Log', state.data.metrics.publishLog, 'published records'],
   ];
@@ -248,16 +249,36 @@ function renderKnowledge() {
 
 function renderAssets() {
   const assets = state.data.assetPicks.filter(asset => recordMatches(asset));
+  const candidates = state.data.assetCandidates.filter(asset => recordMatches(asset));
 
   elements.primaryPanel.innerHTML = `
     <div class="panel-header">
       <div>
         <h2>Assets</h2>
-        <p>${assets.length} asset picks registrados</p>
+        <p>${candidates.length} candidatos API · ${assets.length} picks registrados</p>
       </div>
       ${badge('Pexels / Pixabay only', 'blue')}
     </div>
     <div class="stack">
+      ${candidates.map(candidate => `
+        <article class="list-item asset-card">
+          ${candidate.previewImageUrl ? `<img src="${escapeHtml(candidate.previewImageUrl)}" alt="">` : '<div class="asset-placeholder">Sin preview</div>'}
+          <div>
+            <div class="split-line">
+              <strong>${escapeHtml(candidate.renderId)}</strong>
+              ${badge(candidate.status, 'amber')}
+            </div>
+            <p>${escapeHtml(candidate.query)} · ${escapeHtml(candidate.creator)}</p>
+            <div class="badge-row">
+              ${badge(candidate.source, candidate.source === 'pexels' ? 'blue' : 'green')}
+              ${badge(candidate.mediaType)}
+              ${badge(candidate.orientation)}
+              ${badge(candidate.sector)}
+            </div>
+            ${candidate.sourcePageUrl ? `<a class="text-link" href="${escapeHtml(candidate.sourcePageUrl)}" target="_blank" rel="noreferrer">Abrir fuente</a>` : ''}
+          </div>
+        </article>
+      `).join('')}
       ${assets.map(asset => `
         <article class="list-item">
           <div class="split-line">
@@ -272,7 +293,7 @@ function renderAssets() {
             ${badge(asset.renderId, 'blue')}
           </div>
         </article>
-      `).join('') || emptyState('No hay assets seleccionados todavia.')}
+      `).join('') || (candidates.length === 0 ? emptyState('No hay assets seleccionados todavia.') : '')}
     </div>
   `;
 }

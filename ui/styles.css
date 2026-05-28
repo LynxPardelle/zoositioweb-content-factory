@@ -498,6 +498,43 @@ tbody tr.selected {
   gap: 8px;
 }
 
+.asset-card {
+  align-items: start;
+  grid-template-columns: 112px minmax(0, 1fr);
+}
+
+.asset-card img,
+.asset-placeholder {
+  aspect-ratio: 9 / 12;
+  background: var(--line);
+  border: 1px solid var(--line-strong);
+  border-radius: 8px;
+  display: block;
+  object-fit: cover;
+  width: 100%;
+}
+
+.asset-placeholder {
+  align-items: center;
+  color: var(--muted);
+  display: flex;
+  font-size: 12px;
+  justify-content: center;
+  text-align: center;
+}
+
+.text-link {
+  color: var(--blue);
+  display: inline-flex;
+  font-size: 13px;
+  margin-top: 8px;
+  text-decoration: none;
+}
+
+.text-link:hover {
+  text-decoration: underline;
+}
+
 .split-line {
   align-items: start;
   display: flex;

@@ -9,6 +9,7 @@ const REPO_ROOT = path.resolve(__dirname, '../../..');
 const DEFAULT_OUTPUT_DIR = 'devonly/campaigns/zoositioweb/pilot-2026-05-sector-shortform/asset-candidates';
 const DEFAULT_ENV_FILE = '.env';
 const DEFAULT_PER_PROVIDER = 3;
+const TARGET_VERTICAL_VIDEO_AREA = 1080 * 1920;
 const PROVIDERS = new Set(['all', 'pexels', 'pixabay']);
 const MEDIA_TYPES = new Set(['all', 'image', 'video']);
 const SECTOR_ASSET_QUERIES = {
@@ -356,17 +357,18 @@ function baseCandidate({ plan, index, providerAssetId, creator, sourcePageUrl },
 function selectVideoFile(files) {
   return [...files]
     .filter(file => file.link && (!file.file_type || file.file_type.includes('mp4')))
-    .sort((a, b) => videoFileScore(b) - videoFileScore(a))[0] || null;
+    .sort((a, b) => videoFileScore(a) - videoFileScore(b))[0] || null;
 }
 
 function selectPixabayVideoFile(videos) {
   const files = [videos.large, videos.medium, videos.small, videos.tiny].filter(Boolean);
-  return [...files].sort((a, b) => videoFileScore(b) - videoFileScore(a))[0] || null;
+  return [...files].sort((a, b) => videoFileScore(a) - videoFileScore(b))[0] || null;
 }
 
 function videoFileScore(file) {
-  const portraitBonus = file.height > file.width ? 1_000_000_000 : 0;
-  return portraitBonus + ((file.width || 0) * (file.height || 0));
+  const portraitPenalty = file.height > file.width ? 0 : 1_000_000_000;
+  const area = (file.width || 0) * (file.height || 0);
+  return portraitPenalty + Math.abs(area - TARGET_VERTICAL_VIDEO_AREA);
 }
 
 function orientationFor(width, height) {

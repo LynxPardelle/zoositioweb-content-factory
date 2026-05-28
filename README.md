@@ -19,6 +19,8 @@ npm test
 npm run campaign:zoosite:validate
 npm run campaign:zoosite:render-briefs
 npm run campaign:zoosite:report
+npm run campaign:zoosite:polly:plan
+npm run campaign:zoosite:polly:synthesize -- --render-id=render-servicios-locales-001 --voice-id=Mia --engine=neural --language-code=es-MX
 npm run ui
 ```
 
@@ -33,3 +35,4 @@ The UI runs locally and reads the campaign files through a small Node server. It
 - Source visual/audio assets only from Pexels or Pixabay for this pilot.
 - Store only local downloaded files in the renderer; do not hotlink provider URLs in generated videos.
 - Record every selected asset in `asset-picks.jsonl` with source page, creator, license URL, commercial-use check, and notes about trademarks or recognizable people.
+- Prefer Amazon Polly neural Spanish (Mexico) voice `Mia` for first TTS tests. The Polly script is dry-run by default and only calls AWS when `--execute` is passed.

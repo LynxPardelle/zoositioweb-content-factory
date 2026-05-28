@@ -3,6 +3,7 @@ devonly/
 logs/
 .env
 .env.*
+!.env.example
 *.log
 *.mp4
 *.mov

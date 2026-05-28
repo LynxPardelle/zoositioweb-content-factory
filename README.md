@@ -26,6 +26,10 @@ npm run ui
 
 The UI runs locally and reads the campaign files through a small Node server. It does not call external APIs.
 
+## Local Secrets
+
+Copy `.env.example` to `.env` on your machine and fill provider keys there. `.env` files are ignored by git.
+
 ## Safety Rules
 
 - Do not commit `.env`, provider keys, generated videos, downloaded third-party media, or private customer data.

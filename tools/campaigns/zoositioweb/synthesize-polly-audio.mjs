@@ -161,7 +161,7 @@ export async function synthesizePollyAudio({
 }
 
 function runAwsPolly({ item, region }) {
-  const command = process.platform === 'win32' ? 'aws.cmd' : 'aws';
+  const command = 'aws';
   const args = [
     'polly',
     'synthesize-speech',

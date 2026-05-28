@@ -9,7 +9,7 @@ This repo keeps campaign strategy, pilot scripts, knowledge cards, render-brief 
 - Product: `zoositioweb.com.mx`
 - Pilot: `campaigns/zoositioweb/pilot-2026-05-sector-shortform`
 - Sectors: servicios locales, consultorios, despachos
-- Current content: 30 ideas, 30 scripts, 30 knowledge cards, 9 human-gated render queue records, 0 selected asset records, 15 blog backlog candidates
+- Current content: 30 ideas, 30 scripts, 30 knowledge cards, 9 human-gated render queue records, 9 selected asset records, 15 blog backlog candidates
 - Published videos: none recorded yet
 
 ## Commands
@@ -22,9 +22,12 @@ npm run campaign:zoosite:report
 npm run campaign:zoosite:assets:plan
 npm run campaign:zoosite:assets:fetch
 npm run campaign:zoosite:polly:plan
-npm run campaign:zoosite:polly:synthesize -- --render-id=render-servicios-locales-001 --voice-id=Mia --engine=neural --language-code=es-MX
+npm run campaign:zoosite:polly:synthesize -- -- --render-id=render-servicios-locales-001 --voice-id=Mia --engine=neural --language-code=es-MX
+npm run campaign:zoosite:render-video -- -- --render-id=render-servicios-locales-001
 npm run ui
 ```
+
+On NPM 11, dynamic script flags need the double separator shown above: `-- -- --flag=value`.
 
 The UI runs locally and reads the campaign files through a small Node server. It does not call external APIs.
 

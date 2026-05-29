@@ -25,6 +25,7 @@ npm run campaign:zoosite:polly:plan
 npm run campaign:zoosite:polly:synthesize -- -- --render-id=render-servicios-locales-001 --voice-id=Mia --engine=neural --language-code=es-MX
 npm run campaign:zoosite:render-video -- -- --render-id=render-servicios-locales-001
 npm run campaign:zoosite:render-video:mpt -- -- --render-id=render-servicios-locales-001 --mpt-root=C:\path\to\MoneyPrinterTurbo
+npm run campaign:zoosite:render-video:mpt -- -- --render-id=render-servicios-locales-001 --preset=enhanced --mpt-root=C:\path\to\MoneyPrinterTurbo
 npm run ui
 ```
 

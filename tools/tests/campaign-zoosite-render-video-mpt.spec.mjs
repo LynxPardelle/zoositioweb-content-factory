@@ -5,6 +5,7 @@ import {
   buildMptCaptionEvents,
   parseArgs,
   renderSrtSubtitles,
+  selectSourceVideos,
 } from '../campaigns/zoositioweb/render-pilot-video-mpt.mjs';
 
 test('parseArgs supports MoneyPrinterTurbo render flags', () => {
@@ -12,10 +13,28 @@ test('parseArgs supports MoneyPrinterTurbo render flags', () => {
     '--render-id=render-servicios-locales-001',
     '--mpt-root=C:/tmp/MoneyPrinterTurbo',
     '--python=C:/tmp/MoneyPrinterTurbo/.venv/Scripts/python.exe',
+    '--preset=enhanced',
+    '--transition=Shuffle',
+    '--concat-mode=random',
+    '--clip-duration=3',
+    '--bgm-type=random',
+    '--bgm-volume=0.07',
+    '--font-size=54',
+    '--stroke-width=3',
+    '--cta=true',
   ]), {
     renderId: 'render-servicios-locales-001',
     mptRoot: 'C:/tmp/MoneyPrinterTurbo',
     pythonPath: 'C:/tmp/MoneyPrinterTurbo/.venv/Scripts/python.exe',
+    preset: 'enhanced',
+    transition: 'Shuffle',
+    concatMode: 'random',
+    clipDuration: 3,
+    bgmType: 'random',
+    bgmVolume: 0.07,
+    fontSize: 54,
+    strokeWidth: 3,
+    cta: true,
   });
 });
 
@@ -47,4 +66,49 @@ test('renderSrtSubtitles writes plain SRT text', () => {
 
   assert.match(srt, /1\n00:00:00,200 --> 00:00:02,400\nLinea uno/);
   assert.match(srt, /2\n00:00:02,400 --> 00:00:05,000\nCTA final/);
+});
+
+test('selectSourceVideos uses same-sector assets for enhanced renders', () => {
+  const primaryAsset = {
+    id: 'asset-1',
+    sector: 'servicios-locales',
+    mediaType: 'video',
+    status: 'selected',
+    localFilePath: 'a.mp4',
+  };
+  const dataset = {
+    assetPicks: [
+      primaryAsset,
+      {
+        id: 'asset-2',
+        sector: 'servicios-locales',
+        mediaType: 'video',
+        status: 'selected',
+        localFilePath: 'b.mp4',
+      },
+      {
+        id: 'asset-3',
+        sector: 'servicios-locales',
+        mediaType: 'video',
+        status: 'selected',
+        localFilePath: 'c.mp4',
+      },
+      {
+        id: 'asset-4',
+        sector: 'consultorios',
+        mediaType: 'video',
+        status: 'selected',
+        localFilePath: 'd.mp4',
+      },
+    ],
+  };
+
+  assert.deepEqual(
+    selectSourceVideos({ dataset, primaryAsset, preset: 'enhanced' }).map(item => item.id),
+    ['asset-1', 'asset-2', 'asset-3', 'asset-4'],
+  );
+  assert.deepEqual(
+    selectSourceVideos({ dataset, primaryAsset, preset: 'standard' }).map(item => item.id),
+    ['asset-1'],
+  );
 });

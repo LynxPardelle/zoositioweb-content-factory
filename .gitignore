@@ -11,3 +11,4 @@ logs/
 *.mp3
 *.wav
 *.aac
+__pycache__/

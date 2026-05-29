@@ -44,12 +44,18 @@ test('renderAssSubtitles escapes text and uses CTA style for final event', () =>
   const ass = renderAssSubtitles({
     title: 'Titulo {seguro}',
     events: [
-      { kind: 'hook', start: 0.2, end: 4.2, text: 'Texto {uno}' },
+      { kind: 'hook', start: 0.2, end: 4.2, text: 'Texto {uno}\\Nsegunda linea' },
       { kind: 'cta', start: 4.2, end: 8.2, text: 'CTA final' },
     ],
   });
 
   assert.match(ass, /Title: Titulo \\{seguro\\}/);
-  assert.match(ass, /Dialogue: 0,0:00:00\.20,0:00:04\.20,Default,,0,0,0,,Texto \\{uno\\}/);
+  assert.match(ass, /Dialogue: 0,0:00:00\.20,0:00:04\.20,Default,,0,0,0,,Texto \\{uno\\}\\Nsegunda linea/);
   assert.match(ass, /Dialogue: 0,0:00:04\.20,0:00:08\.20,CTA,,0,0,0,,CTA final/);
+});
+
+test('ffprobeDuration is available for alternate renderers', async () => {
+  const { ffprobeDuration } = await import('../campaigns/zoositioweb/render-pilot-video.mjs');
+
+  assert.equal(typeof ffprobeDuration, 'function');
 });

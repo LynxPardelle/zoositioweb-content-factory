@@ -17,7 +17,8 @@
     "campaign:zoosite:assets:fetch": "node tools/campaigns/zoositioweb/find-asset-candidates.mjs --execute",
     "campaign:zoosite:polly:plan": "node tools/campaigns/zoositioweb/synthesize-polly-audio.mjs",
     "campaign:zoosite:polly:synthesize": "node tools/campaigns/zoositioweb/synthesize-polly-audio.mjs --execute",
-    "campaign:zoosite:render-video": "node tools/campaigns/zoositioweb/render-pilot-video.mjs"
+    "campaign:zoosite:render-video": "node tools/campaigns/zoositioweb/render-pilot-video.mjs",
+    "campaign:zoosite:render-video:mpt": "node tools/campaigns/zoositioweb/render-pilot-video-mpt.mjs"
   },
   "engines": {
     "node": ">=20"

@@ -197,10 +197,14 @@ function formatAssTime(value) {
 }
 
 function escapeAssText(value) {
+  const lineBreakToken = '[[ASS_LINE_BREAK]]';
+
   return String(value)
+    .replaceAll('\\N', lineBreakToken)
     .replaceAll('\\', '\\\\')
     .replaceAll('{', '\\{')
-    .replaceAll('}', '\\}');
+    .replaceAll('}', '\\}')
+    .replaceAll(lineBreakToken, '\\N');
 }
 
 function assertSafeRenderId(renderId) {
@@ -209,7 +213,7 @@ function assertSafeRenderId(renderId) {
   }
 }
 
-async function ffprobeDuration(filePath) {
+export async function ffprobeDuration(filePath) {
   const output = await runCommand('ffprobe', [
     '-v',
     'error',

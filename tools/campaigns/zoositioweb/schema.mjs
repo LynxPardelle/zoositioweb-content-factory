@@ -16,6 +16,14 @@ const QA_DECISION_VALUES = new Set(['approved', 'rejected', 'needs-review']);
 const ASSET_SOURCE_VALUES = new Set(['pexels', 'pixabay']);
 const ASSET_MEDIA_TYPE_VALUES = new Set(['image', 'video', 'audio']);
 const ASSET_PICK_STATUS_VALUES = new Set(['candidate', 'selected', 'rejected']);
+const RENDER_QUEUE_STATUS_VALUES = new Set(['needs-review', 'approved', 'rejected']);
+const HUMAN_APPROVAL_STATUS_VALUES = new Set(['pending', 'approved', 'rejected']);
+const ASSET_LICENSE_STATUS_VALUES = new Set(['pending-local-asset-selection', 'verified', 'rejected']);
+const ASSET_CONTENT_TYPES = new Map([
+  ['image', new Set(['image/jpeg', 'image/png'])],
+  ['video', new Set(['video/mp4'])],
+  ['audio', new Set(['audio/mpeg', 'audio/wav'])],
+]);
 const PUBLISH_METRIC_FIELDS = [
   'views',
   'threeSecondRetention',
@@ -157,11 +165,38 @@ export function validateRenderQueueRecord(record) {
   requireString(record, 'voice', errors);
   requireExactValue(record, 'assetSource', 'approved-local-assets-only', errors);
   requireExactValue(record, 'captionStyle', 'large-readable-spanish', errors);
-  requireExactValue(record, 'status', 'needs-review', errors);
+  requireEnum(record, 'status', RENDER_QUEUE_STATUS_VALUES, errors);
   requireExactValue(record, 'humanApprovalRequired', true, errors);
-  requireExactValue(record, 'humanApprovalStatus', 'pending', errors);
-  requireExactValue(record, 'assetLicenseStatus', 'pending-local-asset-selection', errors);
+  requireEnum(record, 'humanApprovalStatus', HUMAN_APPROVAL_STATUS_VALUES, errors);
+  requireEnum(record, 'assetLicenseStatus', ASSET_LICENSE_STATUS_VALUES, errors);
   requireString(record, 'notes', errors);
+
+  if (record?.status === 'needs-review') {
+    requireExactValue(record, 'humanApprovalStatus', 'pending', errors);
+    requireExactValue(record, 'assetLicenseStatus', 'pending-local-asset-selection', errors);
+  }
+
+  if (record?.status === 'approved') {
+    requireExactValue(record, 'humanApprovalStatus', 'approved', errors);
+    requireExactValue(record, 'assetLicenseStatus', 'verified', errors);
+  }
+
+  if (record?.status === 'rejected'
+      && record?.humanApprovalStatus !== 'rejected'
+      && record?.assetLicenseStatus !== 'rejected') {
+    errors.push('rejected render must have a rejected human approval or asset license');
+  }
+
+  if (record?.humanApprovalStatus === 'approved' || record?.humanApprovalStatus === 'rejected') {
+    requireString(record, 'humanApprovalBy', errors);
+    requireIsoDateString(record, 'humanApprovalAt', errors);
+  }
+
+  if (record?.assetLicenseStatus === 'verified' || record?.assetLicenseStatus === 'rejected') {
+    requireString(record, 'assetLicenseVerifiedBy', errors);
+    requireIsoDateString(record, 'assetLicenseVerifiedAt', errors);
+    requireString(record, 'approvedAssetId', errors);
+  }
 
   return errors;
 }
@@ -183,9 +218,15 @@ export function validateAssetPickRecord(record) {
   requireExactValue(record, 'attributionRequired', false, errors);
   requireExactValue(record, 'standaloneRedistributionProhibited', true, errors);
   requireString(record, 'trademarkOrRecognizablePeopleCheck', errors);
-  requireString(record, 'localFilePath', errors, { allowEmpty: true });
+  requireString(record, 'localFilePath', errors, { allowEmpty: record?.status !== 'selected' });
   requireString(record, 'notes', errors, { allowEmpty: true });
   requireEnum(record, 'status', ASSET_PICK_STATUS_VALUES, errors);
+
+  if (record?.status === 'selected') {
+    requireSha256(record, 'sha256', errors);
+    requirePositiveSafeInteger(record, 'byteLength', errors);
+    requireAssetContentType(record, errors);
+  }
 
   return errors;
 }
@@ -331,6 +372,26 @@ function requireMetric(record, field, errors) {
 
   if (!Number.isFinite(value) || value < 0) {
     errors.push(`${field} must be a non-negative number or null`);
+  }
+}
+
+function requireSha256(record, field, errors) {
+  if (typeof record?.[field] !== 'string' || !/^[a-f0-9]{64}$/.test(record[field])) {
+    errors.push(`${field} must be a lowercase SHA-256 digest`);
+  }
+}
+
+function requirePositiveSafeInteger(record, field, errors) {
+  if (!Number.isSafeInteger(record?.[field]) || record[field] <= 0) {
+    errors.push(`${field} must be a positive safe integer`);
+  }
+}
+
+function requireAssetContentType(record, errors) {
+  const allowed = ASSET_CONTENT_TYPES.get(record?.mediaType);
+
+  if (!allowed?.has(record?.contentType)) {
+    errors.push(`contentType must match mediaType ${record?.mediaType || 'unknown'}`);
   }
 }
 

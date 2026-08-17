@@ -1,6 +1,7 @@
 import { createServer } from 'node:http';
 import { readFile } from 'node:fs/promises';
 import { existsSync } from 'node:fs';
+import { BlockList, isIP } from 'node:net';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 
@@ -16,6 +17,9 @@ const ASSET_CANDIDATES_PATH = path.join(
 );
 const HOST = process.env.HOST || '127.0.0.1';
 const DEFAULT_PORT = Number(process.env.PORT || 48210);
+const LOOPBACK_ADDRESSES = new BlockList();
+LOOPBACK_ADDRESSES.addSubnet('127.0.0.0', 8, 'ipv4');
+LOOPBACK_ADDRESSES.addAddress('::1', 'ipv6');
 const MIME_TYPES = new Map([
   ['.html', 'text/html; charset=utf-8'],
   ['.css', 'text/css; charset=utf-8'],
@@ -26,7 +30,7 @@ const MIME_TYPES = new Map([
 
 const server = createServer(async (request, response) => {
   try {
-    const url = new URL(request.url || '/', `http://${HOST}`);
+    const url = new URL(request.url || '/', `http://${urlHost(HOST)}`);
 
     if (request.method !== 'GET') {
       send(response, 405, 'Method not allowed', 'text/plain; charset=utf-8');
@@ -39,12 +43,17 @@ const server = createServer(async (request, response) => {
     }
 
     await serveStatic(url.pathname, response);
-  } catch (error) {
-    sendJson(response, { error: error.message }, 500);
+  } catch {
+    sendJson(response, { error: 'Internal server error' }, 500);
   }
 });
 
-listenWithFallback(server, DEFAULT_PORT);
+if (isLoopbackHost(HOST)) {
+  listenWithFallback(server, DEFAULT_PORT);
+} else {
+  console.error('Refusing to start: HOST must be a loopback address.');
+  process.exitCode = 1;
+}
 
 async function campaignPayload() {
   const dataset = await readPilotDataset(DEFAULT_PILOT_DIR);
@@ -146,8 +155,29 @@ function listenWithFallback(targetServer, port, attempts = 0) {
 
   targetServer.listen(port, HOST, () => {
     const address = targetServer.address();
-    console.log(`Zoositioweb Content Factory UI running at http://${HOST}:${address.port}/`);
+    console.log(`Zoositioweb Content Factory UI running at http://${urlHost(HOST)}:${address.port}/`);
   });
+}
+
+function isLoopbackHost(host) {
+  const normalizedHost = host.toLowerCase();
+  if (normalizedHost === 'localhost') {
+    return true;
+  }
+
+  const family = isIP(normalizedHost);
+  if (family === 4) {
+    return LOOPBACK_ADDRESSES.check(normalizedHost, 'ipv4');
+  }
+  if (family === 6) {
+    return LOOPBACK_ADDRESSES.check(normalizedHost, 'ipv6');
+  }
+
+  return false;
+}
+
+function urlHost(host) {
+  return isIP(host) === 6 ? `[${host}]` : host;
 }
 
 function sendJson(response, payload, status = 200) {

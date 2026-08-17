@@ -4,6 +4,7 @@ import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 
 import { DEFAULT_PILOT_DIR, readPilotDataset } from './validate-pilot.mjs';
+import { assertRenderReady } from './render-safety.mjs';
 
 const DEFAULT_OUTPUT_DIR = 'devonly/campaigns/zoositioweb/pilot-2026-05-sector-shortform/audio/polly';
 const DEFAULT_ENGINE = 'neural';
@@ -142,6 +143,21 @@ export async function synthesizePollyAudio({
       ...plan,
       dryRun: true,
     };
+  }
+
+  const dataset = await readPilotDataset(pilotDir);
+  const rendersById = new Map(dataset.renderQueue.map(render => [render.id, render]));
+  const selectedAssetsByRenderId = new Map(
+    dataset.assetPicks
+      .filter(asset => asset.status === 'selected')
+      .map(asset => [asset.renderId, asset]),
+  );
+
+  for (const item of plan.plans) {
+    assertRenderReady({
+      render: rendersById.get(item.renderId),
+      asset: selectedAssetsByRenderId.get(item.renderId),
+    });
   }
 
   await mkdir(path.join(plan.outputDir, 'text'), { recursive: true });

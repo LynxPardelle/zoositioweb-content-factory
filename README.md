@@ -31,7 +31,7 @@ npm run ui
 
 On NPM 11, dynamic script flags need the double separator shown above: `-- -- --flag=value`.
 
-The UI runs locally and reads the campaign files through a small Node server. It does not call external APIs.
+The UI runs locally and reads the campaign files through a small Node server. It does not call external APIs, and the server accepts loopback hosts only (`127.0.0.1`, `::1`, or `localhost`).
 
 ## Local Secrets
 
@@ -44,7 +44,9 @@ Asset candidate searches use `PEXELS_API_KEY` and `PIXABAY_API_KEY`. Results are
 - Do not commit `.env`, provider keys, generated videos, downloaded third-party media, or private customer data.
 - Keep MoneyPrinterTurbo and generated render steps local-only.
 - Use only approved claims extracted from the product source of truth.
-- Keep the render queue human-gated until scripts, assets, voice, and licenses are manually approved.
+- Preserve pending render-queue records for planning and dry runs. Polly `--execute` and both video renderers fail closed until the render has `status: approved`, `humanApprovalStatus: approved`, and `assetLicenseStatus: verified`, with reviewer/verifier identities, timestamps, and the approved asset ID recorded.
+- Before rendering, record and verify each selected local asset's `localFilePath`, SHA-256, byte length, and content type. The file's canonical path must remain inside the pilot's `selected-assets` directory.
+- No immutable MoneyPrinterTurbo source is approved yet. MPT rendering must remain fail closed until a source-backed repository, exact reviewed commit, reviewer, and review time are recorded; never infer or invent a commit SHA.
 - Source visual/audio assets only from Pexels or Pixabay for this pilot.
 - Store only local downloaded files in the renderer; do not hotlink provider URLs in generated videos.
 - Record every selected asset in `asset-picks.jsonl` with source page, creator, license URL, commercial-use check, and notes about trademarks or recognizable people.

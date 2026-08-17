@@ -4,6 +4,11 @@ import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 
 import { DEFAULT_PILOT_DIR, readPilotDataset } from './validate-pilot.mjs';
+import {
+  assertRenderReady,
+  selectedAssetsDirectoryForPilot,
+  verifySelectedAssetFile,
+} from './render-safety.mjs';
 
 const DEFAULT_AUDIO_DIR = 'devonly/campaigns/zoositioweb/pilot-2026-05-sector-shortform/audio/polly';
 const DEFAULT_OUTPUT_DIR = 'devonly/campaigns/zoositioweb/pilot-2026-05-sector-shortform/renders';
@@ -61,11 +66,17 @@ export async function renderPilotVideo({
     throw new Error(`Missing selected asset pick for render ${render.id}`);
   }
 
+  assertRenderReady({ render, asset });
+  const verifiedAsset = await verifySelectedAssetFile({
+    asset,
+    selectedAssetsDir: selectedAssetsDirectoryForPilot(pilotDir),
+  });
+
   const resolvedOutputDir = path.resolve(outputDir);
   const captionsDir = path.join(resolvedOutputDir, 'captions');
   const outputFile = path.join(resolvedOutputDir, `${renderId}.mp4`);
   const captionsFile = path.join(captionsDir, `${renderId}.ass`);
-  const sourceVideo = path.resolve(asset.localFilePath);
+  const sourceVideo = verifiedAsset.path;
   const sourceAudio = path.resolve(audioDir, `${renderId}.mp3`);
   const audioDuration = await ffprobeDuration(sourceAudio);
   const captionEvents = buildCaptionEvents({

@@ -4,8 +4,8 @@
 
 - Origen canónico público: `https://github.com/LynxPardelle/zoositioweb-content-factory`.
 - `main` exige PR y CI estricto, incluye a administradores, resuelve conversaciones
-  y bloquea force-push y borrado. Secret scanning, push protection, patrones
-  no-proveedor y validación de credenciales están activos.
+  y bloquea force-push y borrado. Secret scanning, push protection y actualizaciones
+  de seguridad de Dependabot están activos.
 - GitHub Actions ejecuta 90 pruebas, validación de campaña, Gitleaks del historial
   y revisión de whitespace en cada push y pull request.
 - Dependabot revisa semanalmente únicamente las acciones fijadas por SHA.

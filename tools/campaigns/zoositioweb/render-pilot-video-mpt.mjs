@@ -6,6 +6,12 @@ import { fileURLToPath } from 'node:url';
 
 import { DEFAULT_PILOT_DIR, readPilotDataset } from './validate-pilot.mjs';
 import { ffprobeDuration } from './render-pilot-video.mjs';
+import { verifyApprovedMptCheckout } from './mpt-provenance.mjs';
+import {
+  assertRenderReady,
+  selectedAssetsDirectoryForPilot,
+  verifySelectedAssetFile,
+} from './render-safety.mjs';
 
 const DEFAULT_AUDIO_DIR = 'devonly/campaigns/zoositioweb/pilot-2026-05-sector-shortform/audio/polly';
 const DEFAULT_OUTPUT_DIR = 'devonly/campaigns/zoositioweb/pilot-2026-05-sector-shortform/renders/mpt';
@@ -131,6 +137,19 @@ export async function renderPilotVideoWithMpt({
     throw new Error(`Missing selected asset pick for render ${render.id}`);
   }
 
+  assertRenderReady({ render, asset });
+  const sourceAssets = selectSourceVideos({ dataset, primaryAsset: asset, preset });
+  const verifiedAssets = [];
+
+  for (const sourceAsset of sourceAssets) {
+    verifiedAssets.push(await verifySelectedAssetFile({
+      asset: sourceAsset,
+      selectedAssetsDir: selectedAssetsDirectoryForPilot(pilotDir),
+    }));
+  }
+
+  const mptProvenance = await verifyApprovedMptCheckout({ mptRoot: resolvedMptRoot });
+
   if (!existsSync(resolvedMptRoot)) {
     throw new Error(`MoneyPrinterTurbo root not found: ${resolvedMptRoot}`);
   }
@@ -139,8 +158,7 @@ export async function renderPilotVideoWithMpt({
     throw new Error(`MoneyPrinterTurbo Python not found: ${resolvedPythonPath}`);
   }
 
-  const sourceVideos = selectSourceVideos({ dataset, primaryAsset: asset, preset })
-    .map(item => path.resolve(item.localFilePath));
+  const sourceVideos = verifiedAssets.map(item => item.path);
   const sourceAudio = path.resolve(audioDir, `${renderId}.mp3`);
   const durationSeconds = await ffprobeDuration(sourceAudio);
   const renderDir = path.resolve(effectiveOutputDir, renderId);
@@ -187,6 +205,7 @@ export async function renderPilotVideoWithMpt({
     scriptId: script.id,
     assetId: asset.id,
     mptRoot: resolvedMptRoot,
+    mptProvenance,
     sourceVideos,
     sourceAudio,
     subtitleFile,
@@ -272,8 +291,17 @@ export function selectSourceVideos({ dataset, primaryAsset, preset = 'standard' 
     return [primaryAsset];
   }
 
+  const rendersById = new Map((dataset.renderQueue || []).map(render => [render.id, render]));
   const selectedAssets = dataset.assetPicks
-    .filter(item => item.status === 'selected' && item.mediaType === 'video');
+    .filter(item => item.status === 'selected' && item.mediaType === 'video')
+    .filter(item => {
+      try {
+        assertRenderReady({ render: rendersById.get(item.renderId), asset: item });
+        return true;
+      } catch {
+        return false;
+      }
+    });
   const sameSector = selectedAssets
     .filter(item => item.sector === primaryAsset.sector && item.id !== primaryAsset.id);
   const fallback = selectedAssets

@@ -21,10 +21,10 @@ Operating order:
 2. Generate ideas, scripts, and knowledge cards from approved claims only.
 3. Validate campaign JSONL files.
 4. Manually approve scripts in `qa-decisions.jsonl`.
-5. Add exactly 9 approved records to `render-queue.jsonl`.
-6. Select only Pexels/Pixabay assets and record license evidence in `asset-picks.jsonl`.
+5. Preserve the 9 pending records in `render-queue.jsonl` until a human records terminal approval and license verification with identities, timestamps, and the approved asset ID.
+6. Select only Pexels/Pixabay assets, record license evidence in `asset-picks.jsonl`, and verify the local file's canonical containment, SHA-256, byte length, and content type before rendering.
 7. Generate render briefs into ignored `devonly/` output.
-8. Render locally with MoneyPrinterTurbo only after human approval.
+8. Render locally with MoneyPrinterTurbo only after human approval and after an immutable source repository and exact commit have been reviewed and recorded with reviewer and review time. No MPT source is currently approved, so this path remains fail closed.
 9. Publish manually and record metrics in `publish-log.jsonl`.
 10. Build the learning report and blog backlog.
 
@@ -35,3 +35,4 @@ Security and quality rules:
 - Do not commit generated videos or third-party media.
 - Do not use provider CDN URLs as permanent media; download selected assets locally before rendering.
 - Keep MoneyPrinterTurbo local-only and do not expose it to the internet.
+- Keep the local campaign UI bound to a loopback host; non-loopback hosts are rejected.

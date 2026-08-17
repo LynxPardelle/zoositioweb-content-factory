@@ -68,6 +68,33 @@ test('validateRenderQueueRecord accepts human-gated render metadata', () => {
   assert.deepEqual(validateRenderQueueRecord(validRenderQueueRecord()), []);
 });
 
+test('validateRenderQueueRecord accepts an audited terminal approval tied to one asset', () => {
+  assert.deepEqual(validateRenderQueueRecord(validRenderQueueRecord({
+    status: 'approved',
+    humanApprovalStatus: 'approved',
+    humanApprovalBy: 'Campaign approver',
+    humanApprovalAt: '2026-08-17T18:00:00.000Z',
+    assetLicenseStatus: 'verified',
+    assetLicenseVerifiedBy: 'License reviewer',
+    assetLicenseVerifiedAt: '2026-08-17T18:05:00.000Z',
+    approvedAssetId: 'asset-render-servicios-locales-001',
+  })), []);
+});
+
+test('validateRenderQueueRecord rejects terminal approval without audit evidence', () => {
+  const errors = validateRenderQueueRecord(validRenderQueueRecord({
+    status: 'approved',
+    humanApprovalStatus: 'approved',
+    assetLicenseStatus: 'verified',
+  }));
+
+  assert.equal(errors.some(error => error.includes('humanApprovalBy')), true);
+  assert.equal(errors.some(error => error.includes('humanApprovalAt')), true);
+  assert.equal(errors.some(error => error.includes('assetLicenseVerifiedBy')), true);
+  assert.equal(errors.some(error => error.includes('assetLicenseVerifiedAt')), true);
+  assert.equal(errors.some(error => error.includes('approvedAssetId')), true);
+});
+
 test('validateRenderQueueRecord rejects unsafe draft render metadata', () => {
   const errors = validateRenderQueueRecord({
     id: 'render-servicios-locales-001',
@@ -83,10 +110,10 @@ test('validateRenderQueueRecord rejects unsafe draft render metadata', () => {
   assert.equal(errors.some(error => error.includes('format must be vertical-9x16')), true);
   assert.equal(errors.some(error => error.includes('assetSource must be approved-local-assets-only')), true);
   assert.equal(errors.some(error => error.includes('captionStyle must be large-readable-spanish')), true);
-  assert.equal(errors.some(error => error.includes('status must be needs-review')), true);
+  assert.equal(errors.some(error => error.includes('status must be one of: needs-review, approved, rejected')), true);
   assert.equal(errors.some(error => error.includes('humanApprovalRequired must be true')), true);
-  assert.equal(errors.some(error => error.includes('humanApprovalStatus must be pending')), true);
-  assert.equal(errors.some(error => error.includes('assetLicenseStatus must be pending-local-asset-selection')), true);
+  assert.equal(errors.some(error => error.includes('humanApprovalStatus must be one of: pending, approved, rejected')), true);
+  assert.equal(errors.some(error => error.includes('assetLicenseStatus must be one of: pending-local-asset-selection, verified, rejected')), true);
   assert.equal(errors.some(error => error.includes('notes must be a string')), true);
 });
 
@@ -185,6 +212,20 @@ test('validateAssetPickRecord accepts Pexels and Pixabay license evidence', () =
   assert.equal(errors.some(error => error.includes('standaloneRedistributionProhibited must be true')), true);
 });
 
+test('validateAssetPickRecord requires immutable file metadata for selected assets', () => {
+  const errors = validateAssetPickRecord(validAssetPickRecord({
+    localFilePath: '',
+    sha256: undefined,
+    byteLength: undefined,
+    contentType: undefined,
+  }));
+
+  assert.equal(errors.some(error => error.includes('localFilePath')), true);
+  assert.equal(errors.some(error => error.includes('sha256')), true);
+  assert.equal(errors.some(error => error.includes('byteLength')), true);
+  assert.equal(errors.some(error => error.includes('contentType')), true);
+});
+
 function validScriptRecord(overrides = {}) {
   return {
     id: 'script-servicios-locales-001',
@@ -277,7 +318,10 @@ function validAssetPickRecord(overrides = {}) {
     attributionRequired: false,
     standaloneRedistributionProhibited: true,
     trademarkOrRecognizablePeopleCheck: 'No visible trademarks or recognizable people selected.',
-    localFilePath: '',
+    localFilePath: 'devonly/campaigns/zoositioweb/pilot/selected-assets/example.mp4',
+    sha256: 'a'.repeat(64),
+    byteLength: 1024,
+    contentType: 'video/mp4',
     notes: 'Candidate b-roll for pilot.',
     status: 'selected',
     ...overrides,

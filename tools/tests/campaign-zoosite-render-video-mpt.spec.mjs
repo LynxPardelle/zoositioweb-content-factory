@@ -71,6 +71,7 @@ test('renderSrtSubtitles writes plain SRT text', () => {
 test('selectSourceVideos uses same-sector assets for enhanced renders', () => {
   const primaryAsset = {
     id: 'asset-1',
+    renderId: 'render-1',
     sector: 'servicios-locales',
     mediaType: 'video',
     status: 'selected',
@@ -81,6 +82,7 @@ test('selectSourceVideos uses same-sector assets for enhanced renders', () => {
       primaryAsset,
       {
         id: 'asset-2',
+        renderId: 'render-2',
         sector: 'servicios-locales',
         mediaType: 'video',
         status: 'selected',
@@ -88,6 +90,7 @@ test('selectSourceVideos uses same-sector assets for enhanced renders', () => {
       },
       {
         id: 'asset-3',
+        renderId: 'render-3',
         sector: 'servicios-locales',
         mediaType: 'video',
         status: 'selected',
@@ -95,20 +98,46 @@ test('selectSourceVideos uses same-sector assets for enhanced renders', () => {
       },
       {
         id: 'asset-4',
+        renderId: 'render-4',
         sector: 'consultorios',
         mediaType: 'video',
         status: 'selected',
         localFilePath: 'd.mp4',
       },
     ],
+    renderQueue: [
+      readyRender('render-1', 'asset-1'),
+      readyRender('render-2', 'asset-2'),
+      readyRender('render-3', 'asset-3'),
+      {
+        id: 'render-4',
+        status: 'needs-review',
+        humanApprovalStatus: 'pending',
+        assetLicenseStatus: 'pending-local-asset-selection',
+      },
+    ],
   };
 
   assert.deepEqual(
     selectSourceVideos({ dataset, primaryAsset, preset: 'enhanced' }).map(item => item.id),
-    ['asset-1', 'asset-2', 'asset-3', 'asset-4'],
+    ['asset-1', 'asset-2', 'asset-3'],
   );
   assert.deepEqual(
     selectSourceVideos({ dataset, primaryAsset, preset: 'standard' }).map(item => item.id),
     ['asset-1'],
   );
 });
+
+function readyRender(id, approvedAssetId) {
+  return {
+    id,
+    status: 'approved',
+    humanApprovalStatus: 'approved',
+    humanApprovalBy: 'Campaign approver',
+    humanApprovalAt: '2026-08-17T18:00:00.000Z',
+    assetLicenseStatus: 'verified',
+    assetLicenseVerifiedBy: 'License reviewer',
+    assetLicenseVerifiedAt: '2026-08-17T18:05:00.000Z',
+    approvedAssetId,
+  };
+}
